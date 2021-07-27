@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 
 import styles from '../styles/Index.module.css'
 
@@ -12,10 +13,11 @@ export default function Blog() {
       </Head>
 
       <main className={styles.main}>
-        <div>Blog</div>
+        <div className={styles.title}>Blog</div>
         <div>Remaking My Portfolio</div>
         <div>Making My First Portfolio</div>
       </main>
+      <Footer />
     </div>
   )
 }

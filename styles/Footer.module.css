@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #c6c8c9;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+.links {
+  display: flex;
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.links > div {
+  margin-left: 1.3rem;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .links {
+    margin-bottom: 0.5rem;
+  }
+}

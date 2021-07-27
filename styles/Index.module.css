@@ -1,18 +1,24 @@
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 40rem;
-  height: 50rem;
+  justify-content: space-between;
   margin: 1.5rem 5.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  min-height: 30rem;
   border: none;
   border-radius: 0.5rem;
   background: #f2f3f4;
 }
 
+.title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
 @media (max-width: 1024px) {
   .container {
     margin: 1.5rem 0rem;
-    margin-top: 4rem;
+    margin-top: 6.5rem;
   }
 }

@@ -12,6 +12,7 @@
 
 @font-face {
   font-family: 'Inter';
+  src: url('/fonts/Inter/static/Inter-Regular.ttf');
   src: url('/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }
 
@@ -21,6 +22,10 @@ body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  font-size: 1.1rem;
 }
 
 a {

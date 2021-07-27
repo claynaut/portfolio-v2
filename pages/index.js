@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 
 import styles from '../styles/Index.module.css'
 
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>Hello! I&apos;m J.S.</div>
+        <div className={styles.title}>Hello! I&apos;m J.S.</div>
         <div>
           Aspiring software engineer based in Southern California, with a great interest in software and web development.
         </div>
@@ -20,6 +21,7 @@ export default function Home() {
           Currently a third-year undergraduate studying computer science at UCR. Let&apos;s talk at hello@jspescas.io!
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

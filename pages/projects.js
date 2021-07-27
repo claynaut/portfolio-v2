@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 
 import styles from '../styles/Index.module.css'
 
@@ -12,7 +13,7 @@ export default function Projects() {
       </Head>
 
       <main className={styles.main}>
-        <div>Projects</div>
+        <div className={styles.title}>Projects</div>
         <div>
           In the Works
         </div>
@@ -47,6 +48,7 @@ export default function Projects() {
           BioHack Website
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

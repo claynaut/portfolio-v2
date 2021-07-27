@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 
 import styles from '../styles/Index.module.css'
 
@@ -12,7 +13,7 @@ export default function About() {
       </Head>
 
       <main className={styles.main}>
-        <div>About</div>
+        <div className={styles.title}>About Me</div>
         <div>Other than coding, here&apos;s my other interests and hobbies.</div>
         <div>Art</div>
         <div>Storytelling</div>
@@ -49,6 +50,7 @@ export default function About() {
         <div>2001</div>
         <div>Born</div>
       </main>
+      <Footer />
     </div>
   )
 }
