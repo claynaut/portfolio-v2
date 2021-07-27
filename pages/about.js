@@ -24,7 +24,7 @@ export default function About() {
         <div>Guitar</div>
         <div>Ukelele</div>
         <div>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on Twitter.</div>
-        <div>Here's a timeline of my experiences.</div>
+        <div>Here&apos;s a timeline of my experiences.</div>
         <div>2021</div>
         <div>Revamped my Portfolio</div>
         <div>Built my First PC</div>
