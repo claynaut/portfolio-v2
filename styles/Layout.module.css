@@ -1,0 +1,7 @@
+.layout {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 60rem;
+  min-height: 100vh;
+}
