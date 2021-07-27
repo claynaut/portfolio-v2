@@ -13,7 +13,7 @@ export default function About() {
 
       <main className={styles.main}>
         <div>About</div>
-        <div>Other than coding, here's my other interests and hobbies.</div>
+        <div>Other than coding, here&apos;s my other interests and hobbies.</div>
         <div>Art</div>
         <div>Storytelling</div>
         <div>Graphic Design</div>
@@ -23,7 +23,7 @@ export default function About() {
         <div>Swords</div>
         <div>Guitar</div>
         <div>Ukelele</div>
-        <div>I'm also known as claynaut, my pen name for anything art-related. See most of my artworks on Twitter.</div>
+        <div>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on Twitter.</div>
         <div>Here's a timeline of my experiences.</div>
         <div>2021</div>
         <div>Revamped my Portfolio</div>
