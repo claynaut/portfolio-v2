@@ -13,42 +13,44 @@ export default function About() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title}>About Me</div>
-        <div>Other than coding, here&apos;s my other interests and hobbies.</div>
-        <div>Art</div>
-        <div>Storytelling</div>
-        <div>Graphic Design</div>
-        <div>KBBQ</div>
-        <div>Indie Pop</div>
-        <div>Indie Video Games</div>
-        <div>Swords</div>
-        <div>Guitar</div>
-        <div>Ukelele</div>
-        <div>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on Twitter.</div>
-        <div>Here&apos;s a timeline of my experiences.</div>
-        <div>2021</div>
-        <div>Revamped my Portfolio</div>
-        <div>Built my First PC</div>
-        <div>Web Dev Lead</div>
-        <div>Started Playing Guitar</div>
-        <div>Built my First Portfolio</div>
-        <div>Joined BioHack</div>
-        <div>2020</div>
-        <div>Online Classes</div>
-        <div>2019</div>
-        <div>Admitted to University of California, Riverside</div>
-        <div>Graduated High School</div>
-        <div>2018</div>
-        <div>Learned How to Code in C++</div>
-        <div>Completed my First Internship</div>
-        <div>2015</div>
-        <div>Learned How to Code in Java</div>
-        <div>2008</div>
-        <div>Got my First Nintendo DS</div>
-        <div>2006</div>
-        <div>Immigrated to USA</div>
-        <div>2001</div>
-        <div>Born</div>
+        <div>
+          <div className={styles.title}>About Me</div>
+          <div>Other than coding, here&apos;s my other interests and hobbies.</div>
+          <div>Art</div>
+          <div>Storytelling</div>
+          <div>Graphic Design</div>
+          <div>KBBQ</div>
+          <div>Indie Pop</div>
+          <div>Indie Video Games</div>
+          <div>Swords</div>
+          <div>Guitar</div>
+          <div>Ukelele</div>
+          <div>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on Twitter.</div>
+          <div>Here&apos;s a timeline of my experiences.</div>
+          <div>2021</div>
+          <div>Revamped my Portfolio</div>
+          <div>Built my First PC</div>
+          <div>Web Dev Lead</div>
+          <div>Started Playing Guitar</div>
+          <div>Built my First Portfolio</div>
+          <div>Joined BioHack</div>
+          <div>2020</div>
+          <div>Online Classes</div>
+          <div>2019</div>
+          <div>Admitted to University of California, Riverside</div>
+          <div>Graduated High School</div>
+          <div>2018</div>
+          <div>Learned How to Code in C++</div>
+          <div>Completed my First Internship</div>
+          <div>2015</div>
+          <div>Learned How to Code in Java</div>
+          <div>2008</div>
+          <div>Got my First Nintendo DS</div>
+          <div>2006</div>
+          <div>Immigrated to USA</div>
+          <div>2001</div>
+          <div>Born</div>
+        </div>
       </main>
       <Footer />
     </div>

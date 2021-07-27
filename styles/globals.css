@@ -1,13 +1,37 @@
 :root {
-  --accent: #e83b4c;
+  --accent: #e24951;
+  --bg: #1f2026;
+  --nav-bg: #1f2026c7;
+  --nav-accent: #191a1fc7;
+  --font: #b9bdc7;
+  --active-font: #1f2026;
+  --hover-button: #11111a;
+  --shadow: rgba(0,0,0,0.5);
+  --border: #121318;
 }
 
 [data-theme=light] {
-  --accent: #3b78e8;
+  --accent: #e24951;
+  --bg: #f2f2f2;
+  --nav-bg: #f2f2f2d7;
+  --nav-accent: #dadbdcd7;
+  --font: #131315;
+  --active-font: #fff;
+  --hover-button: #b6b9bd;
+  --shadow: rgba(0,0,0,0.3);
+  --border: #bfc3c7;
 }
 
 [data-theme=dark] {
-  --accent: #e83b4c;
+  --accent: #e24951;
+  --bg: #1f2026;
+  --nav-bg: #1f2026c7;
+  --nav-accent: #191a1fc7;
+  --font: #b9bdc7;
+  --active-font: #1f2026;
+  --hover-button: #11111a;
+  --shadow: rgba(0,0,0,0.5);
+  --border: #121318;
 }
 
 @font-face {
@@ -26,11 +50,16 @@ body {
 
 body {
   font-size: 1.1rem;
+  color: var(--font);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  line-height: 1.7rem;
 }
 
 * {

@@ -4,7 +4,7 @@
   align-items: center;
   margin-top: 2rem;
   padding-top: 0.5rem;
-  border-top: 1px solid #c6c8c9;
+  border-top: 1px solid var(--border);
 }
 
 .copyright {

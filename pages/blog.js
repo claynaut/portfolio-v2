@@ -13,9 +13,11 @@ export default function Blog() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title}>Blog</div>
-        <div>Remaking My Portfolio</div>
-        <div>Making My First Portfolio</div>
+        <div>
+          <div className={styles.title}>Blog</div>
+          <div>Remaking My Portfolio</div>
+          <div>Making My First Portfolio</div>
+        </div>
       </main>
       <Footer />
     </div>

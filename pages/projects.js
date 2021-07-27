@@ -13,39 +13,41 @@ export default function Projects() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title}>Projects</div>
         <div>
-          In the Works
-        </div>
-        <div>
-          Portfolio
-        </div>
-        <div>
-          Cutie Hack Website
-        </div>
-        <div>
-          A Web Planner App
-        </div>
-        <div>
-          DiamondHacks Website
-        </div>
-        <div>
-          Upcoming
-        </div>
-        <div>
-          Citrus Hack Website
-        </div>
-        <div>
-          BioHack Website
-        </div>
-        <div>
-          Completed
-        </div>
-        <div>
-          Dota 2 Analyzer Frontend
-        </div>
-        <div>
-          BioHack Website
+          <div className={styles.title}>Projects</div>
+          <div>
+            In the Works
+          </div>
+          <div>
+            Portfolio
+          </div>
+          <div>
+            Cutie Hack Website
+          </div>
+          <div>
+            A Web Planner App
+          </div>
+          <div>
+            DiamondHacks Website
+          </div>
+          <div>
+            Upcoming
+          </div>
+          <div>
+            Citrus Hack Website
+          </div>
+          <div>
+            BioHack Website
+          </div>
+          <div>
+            Completed
+          </div>
+          <div>
+            Dota 2 Analyzer Frontend
+          </div>
+          <div>
+            BioHack Website
+          </div>
         </div>
       </main>
       <Footer />

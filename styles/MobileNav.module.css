@@ -17,9 +17,13 @@
 
 .navwrapper {
   height: 3.8rem;
-  background: #dedede;
   border: none;
   border-radius: 0.5rem;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: saturate(80%) blur(20px);
+  -moz-backdrop-filter: saturate(80%) blur(20px);
+  backdrop-filter: saturate(80%) blur(20px);
+  box-shadow: 0 4px 12px var(--shadow);
   transition: 180ms ease-out;
   overflow-y: hidden;
 }
@@ -49,7 +53,7 @@
 
 .icontext:hover {
   background: var(--accent);
-  color: #fff;
+  color: var(--active-font);
   cursor: pointer;
 }
 
@@ -61,7 +65,7 @@
 
 .active {
   background: var(--accent);
-  color: #fff;
+  color: var(--active-font);
 }
 
 .button {
@@ -78,7 +82,7 @@
 .menu:hover,
 .button:hover,
 .themes > div:hover {
-  background: #a1a4a7;
+  background: var(--hover-button);
   cursor: pointer;
 }
 
@@ -112,7 +116,7 @@
   padding-top: 0rem;
   border: none;
   border-radius: 0 0 0.5rem 0.5rem;
-  background: #c2c3c4;
+  background: var(--nav-accent);
 }
 
 .hidden {
@@ -126,11 +130,11 @@
   border: none;
   border-radius: 0.5rem;
   background: var(--accent);
-  color: #fff;
+  color: var(--active-font);
   font-size: 1.5rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .navbar {
     display: none;
   }

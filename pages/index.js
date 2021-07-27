@@ -1,5 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 import Footer from '../components/Footer'
+
+import profile from '../public/assets/profile.png'
 
 import styles from '../styles/Index.module.css'
 
@@ -13,12 +17,27 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.title}>Hello! I&apos;m J.S.</div>
         <div>
-          Aspiring software engineer based in Southern California, with a great interest in software and web development.
+          <div className={styles.title}>Hello! I&apos;m J.S.</div>
+          <p>
+            Aspiring software engineer based in Southern California, with a great interest in software and web development.
+          </p>
+          <p>
+            Currently a third-year undergraduate studying Computer Science at UCR. 
+            Let&apos;s talk at <Link href='mailto:hello@jpescas.io'><span className={styles.link}>hello@jspescas.io</span></Link>!
+          </p>
         </div>
-        <div>
-          Currently a third-year undergraduate studying computer science at UCR. Let&apos;s talk at hello@jspescas.io!
+        <div className={styles.imagewrapper}>
+          <Image 
+            src={profile}
+            alt="Profile Picture"
+            layout="fixed"
+            width={280}
+            height={280}
+            quality={100}
+            placeholder="blur"
+            className={styles.image}
+          />
         </div>
       </main>
       <Footer />
