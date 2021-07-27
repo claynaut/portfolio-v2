@@ -1,7 +1,25 @@
 .layout {
-  position: relative;
   display: flex;
-  margin: 0 auto;
-  width: 60rem;
+  justify-content: center;
+  padding: 0 2rem;
+  width: 100%;
   min-height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  width: 60rem;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    position: static;
+    width: 100%;
+  }
 }

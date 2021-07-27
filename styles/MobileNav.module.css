@@ -4,27 +4,37 @@
   top: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 4.2rem;
-  border: none;
-  border-radius: 0.5rem;
-  background: #dededea3;
-  -webkit-backdrop-filter: saturate(80%) blur(20px);
-  -moz-backdrop-filter: saturate(80%) blur(20px);
-  backdrop-filter: saturate(80%) blur(20px);
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: inherit;
+  padding-right: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 2.6rem;
-  padding: 0.5rem;
+.navwrapper {
+  height: 3.8rem;
+  background: #dedede;
   border: none;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  transition: 180ms ease-out;
+  overflow-y: hidden;
+}
+
+.open {
+  height: 21.2rem;
+  transition: 180ms ease-out;
+}
+
+.menuwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.1rem;
 }
 
 .icontext {
@@ -65,6 +75,7 @@
   overflow: hidden;
 }
 
+.menu:hover,
 .button:hover,
 .themes > div:hover {
   background: #a1a4a7;
@@ -77,14 +88,10 @@
   padding-bottom: 0.1rem;
 }
 
-.themes {
-  margin: 0 auto;
-}
-
+.menu,
 .themes > div {
   display: flex;
   align-items: center;
-  margin-top: 0.6rem;
   padding: 0.5rem;
   border: none;
   border-radius: 0.5rem;
@@ -105,17 +112,25 @@
   padding-top: 0rem;
   border: none;
   border-radius: 0 0 0.5rem 0.5rem;
-  background: #c2c3c495;
-  -webkit-backdrop-filter: saturate(80%) blur(20px);
-  -moz-backdrop-filter: saturate(80%) blur(20px);
-  backdrop-filter: saturate(80%) blur(20px);
+  background: #c2c3c4;
 }
 
 .hidden {
   display: none !important;
 }
 
-@media (max-width: 1024px) {
+.selected {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
   .navbar {
     display: none;
   }

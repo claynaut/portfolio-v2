@@ -12,7 +12,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        Home
+        <div>Hello! I'm J.S.</div>
+        <div>
+          Aspiring software engineer based in Southern California, with a great interest in software and web development.
+        </div>
+        <div>
+          Currently a third-year undergraduate studying computer science at UCR. Let's talk at hello@jspescas.io!
+        </div>
       </main>
     </div>
   )
