@@ -38,7 +38,7 @@ export default function Nav() {
   useEffect(() => {
     setTheme(localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
     document.documentElement.setAttribute('data-theme', theme)
-  })
+  }, [theme])
 
   return (
     <div className={styles.navbar}>
