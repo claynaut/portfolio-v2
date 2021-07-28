@@ -32,6 +32,7 @@ export default function Home() {
             src={profile}
             alt="Profile Picture"
             layout="fixed"
+            objectFit="contain"
             width={280}
             height={280}
             quality={100}
