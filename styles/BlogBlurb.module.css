@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 1.2rem;
+  border: 2px solid var(--border);
+  border-radius: 0.7rem;
+}
+
+.container:hover {
+  background-color: var(--border);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: var(--sub-font);
+}
+
+.date {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.caption {
+  font-size: 1rem;
+}

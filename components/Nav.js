@@ -86,7 +86,7 @@ export default function Nav() {
             whileHover='itemHover' 
             whileTap='tap'
             className={
-              router.pathname === '/blog' 
+              router.pathname.includes('/blog')
               ? `${styles.active} ${styles.icontext}`
               : `${styles.icontext}`
             }
@@ -112,7 +112,7 @@ export default function Nav() {
         </Link>
       </div>
       <div className={styles.bottom}>
-        <Link passHref href='/'>
+        <Link passHref href='https://bit.ly/jspescasio-resume-072721'>
           <motion.div
             variants={desktopVariants}
             whileHover='itemHover' 

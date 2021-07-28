@@ -53,7 +53,7 @@ export default function Nav() {
             <div className={styles.selected}>
               <BiHomeAlt className={router.pathname !== '/' && styles.hidden}/>
               <BiGridAlt className={router.pathname !== '/projects' && styles.hidden}/>
-              <BiEditAlt className={router.pathname !== '/blog' && styles.hidden}/>
+              <BiEditAlt className={!router.pathname.includes('/blog') && styles.hidden}/>
               <BiUser className={router.pathname !== '/about' && styles.hidden}/>
             </div>
             <div
@@ -97,7 +97,7 @@ export default function Nav() {
           <Link passHref href='/blog'>
             <div
               className={
-                router.pathname === '/blog' 
+                router.pathname.includes('/blog')
                 ? `${styles.active} ${styles.icontext}`
                 : `${styles.icontext}`
               }
@@ -122,7 +122,7 @@ export default function Nav() {
           </Link>
         </div>
         <div className={styles.bottom}>
-          <Link passHref href='/'>
+          <Link passHref href='https://bit.ly/jspescasio-resume-072721'>
             <div
               className={styles.button}
             >

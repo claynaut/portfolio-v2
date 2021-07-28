@@ -43,8 +43,8 @@ export default function About() {
             <div>Guitar</div>
             <div>Ukelele</div>
           </div>
-          <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link href='mailto:hello@jpescas.io'><span className={styles.link}>Twitter</span></Link>.</p>
-          <p>See what I've done and where I've gone, with this timeline of my experiences.</p>
+          <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link passHref href='mailto:hello@jpescas.io'><span className={styles.link}>Twitter</span></Link>.</p>
+          <p>See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.</p>
           <div className={styles.subtitle}>2021</div>
           <TimeBlurb 
             icon={<BiStar />}
