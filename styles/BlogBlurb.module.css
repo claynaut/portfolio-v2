@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.container:hover .title{
+  color: var(--accent);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
