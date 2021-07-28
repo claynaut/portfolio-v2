@@ -68,6 +68,11 @@ export default function About() {
           />
           <TimeBlurb 
             icon={<BiBoltCircle />}
+            title="Started Learning Python"
+            caption="Hopefully going to make an app using this."
+          />
+          <TimeBlurb 
+            icon={<BiBoltCircle />}
             title="Started Playing Guitar"
             caption="Tried something new just for fun, and still practicing."
           />
@@ -82,6 +87,11 @@ export default function About() {
             caption="Built the frontend for the BioHack website. Wanted to try something new, and I loved it."
           />
           <div className={styles.subtitle}>2020</div>
+          <TimeBlurb 
+            icon={<BiBoltCircle />}
+            title="Started Learning ASL"
+            caption="For once, not a programming language."
+          />
           <TimeBlurb 
             icon={<BiDesktop />}
             title="Online Classes"
