@@ -19,7 +19,13 @@ export default function Blog() {
           <div className={styles.section}>
             <div className={styles.subtitle}>Getting Into Web Development</div>
             <p>
-              Eat
+              I first got into web development when I decided on a whim to try joining the web dev committee for BioHack, one of various hackathons at UCR.
+            </p>
+            <p>
+              At this point, my only experience with web dev was learning HTML/CSS online to try and make a web app back in high school, which never pushed through. I was working with one HTML file and had no clue about any frameworks or other tools.
+            </p>
+            <p>
+              P
             </p>
           </div>
           <div className={styles.section}>

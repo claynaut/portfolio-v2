@@ -23,7 +23,7 @@ export default function Blog() {
             </p>
           </div>
           <div className={styles.section}>
-            <div className={styles.subtitle}>What's New?</div>
+            <div className={styles.subtitle}>What&apos;s New?</div>
             <p>
               Eat
             </p>
