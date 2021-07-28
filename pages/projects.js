@@ -29,7 +29,7 @@ export default function Projects() {
             </ProjectBlurb>
             <ProjectBlurb
               link="https://cutiehack2021.vercel.app/"
-              title="CutieHack 2021 Website"
+              title="Cutie Hack 2021 Website"
               date="June 2021 - Present"
               caption="Developing the frontend and the backend of the website for CutieHack, a beginner-oriented hackathon at UCR."
             >
@@ -69,7 +69,7 @@ export default function Projects() {
           <div className={styles.section}>
             <ProjectBlurb
               link="/projects"
-              title="CitrusHack 2022 Website"
+              title="Citrus Hack 2022 Website"
               date="2021-2022"
               caption="Designing and developing the website for CitrusHack, a large-scale hackathon at UCR."
             >
