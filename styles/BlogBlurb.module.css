@@ -16,17 +16,26 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
   font-weight: 600;
+}
+
+.title {
   color: var(--sub-font);
+  margin-bottom: 0.2rem;
 }
 
 .date {
-  text-align: right;
   font-size: 0.9rem;
 }
 
 .caption {
   font-size: 1rem;
+}
+
+@media (max-width: 540px) {
+  .header {
+    flex-direction: column;
+    justify-content: normal;
+  }
 }

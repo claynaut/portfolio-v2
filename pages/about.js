@@ -38,7 +38,12 @@ export default function About() {
             <div>Indie Pop</div>
             <div>Japanese Rock</div>
             <div>Korean R&B</div>
+            <div>Nintendo</div>
             <div>Indie Video Games</div>
+            <div>Horror Movies</div>
+            <div>Crime TV Shows</div>
+            <div>Period Piece Dramas</div>
+            <div>Musicals</div>
             <div>Swords</div>
             <div>Guitar</div>
             <div>Ukelele</div>
@@ -80,7 +85,7 @@ export default function About() {
           <TimeBlurb 
             icon={<BiDesktop />}
             title="Online Classes"
-            caption="Learning online, another challenge."
+            caption="Learning online, what a challenge."
           />
           <div className={styles.subtitle}>2019</div>
           <TimeBlurb 
@@ -91,7 +96,7 @@ export default function About() {
           <TimeBlurb 
             icon={<BiAward />}
             title="Graduated High School"
-            caption="And continuing on with college."
+            caption="Farewell, Fullerton. Hello, Riverside."
           />
           <div className={styles.subtitle}>2018</div>
           <TimeBlurb 

@@ -12,6 +12,12 @@
   width: 60rem;
 }
 
+@media (max-width: 768px) {
+  .layout {
+    padding: 0 0.7rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .layout {
     position: static;
