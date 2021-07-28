@@ -7,7 +7,7 @@
   --sub-font: #fff;
   --active-font: #1f2026;
   --hover-button: #11111a;
-  --shadow: rgba(0,0,0,0.5);
+  --shadow: rgba(0,0,0,0.6);
   --border: #121318;
 }
 
@@ -20,7 +20,7 @@
   --sub-font: #000;
   --active-font: #fff;
   --hover-button: #b6b9bd;
-  --shadow: rgba(0,0,0,0.3);
+  --shadow: rgba(0,0,0,0.4);
   --border: #bfc3c7;
 }
 
@@ -33,7 +33,7 @@
   --sub-font: #fff;
   --active-font: #1f2026;
   --hover-button: #11111a;
-  --shadow: rgba(0,0,0,0.5);
+  --shadow: rgba(0,0,0,0.6);
   --border: #121318;
 }
 
@@ -49,6 +49,7 @@ body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--bg);
 }
 
 body {
