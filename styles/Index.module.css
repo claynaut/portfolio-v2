@@ -46,6 +46,11 @@
   color: var(--sub-font);
 }
 
+.subsubtitle {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
 .time {
   font-size: 0.9rem;
 }
