@@ -122,7 +122,7 @@ export default function Nav() {
           </Link>
         </div>
         <div className={styles.bottom}>
-          <Link passHref href='https://bit.ly/jspescasio-resume-072721'>
+          <Link passHref href='https://bit.ly/jspescasio-resume-072821'>
             <div
               className={styles.button}
             >
