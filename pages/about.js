@@ -46,6 +46,7 @@ export default function About() {
             <div>Swords</div>
             <div>Guitar</div>
             <div>Ukelele</div>
+            <div>Traveling</div>
           </div>
           <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link passHref href='mailto:hello@jpescas.io'><span className={styles.link}>Twitter</span></Link>.</p>
           <p>See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.</p>
@@ -63,7 +64,7 @@ export default function About() {
           <TimeBlurb 
             icon={<BiStar />}
             title="Web Dev Lead"
-            caption="Spearheaded the development for the DiamondHacks, CutieHack, Citrushack, BioHack websites, getting outside of my comfort zone."
+            caption="Spearheaded the development for the DiamondHacks, Cutie Hack, Citrus Hack, BioHack websites, getting outside of my comfort zone."
           />
           <TimeBlurb 
             icon={<BiBoltCircle />}
@@ -87,6 +88,11 @@ export default function About() {
             caption="Learning online, what a challenge."
           />
           <div className={styles.subtitle}>2019</div>
+          <TimeBlurb 
+            icon={<BiWorld />}
+            title="Traveled to Japan"
+            caption="Hoping to go again."
+          />
           <TimeBlurb 
             icon={<BiAward />}
             title="Admitted to University of California, Riverside"
