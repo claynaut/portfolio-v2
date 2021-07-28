@@ -1,5 +1,19 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Footer from '../components/Footer'
+import TimeBlurb from '../components/TimeBlurb'
+
+import { 
+  BiStar,
+  BiAward,
+  BiCog,
+  BiBoltCircle,
+  BiDesktop,
+  BiCodeAlt, 
+  BiWorld, 
+  BiCake,
+  BiJoystick
+} from 'react-icons/bi'
 
 import styles from '../styles/Index.module.css'
 
@@ -15,41 +29,105 @@ export default function About() {
       <main className={styles.main}>
         <div>
           <div className={styles.title}>About Me</div>
-          <div>Other than coding, here&apos;s my other interests and hobbies.</div>
-          <div>Art</div>
-          <div>Storytelling</div>
-          <div>Graphic Design</div>
-          <div>KBBQ</div>
-          <div>Indie Pop</div>
-          <div>Indie Video Games</div>
-          <div>Swords</div>
-          <div>Guitar</div>
-          <div>Ukelele</div>
-          <div>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on Twitter.</div>
-          <div>Here&apos;s a timeline of my experiences.</div>
-          <div>2021</div>
-          <div>Revamped my Portfolio</div>
-          <div>Built my First PC</div>
-          <div>Web Dev Lead</div>
-          <div>Started Playing Guitar</div>
-          <div>Built my First Portfolio</div>
-          <div>Joined BioHack</div>
-          <div>2020</div>
-          <div>Online Classes</div>
-          <div>2019</div>
-          <div>Admitted to University of California, Riverside</div>
-          <div>Graduated High School</div>
-          <div>2018</div>
-          <div>Learned How to Code in C++</div>
-          <div>Completed my First Internship</div>
-          <div>2015</div>
-          <div>Learned How to Code in Java</div>
-          <div>2008</div>
-          <div>Got my First Nintendo DS</div>
-          <div>2006</div>
-          <div>Immigrated to USA</div>
-          <div>2001</div>
-          <div>Born</div>
+          <p>Other than coding, I spend my free time doing my other interests and hobbies.</p>
+          <div className={styles.grid}>
+            <div>Art</div>
+            <div>Storytelling</div>
+            <div>Graphic Design</div>
+            <div>KBBQ</div>
+            <div>Indie Pop</div>
+            <div>Japanese Rock</div>
+            <div>Korean R&B</div>
+            <div>Indie Video Games</div>
+            <div>Swords</div>
+            <div>Guitar</div>
+            <div>Ukelele</div>
+          </div>
+          <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link href='mailto:hello@jpescas.io'><span className={styles.link}>Twitter</span></Link>.</p>
+          <p>See what I've done with this timeline of my experiences.</p>
+          <div className={styles.subtitle}>2021</div>
+          <TimeBlurb 
+            icon={<BiStar />}
+            title="Revamped my Portfolio"
+            caption="Rebuilt with Next.JS, trying out some new features."
+          />
+          <TimeBlurb 
+            icon={<BiCog />}
+            title="Built my First PC"
+            caption="Finally, after GPUs started coming back in stock."
+          />
+          <TimeBlurb 
+            icon={<BiStar />}
+            title="Web Dev Lead"
+            caption="Spearheaded the development for the DiamondHacks, CutieHack, Citrushack, BioHack websites, getting outside of my comfort zone."
+          />
+          <TimeBlurb 
+            icon={<BiBoltCircle />}
+            title="Started Playing Guitar"
+            caption="Tried something new just for fun, and still practicing."
+          />
+          <TimeBlurb 
+            icon={<BiCog />}
+            title="Built my First Portfolio"
+            caption="Diving deeper in web development, and trying out Gatsby."
+          />
+          <TimeBlurb 
+            icon={<BiBoltCircle />}
+            title="Joined BioHack"
+            caption="Built the frontend for the BioHack website. Wanted to try something new, and I loved it."
+          />
+          <div className={styles.subtitle}>2020</div>
+          <TimeBlurb 
+            icon={<BiDesktop />}
+            title="Online Classes"
+            caption="Learning online, another challenge."
+          />
+          <div className={styles.subtitle}>2019</div>
+          <TimeBlurb 
+            icon={<BiAward />}
+            title="Admitted to University of California, Riverside"
+            caption="Majoring in Computer Science."
+          />
+          <TimeBlurb 
+            icon={<BiAward />}
+            title="Graduated High School"
+            caption="And continuing on with college."
+          />
+          <div className={styles.subtitle}>2018</div>
+          <TimeBlurb 
+            icon={<BiCodeAlt />}
+            title="Learned How to Code in C++"
+            caption="Greeting the world in another language."
+          />
+          <TimeBlurb 
+            icon={<BiStar />}
+            title="Completed my First Internship"
+            caption="Spent the summer in Los Angeles as a QA intern, squashing bugs."
+          />
+          <div className={styles.subtitle}>2015</div>
+          <TimeBlurb 
+            icon={<BiCodeAlt />}
+            title="Learned How to Code in Java"
+            caption="Greeted the world with System.out.println(&quot;Hello World!&quot;)."
+          />
+          <div className={styles.subtitle}>2008</div>
+          <TimeBlurb 
+            icon={<BiJoystick />}
+            title="Got my First Nintendo DS"
+            caption="Started playing Pokemon, the start of my video gaming hobby."
+          />
+          <div className={styles.subtitle}>2006</div>
+          <TimeBlurb 
+            icon={<BiWorld />}
+            title="Immigrated to USA"
+            caption="Moved to Southern California and stayed there since."
+          />
+          <div className={styles.subtitle}>2001</div>
+          <TimeBlurb 
+            icon={<BiCake />}
+            title="Born"
+            caption="In Manila, Philippines."
+          />
         </div>
       </main>
       <Footer />

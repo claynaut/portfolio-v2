@@ -21,6 +21,14 @@
   color: var(--accent);
 }
 
+.subtitle {
+  margin-TOP: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--sub-font);
+}
+
 .imagewrapper {
   display: block;
   margin-left: 1rem;
@@ -37,13 +45,28 @@
   cursor: pointer
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.grid > div {
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--accent);
+  color: var(--active-font);
+}
+
 @media (max-width: 720px) {
   .main {
     flex-direction: column-reverse;
-    align-items: center;
   }
   .imagewrapper {
     margin-bottom: 0.7rem;
+    align-SELF: center;
   }
 }
 

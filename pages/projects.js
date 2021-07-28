@@ -15,9 +15,7 @@ export default function Projects() {
       <main className={styles.main}>
         <div>
           <div className={styles.title}>Projects</div>
-          <div>
-            In the Works
-          </div>
+          <div className={styles.subtitle}>In the Works</div>
           <div>
             Portfolio
           </div>
@@ -30,18 +28,14 @@ export default function Projects() {
           <div>
             DiamondHacks Website
           </div>
-          <div>
-            Upcoming
-          </div>
+          <div className={styles.subtitle}>Upcoming</div>
           <div>
             Citrus Hack Website
           </div>
           <div>
             BioHack Website
           </div>
-          <div>
-            Completed
-          </div>
+          <div className={styles.subtitle}>Completed</div>
           <div>
             Dota 2 Analyzer Frontend
           </div>

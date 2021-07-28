@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.icon,
+.title {
+  color: var(--sub-font);
+}
+
+.icon {
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+
+.title {
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+.caption {
+  line-height: 1.7rem;
+}

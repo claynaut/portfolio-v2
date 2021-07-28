@@ -24,7 +24,7 @@ export default function Home() {
           </p>
           <p>
             Currently a third-year undergraduate studying Computer Science at UCR. 
-            Let&apos;s talk at <Link href='mailto:hello@jpescas.io'><span className={styles.link}>hello@jspescas.io</span></Link>!
+            Let&apos;s talk at <Link href='https://twitter.com/claynaut'><span className={styles.link}>hello@jspescas.io</span></Link>!
           </p>
         </div>
         <div className={styles.imagewrapper}>
