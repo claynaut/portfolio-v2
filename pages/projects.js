@@ -63,7 +63,7 @@ export default function Projects() {
               link="/projects"
               title="DiamondHacks 2021 Website"
               date="July 2021 - Present"
-              caption="Building the frontend and the backend of the website for DiamondHacks, a new hackathon at UCR."
+              caption="Building the frontend and the backend of the website for DiamondHacks, the first hardware hackathon at UCR."
             >
               <div>Next.JS</div>
               <div>CSS Modules</div>
