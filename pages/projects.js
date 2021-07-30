@@ -61,9 +61,9 @@ export default function Projects() {
             </ProjectBlurb>
             <ProjectBlurb
               link="/projects"
-              title="DiamondHacks 2021 Website"
+              title="Dream Hacks 2021 Website"
               date="July 2021 - Present"
-              caption="Building the frontend and the backend of the website for DiamondHacks, the first hardware hackathon at UCR."
+              caption="Designing and developing the website for Dream Hacks, the first hardware hackathon at UCR."
             >
               <div>Next.JS</div>
               <div>CSS Modules</div>

@@ -55,7 +55,7 @@ export default function About() {
             <div>Ukelele</div>
             <div>Traveling</div>
           </div>
-          <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link passHref href='mailto:hello@jpescas.io'><span className={styles.link}>Twitter</span></Link>.</p>
+          <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link passHref href='https://twitter.com/claynaut'><span className={styles.link}>Twitter</span></Link>.</p>
           <p>See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.</p>
           <div className={styles.subtitle}>2021</div>
           <TimeBlurb 

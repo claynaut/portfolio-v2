@@ -23,7 +23,7 @@ export default function Blog() {
         <div>
           <div className={styles.title}>Blog</div>
           <p>Occasionally writing about what I&apos;ve done and what I find interesting.</p>
-          <BlogBlurb
+          {/* <BlogBlurb
             link="/blog"
             title="Trying Out for Web Dev Lead"
             date="August 2021"
@@ -34,7 +34,7 @@ export default function Blog() {
             title="Joining BioHack"
             date="July 2021"
             caption="Going over my experience with joining the BioHack web dev committee."
-          />
+          /> */}
           <BlogBlurb
             link="/blog/remaking-my-portfolio"
             title="Revamping My Portfolio"
