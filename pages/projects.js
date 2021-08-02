@@ -38,7 +38,7 @@ export default function Projects() {
               link="https://cutiehack2021.vercel.app/"
               title="Cutie Hack 2021 Website"
               date="June 2021 - Present"
-              caption="Developing the frontend and the backend of the website for CutieHack, a beginner-oriented hackathon at UCR."
+              caption="Developing the frontend and the backend of the website for Cutie Hack, a beginner-oriented hackathon at UCR."
             >
               <div>Next.JS</div>
               <div>CSS Modules</div>
@@ -78,7 +78,7 @@ export default function Projects() {
               link="/projects"
               title="Citrus Hack 2022 Website"
               date="2021-2022"
-              caption="Designing and developing the website for CitrusHack, a large-scale hackathon at UCR."
+              caption="Designing and developing the website for Citrus Hack, a large-scale hackathon at UCR."
             >
               <div>Next.JS</div>
               <div>CSS Modules</div>
