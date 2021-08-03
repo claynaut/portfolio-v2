@@ -28,13 +28,13 @@ export default function Blog() {
             title="Trying Out for Web Dev Lead"
             date="August 2021"
             caption="Getting outside of my comfort zone with my desire to learn more."
-          />
+          /> */}
           <BlogBlurb
             link="/blog"
             title="Joining BioHack"
-            date="July 2021"
+            date="August 2021"
             caption="Going over my experience with joining the BioHack web dev committee."
-          /> */}
+          />
           <BlogBlurb
             link="/blog/remaking-my-portfolio"
             title="Revamping My Portfolio"
