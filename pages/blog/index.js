@@ -30,7 +30,7 @@ export default function Blog() {
             caption="Getting outside of my comfort zone with my desire to learn more."
           /> */}
           <BlogBlurb
-            link="/blog"
+            link="/blog/joining-biohack"
             title="Joining BioHack"
             date="August 2021"
             caption="Going over my experience with joining the BioHack web dev committee."
