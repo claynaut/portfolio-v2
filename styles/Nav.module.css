@@ -1,6 +1,6 @@
 .navbar {
   z-index: 20;
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   display: flex;
   flex-direction: column;
