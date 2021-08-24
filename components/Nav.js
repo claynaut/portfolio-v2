@@ -112,7 +112,7 @@ export default function Nav() {
         </Link>
       </div>
       <div className={styles.bottom}>
-        <Link passHref href='https://bit.ly/jspescasio-resume-080221'>
+        <Link passHref href='https://drive.google.com/file/d/1FpHbai8UVdBYqs-0JDN9VEHnJl0ursV8/view?usp=sharing'>
           <motion.div
             variants={desktopVariants}
             whileHover='itemHover' 
