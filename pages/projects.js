@@ -48,6 +48,15 @@ export default function Projects() {
             </ProjectBlurb>
             <ProjectBlurb
               link="/projects"
+              title="Prytaneum"
+              date="August 2021 - Present"
+              caption="Developing the frontend of Prytaneum providing a unique medium for city officials to interact and promoting a better democracy."
+            >
+              <div>Next.JS</div>
+              <div>TypeScript</div>
+            </ProjectBlurb>
+            <ProjectBlurb
+              link="/projects"
               title="A Web Planner App"
               date="July 2021 - Present"
               caption="Building a web application on a larger scale than I've done before. Geared towards anyone who organizes their day on the go."

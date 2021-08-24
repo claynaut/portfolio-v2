@@ -12,7 +12,8 @@ import {
   BiCodeAlt, 
   BiWorld, 
   BiCake,
-  BiJoystick
+  BiJoystick,
+  BiPalette
 } from 'react-icons/bi'
 
 import styles from '../styles/Index.module.css'
@@ -59,6 +60,16 @@ export default function About() {
           <p>See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.</p>
           <div className={styles.subtitle}>2021</div>
           <TimeBlurb 
+            icon={<BiCog />}
+            title="Built my First Keyboard"
+            caption="A Drop ALT keyboard with Invyr Holy Panda switches and GMK Red Samurai keycaps. The best-sounding keyboard I've ever owned."
+          />
+          <TimeBlurb 
+            icon={<BiBoltCircle />}
+            title="Started my First Part-Time Job"
+            caption="Joined Prytaneum, a project led by the School of Public Policy at University of California, Riverside. Excited to get more experience in something I enjoy doing."
+          />
+          <TimeBlurb 
             icon={<BiStar />}
             title="Revamped my Portfolio"
             caption="Rebuilt with Next.JS, trying out some new features."
@@ -93,6 +104,7 @@ export default function About() {
             title="Joined BioHack"
             caption="Built the frontend for the BioHack website. Wanted to try something new, and I loved it."
           />
+
           <div className={styles.subtitle}>2020</div>
           <TimeBlurb 
             icon={<BiBoltCircle />}
@@ -104,6 +116,7 @@ export default function About() {
             title="Online Classes"
             caption="Learning online, what a challenge."
           />
+
           <div className={styles.subtitle}>2019</div>
           <TimeBlurb 
             icon={<BiWorld />}
@@ -120,6 +133,7 @@ export default function About() {
             title="Graduated High School"
             caption="Farewell, Fullerton. Hello, Riverside."
           />
+
           <div className={styles.subtitle}>2018</div>
           <TimeBlurb 
             icon={<BiCodeAlt />}
@@ -131,24 +145,35 @@ export default function About() {
             title="Completed my First Internship"
             caption="Spent the summer in Los Angeles as a QA intern, squashing bugs."
           />
+
           <div className={styles.subtitle}>2015</div>
           <TimeBlurb 
             icon={<BiCodeAlt />}
             title="Learned How to Code in Java"
             caption="Greeted the world with System.out.println(&quot;Hello World!&quot;)."
           />
+
+          <div className={styles.subtitle}>2014</div>
+          <TimeBlurb 
+            icon={<BiPalette />}
+            title="Got my First Drawing Tablet"
+            caption="A Wacom Intuos Pro Medium. Still using it to this day."
+          />
+
           <div className={styles.subtitle}>2008</div>
           <TimeBlurb 
             icon={<BiJoystick />}
             title="Got my First Nintendo DS"
             caption="Started playing Pokemon, the start of my video gaming hobby."
           />
+
           <div className={styles.subtitle}>2006</div>
           <TimeBlurb 
             icon={<BiWorld />}
             title="Immigrated to USA"
             caption="Moved to Southern California and stayed there since."
           />
+
           <div className={styles.subtitle}>2001</div>
           <TimeBlurb 
             icon={<BiCake />}
