@@ -53,6 +53,7 @@ export default function Projects() {
               caption="Developing the frontend of Prytaneum providing a unique medium for city officials to interact and promoting a better democracy."
             >
               <div>Next.JS</div>
+              <div>MaterialUI</div>
               <div>TypeScript</div>
             </ProjectBlurb>
             <ProjectBlurb
