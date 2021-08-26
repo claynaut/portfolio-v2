@@ -1,5 +1,5 @@
 :root {
-  --accent: #e24951;
+  --accent: #fa6f56;
   --bg: #1f2026;
   --nav-bg: #1f2026c7;
   --nav-accent: #18181dc7;
@@ -12,16 +12,16 @@
 }
 
 [data-theme=light] {
-  --accent: #e24951;
+  --accent: #eb7171;
   --bg: #f2f2f2;
   --nav-bg: #f2f2f2d7;
-  --nav-accent: #dadbdcd7;
+  --nav-accent: #e4e4e4d7;
   --font: #131315;
   --sub-font: #000;
   --active-font: #fff;
-  --hover-button: #b6b9bd;
+  --hover-button: #bfc3c5;
   --shadow: rgba(0,0,0,0.4);
-  --border: #bfc3c7;
+  --border: #d7dadd;
 }
 
 [data-theme=dark] {

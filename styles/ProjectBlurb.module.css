@@ -4,7 +4,7 @@
   width: 100%;
   margin-bottom: 0.5rem;
   padding: 1.2rem;
-  border: 2px solid var(--border);
+  border: 0.15rem solid var(--border);
   border-radius: 0.7rem;
 }
 
