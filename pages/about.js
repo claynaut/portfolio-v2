@@ -87,7 +87,7 @@ export default function About() {
             <TimeBlurb 
               icon={<BiStar />}
               title="Web Dev Lead"
-              caption="Spearheaded the development for the DiamondHacks, Cutie Hack, Citrus Hack, BioHack websites, getting outside of my comfort zone."
+              caption="Spearheaded the development for the Cutie Hack, Citrus Hack, Lotus Hacks, BioHack websites, getting outside of my comfort zone."
             />
             <TimeBlurb 
               icon={<BiBoltCircle />}
