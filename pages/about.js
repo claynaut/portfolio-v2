@@ -71,8 +71,8 @@ export default function About() {
             />
             <TimeBlurb 
               icon={<BiBoltCircle />}
-              title="Started my First Part-Time Job"
-              caption="Joined Prytaneum, a project led by the School of Public Policy at University of California, Riverside. Excited to get more experience in something I enjoy doing."
+              title="Joined Prytaneum"
+              caption="A project led by the School of Public Policy at University of California, Riverside, developing a unique platform for a better democracy. Excited to get more experience in something I enjoy doing."
             />
             <TimeBlurb 
               icon={<BiStar />}

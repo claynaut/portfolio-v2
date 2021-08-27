@@ -50,7 +50,7 @@ export default function Projects() {
               link="/projects"
               title="Prytaneum"
               date="August 2021 - Present"
-              caption="Developing the frontend of Prytaneum providing a unique medium for city officials to interact and promoting a better democracy."
+              caption="Developing the frontend of Prytaneum providing a unique platform for town officials and their constituents, promoting a better democracy."
             >
               <div>Next.JS</div>
               <div>MaterialUI</div>
