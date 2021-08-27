@@ -23,12 +23,12 @@ export default function Blog() {
         <div>
           <div className={styles.title}>Blog</div>
           <p>Occasionally writing about what I&apos;ve done and what I find interesting.</p>
-          {/* <BlogBlurb
-            link="/blog"
+          <BlogBlurb
+            link="/blog/trying-out-for-web-dev-lead"
             title="Trying Out for Web Dev Lead"
             date="August 2021"
             caption="Getting outside of my comfort zone with my desire to learn more."
-          /> */}
+          />
           <BlogBlurb
             link="/blog/joining-biohack"
             title="Joining BioHack"
