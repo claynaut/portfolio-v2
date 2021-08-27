@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Footer from '../components/Footer'
 import TimeBlurb from '../components/TimeBlurb'
+import TimeAccordion from '../components/TimeAccordion'
 
 import { 
+  BiMinus,
+  BiPlus,
   BiStar,
   BiAward,
   BiCog,
@@ -56,130 +59,141 @@ export default function About() {
             <div>Ukelele</div>
             <div>Traveling</div>
           </div>
+
           <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link passHref href='https://twitter.com/claynaut'><span className={styles.link}>Twitter</span></Link>.</p>
           <p>See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.</p>
-          <div className={styles.subtitle}>2021</div>
-          <TimeBlurb 
-            icon={<BiCog />}
-            title="Built my First Keyboard"
-            caption="A Drop ALT keyboard with Invyr Holy Panda switches and GMK Red Samurai keycaps. The best-sounding keyboard I've ever owned."
-          />
-          <TimeBlurb 
-            icon={<BiBoltCircle />}
-            title="Started my First Part-Time Job"
-            caption="Joined Prytaneum, a project led by the School of Public Policy at University of California, Riverside. Excited to get more experience in something I enjoy doing."
-          />
-          <TimeBlurb 
-            icon={<BiStar />}
-            title="Revamped my Portfolio"
-            caption="Rebuilt with Next.JS, trying out some new features."
-          />
-          <TimeBlurb 
-            icon={<BiCog />}
-            title="Built my First PC"
-            caption="Finally, after GPUs started coming back in stock."
-          />
-          <TimeBlurb 
-            icon={<BiStar />}
-            title="Web Dev Lead"
-            caption="Spearheaded the development for the DiamondHacks, Cutie Hack, Citrus Hack, BioHack websites, getting outside of my comfort zone."
-          />
-          <TimeBlurb 
-            icon={<BiBoltCircle />}
-            title="Started Learning Python"
-            caption="Hopefully going to make an app using this."
-          />
-          <TimeBlurb 
-            icon={<BiBoltCircle />}
-            title="Started Playing Guitar"
-            caption="Tried something new just for fun, and still practicing."
-          />
-          <TimeBlurb 
-            icon={<BiCog />}
-            title="Built my First Portfolio"
-            caption="Diving deeper in web development, and trying out Gatsby."
-          />
-          <TimeBlurb 
-            icon={<BiBoltCircle />}
-            title="Joined BioHack"
-            caption="Built the frontend for the BioHack website. Wanted to try something new, and I loved it."
-          />
+          
+          <TimeAccordion year='2021' length='lg'>
+            <TimeBlurb 
+              icon={<BiCog />}
+              title="Built my First Keyboard"
+              caption="A Drop ALT keyboard with Invyr Holy Panda switches and GMK Red Samurai keycaps. The best-sounding keyboard I've ever owned."
+            />
+            <TimeBlurb 
+              icon={<BiBoltCircle />}
+              title="Started my First Part-Time Job"
+              caption="Joined Prytaneum, a project led by the School of Public Policy at University of California, Riverside. Excited to get more experience in something I enjoy doing."
+            />
+            <TimeBlurb 
+              icon={<BiStar />}
+              title="Revamped my Portfolio"
+              caption="Rebuilt with Next.JS, trying out some new features."
+            />
+            <TimeBlurb 
+              icon={<BiCog />}
+              title="Built my First PC"
+              caption="Finally, after GPUs started coming back in stock."
+            />
+            <TimeBlurb 
+              icon={<BiStar />}
+              title="Web Dev Lead"
+              caption="Spearheaded the development for the DiamondHacks, Cutie Hack, Citrus Hack, BioHack websites, getting outside of my comfort zone."
+            />
+            <TimeBlurb 
+              icon={<BiBoltCircle />}
+              title="Started Learning Python"
+              caption="Hopefully going to make an app using this."
+            />
+            <TimeBlurb 
+              icon={<BiBoltCircle />}
+              title="Started Playing Guitar"
+              caption="Tried something new just for fun, and still practicing."
+            />
+            <TimeBlurb 
+              icon={<BiCog />}
+              title="Built my First Portfolio"
+              caption="Diving deeper in web development, and trying out Gatsby."
+            />
+            <TimeBlurb 
+              icon={<BiBoltCircle />}
+              title="Joined BioHack"
+              caption="Built the frontend for the BioHack website. Wanted to try something new, and I loved it."
+            />
+          </TimeAccordion>
+          
+          <TimeAccordion year='2020' length='xs'>
+            <TimeBlurb 
+              icon={<BiBoltCircle />}
+              title="Started Learning ASL"
+              caption="For once, not a programming language."
+            />
+            <TimeBlurb 
+              icon={<BiDesktop />}
+              title="Online Classes"
+              caption="Learning online, what a challenge."
+            />
+          </TimeAccordion>
+          
+          <TimeAccordion year='2019' length='sm'>
+            <TimeBlurb 
+              icon={<BiWorld />}
+              title="Traveled to Japan"
+              caption="Hoping to go again."
+            />
+            <TimeBlurb 
+              icon={<BiAward />}
+              title="Admitted to University of California, Riverside"
+              caption="Majoring in Computer Science."
+            />
+            <TimeBlurb 
+              icon={<BiAward />}
+              title="Graduated High School"
+              caption="Farewell, Fullerton. Hello, Riverside."
+            />
+          </TimeAccordion>
 
-          <div className={styles.subtitle}>2020</div>
-          <TimeBlurb 
-            icon={<BiBoltCircle />}
-            title="Started Learning ASL"
-            caption="For once, not a programming language."
-          />
-          <TimeBlurb 
-            icon={<BiDesktop />}
-            title="Online Classes"
-            caption="Learning online, what a challenge."
-          />
+          <TimeAccordion year='2018' length='xs'>
+            <TimeBlurb 
+              icon={<BiCodeAlt />}
+              title="Learned How to Code in C++"
+              caption="Greeting the world in another language."
+            />
+            <TimeBlurb 
+              icon={<BiStar />}
+              title="Completed my First Internship"
+              caption="Spent the summer in Los Angeles as a QA intern, squashing bugs."
+            />
+          </TimeAccordion>
 
-          <div className={styles.subtitle}>2019</div>
-          <TimeBlurb 
-            icon={<BiWorld />}
-            title="Traveled to Japan"
-            caption="Hoping to go again."
-          />
-          <TimeBlurb 
-            icon={<BiAward />}
-            title="Admitted to University of California, Riverside"
-            caption="Majoring in Computer Science."
-          />
-          <TimeBlurb 
-            icon={<BiAward />}
-            title="Graduated High School"
-            caption="Farewell, Fullerton. Hello, Riverside."
-          />
+          <TimeAccordion year='2015' length='xs'>
+            <TimeBlurb 
+              icon={<BiCodeAlt />}
+              title="Learned How to Code in Java"
+              caption="Greeted the world with System.out.println(&quot;Hello World!&quot;)."
+            />
+          </TimeAccordion>
 
-          <div className={styles.subtitle}>2018</div>
-          <TimeBlurb 
-            icon={<BiCodeAlt />}
-            title="Learned How to Code in C++"
-            caption="Greeting the world in another language."
-          />
-          <TimeBlurb 
-            icon={<BiStar />}
-            title="Completed my First Internship"
-            caption="Spent the summer in Los Angeles as a QA intern, squashing bugs."
-          />
+          <TimeAccordion year='2014' length='xs'>
+            <TimeBlurb 
+              icon={<BiPalette />}
+              title="Got my First Drawing Tablet"
+              caption="A Wacom Intuos Pro Medium. Still using it to this day."
+            />
+          </TimeAccordion>
 
-          <div className={styles.subtitle}>2015</div>
-          <TimeBlurb 
-            icon={<BiCodeAlt />}
-            title="Learned How to Code in Java"
-            caption="Greeted the world with System.out.println(&quot;Hello World!&quot;)."
-          />
+          <TimeAccordion year='2008' length='xs'>
+            <TimeBlurb 
+              icon={<BiJoystick />}
+              title="Got my First Nintendo DS"
+              caption="Started playing Pokemon, the start of my video gaming hobby."
+            />
+          </TimeAccordion>
 
-          <div className={styles.subtitle}>2014</div>
-          <TimeBlurb 
-            icon={<BiPalette />}
-            title="Got my First Drawing Tablet"
-            caption="A Wacom Intuos Pro Medium. Still using it to this day."
-          />
+          <TimeAccordion year='2006' length='xs'>
+            <TimeBlurb 
+              icon={<BiWorld />}
+              title="Immigrated to USA"
+              caption="Moved to Southern California and stayed there since."
+            />
+          </TimeAccordion>
 
-          <div className={styles.subtitle}>2008</div>
-          <TimeBlurb 
-            icon={<BiJoystick />}
-            title="Got my First Nintendo DS"
-            caption="Started playing Pokemon, the start of my video gaming hobby."
-          />
-
-          <div className={styles.subtitle}>2006</div>
-          <TimeBlurb 
-            icon={<BiWorld />}
-            title="Immigrated to USA"
-            caption="Moved to Southern California and stayed there since."
-          />
-
-          <div className={styles.subtitle}>2001</div>
-          <TimeBlurb 
-            icon={<BiCake />}
-            title="Born"
-            caption="In Manila, Philippines."
-          />
+          <TimeAccordion year='2001' length='xs'>
+            <TimeBlurb 
+              icon={<BiCake />}
+              title="Born"
+              caption="In Manila, Philippines."
+            />
+          </TimeAccordion>
         </div>
       </main>
       <Footer />

@@ -76,14 +76,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.9rem;
 }
 
 .grid > div {
   padding: 0.2rem 1rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   background: var(--accent);
   color: var(--active-font);
 }

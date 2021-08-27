@@ -1,0 +1,65 @@
+.header {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* background: rosybrown; */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--sub-font);
+  cursor: pointer;
+}
+
+.header:hover *:nth-of-type(1) {
+  color: var(--accent);
+}
+
+.xs {
+  max-height: 0;
+  overflow: hidden;
+  transition: 300ms ease-out;
+}
+.open .xs {
+  max-height: 10rem;
+  transition: 300ms ease-in;
+}
+
+.sm {
+  max-height: 0;
+  overflow: hidden;
+  transition: 300ms ease-out;
+}
+.open .sm {
+  max-height: 17rem;
+  transition: 300ms ease-in;
+}
+
+.md {
+  max-height: 0;
+  overflow: hidden;
+  transition: 300ms ease-out;
+}
+.open .md {
+  max-height: 35rem;
+  transition: 300ms ease-in;
+}
+
+.lg {
+  max-height: 0;
+  overflow: hidden;
+  transition: 450ms ease-out;
+}
+.open .lg {
+  max-height: 55rem;
+  transition: 450ms ease-in;
+}
+
+.xl {
+  max-height: 0;
+  overflow: hidden;
+  transition: 600ms ease-out;
+}
+.open .xl {
+  max-height: 70rem;
+  transition: 600ms ease-in;
+}
