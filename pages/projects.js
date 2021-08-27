@@ -58,6 +58,18 @@ export default function Projects() {
             </ProjectBlurb>
             <ProjectBlurb
               link="/projects"
+              title="Lotus Hacks 2021 Website"
+              date="July 2021 - Present"
+              caption="Designing and developing the website for Lotus Hacks, the first hardware hackathon at UCR."
+            >
+              <div>Next.JS</div>
+              <div>CSS Modules</div>
+              <div>Framer Motion</div>
+              <div>MongoDB</div>
+              <div>TypeScript</div>
+            </ProjectBlurb>
+            <ProjectBlurb
+              link="/projects"
               title="A Web Planner App"
               date="July 2021 - Present"
               caption="Building a web application on a larger scale than I've done before. Geared towards anyone who organizes their day on the go."
@@ -66,18 +78,6 @@ export default function Projects() {
               <div>CSS Modules</div>
               <div>Framer Motion</div>
               <div>SWR</div>
-              <div>MongoDB</div>
-              <div>TypeScript</div>
-            </ProjectBlurb>
-            <ProjectBlurb
-              link="/projects"
-              title="Dream Hacks 2021 Website"
-              date="July 2021 - Present"
-              caption="Designing and developing the website for Dream Hacks, the first hardware hackathon at UCR."
-            >
-              <div>Next.JS</div>
-              <div>CSS Modules</div>
-              <div>Framer Motion</div>
               <div>MongoDB</div>
               <div>TypeScript</div>
             </ProjectBlurb>
