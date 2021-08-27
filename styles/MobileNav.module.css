@@ -1,7 +1,7 @@
 .navbar {
   z-index: 20;
   position: fixed !important;
-  top: 1.5rem;
+  top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
