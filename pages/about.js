@@ -66,8 +66,13 @@ export default function About() {
           <TimeAccordion year='2021' length='lg'>
             <TimeBlurb 
               icon={<BiCog />}
+              title="Built my Second Keyboard"
+              caption="A compact GMMK with Glorious Holy Panda switches and a combination of GPBT keycaps and MiTo GMK Laser keycaps. Digging the look and the feel."
+            />
+            <TimeBlurb 
+              icon={<BiCog />}
               title="Built my First Keyboard"
-              caption="A Drop ALT keyboard with Invyr Holy Panda switches and GMK Red Samurai keycaps. The best-sounding keyboard I've ever owned."
+              caption="A compact GMMK with Invyr Holy Panda switches and GMK Red Samurai keycaps. Never heard a more satisfying click."
             />
             <TimeBlurb 
               icon={<BiBoltCircle />}
