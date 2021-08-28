@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 
 import { 
   BiMenu,
+  BiX,
   BiHomeAlt,
   BiGridAlt,
   BiEditAlt,
@@ -49,7 +50,10 @@ export default function Nav() {
       }>
         <div className={styles.top}>
           <div className={styles.menuwrapper}>
-            <div className={styles.menu} onClick={() => openNav()}><BiMenu /></div>
+            <div className={styles.menu} onClick={() => openNav()}>
+              { !open && <BiMenu /> }
+              { open && <BiX /> }
+            </div>
             <div className={styles.selected}>
               <BiHomeAlt className={router.pathname !== '/' && styles.hidden}/>
               <BiGridAlt className={router.pathname !== '/projects' && styles.hidden}/>
