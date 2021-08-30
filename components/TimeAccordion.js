@@ -1,11 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 
-import { HiMinusSm, HiPlus } from 'react-icons/hi'
+import { HiMinusSm, HiPlus, HiChevronUp } from 'react-icons/hi'
 
 import styles from '../styles/TimeAccordion.module.css'
 
 export default function TimeAccordion( props ) {
   const [open, setOpen] = useState(true)
+
+  const [isMobile, setIsMobile] = useState(false)
+  var desktopVariants = {}
+  if (!isMobile)
+    desktopVariants = {
+      hover: { scale: 1.02 },
+      tap: { scale: 0.995},
+    }
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+  })
 
   return (
     <div className={open && styles.open}>
@@ -23,6 +40,18 @@ export default function TimeAccordion( props ) {
         }
       >
         {props.children}
+        {(props.length === 'md' || props.length === 'lg' || props.length === 'xl') && 
+          <motion.button 
+            variants={desktopVariants}
+            whileHover='hover'
+            whileTap='tap' 
+            transition={{ ease: 'easeInOut', duration: 0.1 }}
+            onClick={() => setOpen(!open)}
+            className={styles.button}
+          >
+            Show Less <HiChevronUp />
+          </motion.button>
+        }
       </div>
     </div>
   )
