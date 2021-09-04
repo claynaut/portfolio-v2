@@ -58,6 +58,15 @@ export default function Projects() {
             </ProjectBlurb>
             <ProjectBlurb
               link="/projects"
+              title="IEJL Website"
+              date="August 2021 - Present"
+              caption="Developing a redesign of International Economic Justice League's (IEJL) website, with a small team of developers working remotely."
+            >
+              <div>Gatsby.JS</div>
+              <div>TailwindCSS</div>
+            </ProjectBlurb>
+            <ProjectBlurb
+              link="/projects"
               title="Lotus Hacks 2021 Website"
               date="July 2021 - Present"
               caption="Designing and developing the website for Lotus Hacks, the first hardware hackathon at UCR."
