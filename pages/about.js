@@ -65,6 +65,11 @@ export default function About() {
           
           <TimeAccordion year='2021' length='lg'>
             <TimeBlurb 
+              icon={<BiBoltCircle />}
+              title="Joined IEJL"
+              caption="Volunteered to be a frontend developer to help redesign the site for the International Economic Justice League (IEJL)."
+            />
+            <TimeBlurb 
               icon={<BiCog />}
               title="Built my Second Keyboard"
               caption="A compact GMMK with Glorious Holy Panda switches and a combination of GPBT keycaps and MiTo GMK Laser keycaps. Digging the look and the feel."

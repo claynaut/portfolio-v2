@@ -57,7 +57,7 @@ export default function Projects() {
               <div>TypeScript</div>
             </ProjectBlurb>
             <ProjectBlurb
-              link="/projects"
+              link="https://iejl.org/"
               title="IEJL Website"
               date="August 2021 - Present"
               caption="Developing a redesign of International Economic Justice League's (IEJL) website, with a small team of developers working remotely."
@@ -66,7 +66,7 @@ export default function Projects() {
               <div>TailwindCSS</div>
             </ProjectBlurb>
             <ProjectBlurb
-              link="/projects"
+              link="https://lotushacks.com/"
               title="Lotus Hacks 2021 Website"
               date="July 2021 - Present"
               caption="Designing and developing the website for Lotus Hacks, the first hardware hackathon at UCR."
