@@ -176,7 +176,14 @@ export default function Projects() {
                 date={date}
                 caption={caption}
               >
-                { stack.map((tech, idx) => <div key={idx}>{tech}</div>) }
+                { stack.map((tech, idx) => 
+                  <div
+                    key={idx}
+                    className='px-4 py-1 rounded-md bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark'
+                  >
+                    {tech}
+                  </div>
+                )}
               </ProjectBlurb>
             )}
           </div>
@@ -192,7 +199,14 @@ export default function Projects() {
                 date={date}
                 caption={caption}
               >
-                { stack.map((tech, idx) => <div key={idx}>{tech}</div>) }
+                { stack.map((tech, idx) => 
+                  <div
+                    key={idx}
+                    className='px-4 py-1 rounded-md bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark'
+                  >
+                    {tech}
+                  </div>
+                )}
               </ProjectBlurb>
             )}
           </div>
@@ -208,7 +222,14 @@ export default function Projects() {
                 date={date}
                 caption={caption}
               >
-                { stack.map((tech, idx) => <div key={idx}>{tech}</div>) }
+                { stack.map((tech, idx) => 
+                  <div
+                    key={idx}
+                    className='px-4 py-1 rounded-md bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark'
+                  >
+                    {tech}
+                  </div>
+                )}
               </ProjectBlurb>
             )}
           </div>
