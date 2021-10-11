@@ -56,7 +56,7 @@ export default function Nav() {
       <motion.div
         variants={desktopVariants}
         whileHover='navHover'
-        className='z-100 fixed top-6 hidden lg:flex flex-col justify-center w-16 rounded-lg bg-nav dark:bg-nav-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg shadow-light dark:shadow-dark font-semibold'
+        className='z-100 fixed top-6 hidden lg:flex flex-col justify-center w-17 rounded-lg bg-nav dark:bg-nav-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg shadow-light dark:shadow-dark font-semibold'
       >
         <div className='flex flex-col w-full p-3'>
           <div className='flex justify-center self-center p-2 rounded-lg text-2xl'>
