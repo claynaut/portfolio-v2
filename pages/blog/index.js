@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import Container from '../../components/Container'
-import Footer from '../../components/Footer'
 import BlogBlurb from '../../components/BlogBlurb'
-
-import styles from '../../styles/Index.module.css'
 
 export default function Blog() {
   return (
@@ -45,7 +42,6 @@ export default function Blog() {
           />
         </div>
       </section>
-      <Footer />
     </Container>
   )
 }

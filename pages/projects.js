@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Container from '../components/Container'
-import Footer from '../components/Footer'
 import ProjectBlurb from '../components/ProjectBlurb'
 
 export default function Projects() {
@@ -164,9 +163,9 @@ export default function Projects() {
           <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
             Projects
           </h1>
-          <div className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+          <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
             In the Works
-          </div>
+          </h2>
           <div className='mb-8'>
             { current.map(({ link, title, date, caption, stack }, idx) =>
               <ProjectBlurb
@@ -187,9 +186,9 @@ export default function Projects() {
               </ProjectBlurb>
             )}
           </div>
-          <div className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+          <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
             Upcoming
-          </div>
+          </h2>
           <div className='mb-8'>
             { upcoming.map(({ link, title, date, caption, stack }, idx) =>
               <ProjectBlurb
@@ -210,9 +209,9 @@ export default function Projects() {
               </ProjectBlurb>
             )}
           </div>
-          <div className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+          <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
             Completed
-          </div>
+          </h2>
           <div>
             { completed.map(({ link, title, date, caption, stack }, idx) =>
               <ProjectBlurb
@@ -235,7 +234,6 @@ export default function Projects() {
           </div>
         </div>
       </section>
-      <Footer />
     </Container>
   )
 }

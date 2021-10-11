@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Container from '../components/Container'
-import Footer from '../components/Footer'
 import profile from '../public/assets/profile.png'
 
 export default function Home() {
@@ -38,7 +37,6 @@ export default function Home() {
           />
         </div>
       </section>
-      <Footer />
     </Container>
   )
 }
