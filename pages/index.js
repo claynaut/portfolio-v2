@@ -16,10 +16,10 @@ export default function Home() {
           <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
             Hello! I&apos;m J.S.
           </h1>
-          <p>
+          <p className='my-4'>
             Aspiring software engineer based in Southern California, with a great interest in software and web development.
           </p>
-          <p>
+          <p className='my-4'>
             Currently a third-year undergraduate studying Computer Science at UCR. 
             Let&apos;s talk at <Link passHref href='https://twitter.com/claynaut'><span className='font-semibold text-accent dark:text-accent-dark cursor-pointer'>hello@jspescas.io</span></Link>!
           </p>
