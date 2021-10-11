@@ -160,7 +160,7 @@ export default function Projects() {
         <title>J.S. Pescasio | Projects</title>
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
-        <div>
+        <div className='w-full'>
           <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
             Projects
           </h1>
