@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Container from '../../components/Container'
 import Footer from '../components/Footer'
 import TimeBlurb from '../components/TimeBlurb'
 import TimeAccordion from '../components/TimeAccordion'
@@ -23,11 +24,10 @@ import styles from '../styles/Index.module.css'
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>J.S. Pescasio | About</title>
       </Head>
-
       <main className={styles.main}>
         <div>
           <div className={styles.title}>About Me</div>
@@ -204,6 +204,6 @@ export default function About() {
         </div>
       </main>
       <Footer />
-    </div>
+    </Container>
   )
 }

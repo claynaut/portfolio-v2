@@ -1,15 +1,15 @@
 import Head from 'next/head'
+import Container from '../../components/Container'
 import Footer from '../../components/Footer'
 
 import styles from '../../styles/Index.module.css'
 
 export default function Blog() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>J.S. Pescasio | Remaking my First Portfolio</title>
       </Head>
-
       <main className={styles.main}>
         <div>
           <div className={styles.title}>Revamping my First Portfolio</div>
@@ -48,6 +48,6 @@ export default function Blog() {
         </div>
       </main>
       <Footer />
-    </div>
+    </Container>
   )
 }
