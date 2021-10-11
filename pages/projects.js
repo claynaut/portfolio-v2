@@ -57,15 +57,6 @@ export default function Projects() {
               <div>TypeScript</div>
             </ProjectBlurb>
             <ProjectBlurb
-              link="https://iejl.org/"
-              title="IEJL Website"
-              date="August 2021 - Present"
-              caption="Developing a redesign of International Economic Justice League's (IEJL) website, with a small team of developers working remotely."
-            >
-              <div>Gatsby.JS</div>
-              <div>TailwindCSS</div>
-            </ProjectBlurb>
-            <ProjectBlurb
               link="https://lotushacks.com/"
               title="Lotus Hacks 2021 Website"
               date="July 2021 - Present"
@@ -74,8 +65,32 @@ export default function Projects() {
               <div>Next.JS</div>
               <div>CSS Modules</div>
               <div>Framer Motion</div>
+              <div>React Hook Forms</div>
               <div>MongoDB</div>
               <div>TypeScript</div>
+            </ProjectBlurb>
+            <ProjectBlurb
+              link="/projects"
+              title="BioHack 2022 Website"
+              date="September 2021 - Present"
+              caption="Building the website for BioHack, a healthcare hackathon at UCR."
+            >
+              <div>Next.JS</div>
+              <div>TailwindCSS</div>
+              <div>Framer Motion</div>
+              <div>React Hook Forms</div>
+              <div>MongoDB</div>
+              <div>TypeScript</div>
+              <div>Axios</div>
+            </ProjectBlurb>
+            <ProjectBlurb
+              link="https://iejl.org/"
+              title="IEJL Website"
+              date="August 2021 - Present"
+              caption="Developing a redesign of International Economic Justice League's (IEJL) website, with a small team of developers working remotely."
+            >
+              <div>Gatsby.JS</div>
+              <div>TailwindCSS</div>
             </ProjectBlurb>
             <ProjectBlurb
               link="/projects"
@@ -100,22 +115,12 @@ export default function Projects() {
               caption="Designing and developing the website for Citrus Hack, a large-scale hackathon at UCR."
             >
               <div>Next.JS</div>
-              <div>CSS Modules</div>
+              <div>TailwindCSS</div>
               <div>Framer Motion</div>
+              <div>React Hook Forms</div>
               <div>MongoDB</div>
               <div>TypeScript</div>
-            </ProjectBlurb>
-            <ProjectBlurb
-              link="/projects"
-              title="BioHack 2022 Website"
-              date="2021-2022"
-              caption="Building the website for BioHack, a healthcare hackathon at UCR."
-            >
-              <div>Next.JS</div>
-              <div>CSS Modules</div>
-              <div>Framer Motion</div>
-              <div>MongoDB</div>
-              <div>TypeScript</div>
+              <div>Axios</div>
             </ProjectBlurb>
           </div>
           <div className={styles.subtitle}>Completed</div>
