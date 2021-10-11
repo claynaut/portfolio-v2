@@ -18,10 +18,6 @@ module.exports = {
       minHeight: {
         'min': 'min-content',
       },
-      maxHeight: {
-        18: '4.5rem',
-        112: '28rem',
-      },
       spacing: {
         22: '5.5rem',
       },
@@ -46,24 +42,34 @@ module.exports = {
             DEFAULT: '#000',
             dark: '#fff',
           },
+          active: {
+            DEFAULT: '#fff',
+            dark: '#1f2026',
+          },
         },
         accent: {
           DEFAULT: '#eb7171',
           dark: '#e24951',
         },
+        nav: {
+          DEFAULT: '#f2f2f2d7',
+          dark: '#1f2026c7',
+          accent: {
+            DEFAULT: '#e4e4e4d7',
+            dark: '#18181dc7',
+          },
+          button: {
+            DEFAULT: '#cfcfd0',
+            dark: '#11111a',
+          },
+        },
         border: {
           DEFAULT: '#d7dadd',
           dark: '#121318'
         },
-        overlay: '#00000032',
-        'white-50': '#ffffff32',
       }
     },
   },
-  variants: {
-    extend: {
-      backgroundColor: ['disabled'],
-    },
-  },
+  variants: {},
   plugins: [],
 }
