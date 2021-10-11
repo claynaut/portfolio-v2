@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Container from '../../components/Container'
+import Container from '../components/Container'
 import Footer from '../components/Footer'
 import TimeBlurb from '../components/TimeBlurb'
 import TimeAccordion from '../components/TimeAccordion'
