@@ -36,7 +36,7 @@ export default function ProjectBlurb(props) {
             {props.date}
           </div>
         </div>
-        <p>
+        <p className='text-base'>
           {props.caption}
         </p>
         <div className='flex flex-wrap mt-5 gap-2 font-semibold text-sm'>
