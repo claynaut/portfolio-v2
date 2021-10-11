@@ -1,8 +1,7 @@
 import Head from 'next/head'
+import Container from '../components/Container'
 import Footer from '../components/Footer'
 import ProjectBlurb from '../components/ProjectBlurb'
-
-import styles from '../styles/Index.module.css'
 
 export default function Projects() {
   const current = [
@@ -156,16 +155,19 @@ export default function Projects() {
   ]
 
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>J.S. Pescasio | Projects</title>
       </Head>
-
-      <main className={styles.main}>
+      <section className='flex flex-col-reverse md:flex-row w-full'>
         <div>
-          <div className={styles.title}>Projects</div>
-          <div className={styles.subtitle}>In the Works</div>
-          <div className={styles.section}>
+          <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
+            Projects
+          </h1>
+          <div className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+            In the Works
+          </div>
+          <div className='mb-8'>
             { current.map(({ link, title, date, caption, stack }, idx) =>
               <ProjectBlurb
                 key={idx}
@@ -178,8 +180,10 @@ export default function Projects() {
               </ProjectBlurb>
             )}
           </div>
-          <div className={styles.subtitle}>Upcoming</div>
-          <div className={styles.section}>
+          <div className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+            Upcoming
+          </div>
+          <div className='mb-8'>
             { upcoming.map(({ link, title, date, caption, stack }, idx) =>
               <ProjectBlurb
                 key={idx}
@@ -192,8 +196,10 @@ export default function Projects() {
               </ProjectBlurb>
             )}
           </div>
-          <div className={styles.subtitle}>Completed</div>
-          <div className={styles.section}>
+          <div className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+            Completed
+          </div>
+          <div>
             { completed.map(({ link, title, date, caption, stack }, idx) =>
               <ProjectBlurb
                 key={idx}
@@ -207,8 +213,8 @@ export default function Projects() {
             )}
           </div>
         </div>
-      </main>
+      </section>
       <Footer />
-    </div>
+    </Container>
   )
 }

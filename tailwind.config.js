@@ -37,6 +37,16 @@ module.exports = {
           DEFAULT: '#f2f2f2',
           dark: '#1f2026',
         },
+        text: {
+          primary: {
+            DEFAULT: '#424248',
+            dark: '#b9bdc7',
+          },
+          secondary: {
+            DEFAULT: '#000',
+            dark: '#fff',
+          },
+        },
         accent: {
           DEFAULT: '#eb7171',
           dark: '#e24951',
