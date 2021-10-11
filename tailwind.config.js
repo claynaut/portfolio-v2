@@ -15,7 +15,7 @@ module.exports = {
       },
       height: {
         'nav': '3.75rem',
-        'nav-open': '21.25rem',
+        'nav-open': '21rem',
       },
       maxHeight: {
         600: '150rem',
