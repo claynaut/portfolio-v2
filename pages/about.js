@@ -43,6 +43,11 @@ export default function About() {
       length: 'xl',
       events: [
         {
+          icon: <BiBoltCircle />,
+          title: 'Switched to TailwindCSS',
+          caption: 'Refactored my portfolio and switched to using mostly TailwindCSS, a new preference.',
+        },
+        {
           icon: <BiStar />,
           title: 'Upgraded my First Keyboard',
           caption: 'Switched to Boba U4T switches lubed with Krytox 205g0. Unbeatable sound and feel.',
