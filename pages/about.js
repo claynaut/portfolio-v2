@@ -63,7 +63,12 @@ export default function About() {
           <p>I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <Link passHref href='https://twitter.com/claynaut'><span className={styles.link}>Twitter</span></Link>.</p>
           <p>See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.</p>
           
-          <TimeAccordion year='2021' length='lg'>
+          <TimeAccordion year='2021' length='xl'>
+            <TimeBlurb 
+              icon={<BiStar />}
+              title="Upgraded my First Keyboard"
+              caption="Switched to Boba U4T switches lubed with Krytox 205g0. Unbeatable sound and feel."
+            />
             <TimeBlurb 
               icon={<BiBoltCircle />}
               title="Joined IEJL"
