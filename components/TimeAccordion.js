@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-
 import { HiMinusSm, HiPlus, HiChevronUp } from 'react-icons/hi'
-
-import styles from '../styles/TimeAccordion.module.css'
 
 export default function TimeAccordion( props ) {
   const [open, setOpen] = useState(true)
@@ -25,29 +22,32 @@ export default function TimeAccordion( props ) {
   })
 
   return (
-    <div className={open && styles.open}>
-      <div className={styles.header} onClick={() => setOpen(!open)}>
-        { open ? <HiMinusSm /> : <HiPlus /> }
+    <div>
+      <div
+        className='group flex gap-2 items-center my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark cursor-pointer'
+        onClick={() => setOpen(!open)}
+      >
+        { open 
+          ? <HiMinusSm className='group-hover:text-accent dark:group-hover-text-accent-dark' /> 
+          : <HiPlus className='group-hover:text-accent dark:group-hover-text-accent-dark' />
+        }
         {props.year}
       </div>
       <div 
         className={
-          props.length === 'xs' && styles.xs || // 1-2 items
-          props.length === 'sm' && styles.sm || // 3-5 items
-          props.length === 'md' && styles.md || // 6-8 items
-          props.length === 'lg' && styles.lg || // 9-11 items
-          props.length === 'xl' && styles.xl    // 12-15 items
+          'flex flex-col items-start overflow-hidden transition-height duration-500 ease-in-out '
+          + (open ? '' : 'h-0')
         }
       >
         {props.children}
-        {(props.length === 'md' || props.length === 'lg' || props.length === 'xl') && 
+        {(props.length === 'xl') && 
           <motion.button 
             variants={desktopVariants}
             whileHover='hover'
             whileTap='tap' 
             transition={{ ease: 'easeInOut', duration: 0.1 }}
             onClick={() => setOpen(!open)}
-            className={styles.button}
+            className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent dark:bg-nav-accent-dark text-base text-text-primary dark:text-text-primary-dark'
           >
             Show Less <HiChevronUp />
           </motion.button>

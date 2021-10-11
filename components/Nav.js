@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
-
 import { 
   BiMenu,
   BiHomeAlt,
@@ -14,9 +13,6 @@ import {
   BiMoon,
   BiX
 } from 'react-icons/bi'
-
-import styles from '../styles/Nav.module.css'
-import mobileStyles from '../styles/MobileNav.module.css'
 
 export default function Nav() {
   const router = useRouter()
@@ -56,25 +52,27 @@ export default function Nav() {
 
   return (
     <>
+      {/* desktop navbar */}
       <motion.div
         variants={desktopVariants}
         whileHover='navHover'
-        className={styles.navbar} 
+        className='z-100 fixed top-6 hidden lg:flex flex-col justify-center w-16 rounded-lg bg-nav dark:bg-nav-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg shadow-light dark:shadow-dark font-semibold'
       >
-        <div className={styles.top}>
-          <div className={styles.menu}><BiMenu /></div>
+        <div className='flex flex-col w-full p-3'>
+          <div className='flex justify-center self-center p-2 rounded-lg text-2xl'>
+            <BiMenu />
+          </div>
           <Link passHref href='/'>
             <motion.div
               variants={desktopVariants}
               whileHover='itemHover' 
               whileTap='tap'
               className={
-                router.pathname === '/' 
-                ? `${styles.active} ${styles.icontext}`
-                : `${styles.icontext}`
+                'flex gap-2.5 items-center mt-2.5 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                + (router.pathname === '/' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
               }
             >
-              <div className={styles.icon}><BiHomeAlt /></div>
+              <div className='my-2 text-2xl'><BiHomeAlt /></div>
               <div>Home</div>
             </motion.div>
           </Link>
@@ -84,12 +82,11 @@ export default function Nav() {
               whileHover='itemHover' 
               whileTap='tap'
               className={
-                router.pathname === '/projects' 
-                ? `${styles.active} ${styles.icontext}`
-                : `${styles.icontext}`
+                'flex gap-2.5 items-center mt-2.5 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                + (router.pathname === '/projects' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
               }
             >
-              <div className={styles.icon}><BiGridAlt /></div>
+              <div className='my-2 text-2xl'><BiGridAlt /></div>
               <div>Projects</div>
             </motion.div>
           </Link>
@@ -99,12 +96,11 @@ export default function Nav() {
               whileHover='itemHover' 
               whileTap='tap'
               className={
-                router.pathname.includes('/blog')
-                ? `${styles.active} ${styles.icontext}`
-                : `${styles.icontext}`
+                'flex gap-2.5 items-center mt-2.5 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                + (router.pathname === '/blog' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
               }
             >
-              <div className={styles.icon}><BiEditAlt /></div>
+              <div className='my-2 text-2xl'><BiEditAlt /></div>
               <div>Blog</div>
             </motion.div>
           </Link>
@@ -114,25 +110,24 @@ export default function Nav() {
               whileHover='itemHover' 
               whileTap='tap'
               className={
-                router.pathname === '/about' 
-                ? `${styles.active} ${styles.icontext}`
-                : `${styles.icontext}`
+                'flex gap-2.5 items-center mt-2.5 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                + (router.pathname === '/about' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
               }
             >
-              <div className={styles.icon}><BiUser /></div>
+              <div className='my-2 text-2xl'><BiUser /></div>
               <div>About</div>
             </motion.div>
           </Link>
         </div>
-        <div className={styles.bottom}>
+        <div className='flex flex-col w-full p-3 pt-0 rounded-bl-lg rounded-br-lg bg-nav-accent dark:bg-nav-accent-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
           <Link passHref href='https://drive.google.com/file/d/1FpHbai8UVdBYqs-0JDN9VEHnJl0ursV8/view?usp=sharing'>
             <motion.div
               variants={desktopVariants}
               whileHover='itemHover' 
               whileTap='tap'
-              className={styles.button}
+              className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark overflow-hidden cursor-pointer'
             >
-              <div className={styles.icon}><BiFile /></div>
+              <div className='my-2 text-2xl'><BiFile /></div>
               <div>Resume</div>
             </motion.div>
           </Link>
@@ -140,125 +135,126 @@ export default function Nav() {
             variants={desktopVariants}
             whileHover='itemHover' 
             whileTap='tap'
-            className={styles.themes}
+            className='mx-auto my-0'
             onClick={() => toggle()}
           >
-            <div 
-              className={
-                theme === 'light' 
-                  ? `${styles.icon}`
-                  : `${styles.hidden} ${styles.icon}`
-              }
-            >
-              <BiSun />
-            </div>
-            <div 
-              className={
-                theme === 'dark' 
-                  ? `${styles.icon}`
-                  : `${styles.hidden} ${styles.icon}`
-              }
-            >
-              <BiMoon />
-            </div>
+            {
+              theme === 'light'
+              ?
+                <div className='flex items-center mt-2.5 p-2 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark text-2xl cursor-pointer'>
+                  <BiSun />
+                </div>
+              :
+                <div className='flex items-center mt-2.5 p-2 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark text-2xl cursor-pointer'>
+                  <BiMoon />
+                </div>
+            }
           </motion.div>
         </div>
       </motion.div>
-      <div className={mobileStyles.navbar}>
+      {/* mobile navbar */}
+      <div className='z-100 fixed top-4 left-0 lg:hidden flex-col justify-start w-full px-4 font-semibold'>
         <div className={
-          open 
-          ? `${mobileStyles.open} ${mobileStyles.navwrapper}`
-          : `${mobileStyles.navwrapper}`
+          'rounded-lg bg-nav dark:bg-nav-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg shadow-light dark:shadow-dark overflow-hidden transition-height duration-200 ease-out '
+          + (open ? 'h-nav-open' : 'h-nav')
         }>
-          <div className={mobileStyles.top}>
-            <div className={mobileStyles.menuwrapper}>
-              <div className={mobileStyles.menu} onClick={() => openNav()}>
+          <div className='flex flex-col w-full p-2.5'>
+            <div className='flex justify-between items-center w-full mb-0.5'>
+              <div
+                className='flex items-center p-2 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark text-2xl cursor-pointer'
+                onClick={() => openNav()}
+              >
                 { !open && <BiMenu /> }
                 { open && <BiX /> }
               </div>
-              <div className={mobileStyles.selected}>
-                <BiHomeAlt className={router.pathname !== '/' && mobileStyles.hidden}/>
-                <BiGridAlt className={router.pathname !== '/projects' && mobileStyles.hidden}/>
-                <BiEditAlt className={!router.pathname.includes('/blog') && mobileStyles.hidden}/>
-                <BiUser className={router.pathname !== '/about' && mobileStyles.hidden}/>
+              <div className='flex items-center p-2 rounded-lg bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark text-xl'>
+                {router.pathname === '/' && <BiHomeAlt /> }
+                {router.pathname === '/projects' && <BiGridAlt /> }
+                {router.pathname.includes('/blog') && <BiEditAlt /> }
+                {router.pathname === '/about' && <BiUser /> }
               </div>
-              <div
-                className={mobileStyles.themes}
-                onClick={() => toggle()}
-              >
-                <div className={theme !== 'light' && mobileStyles.hidden}>
-                  <BiSun />
-                </div>
-                <div className={theme !== 'dark' && mobileStyles.hidden}>
-                  <BiMoon />
-                </div>
+              <div onClick={() => toggle()}>
+                {
+                  theme === 'light'
+                  ?
+                    <div className='flex items-center p-2 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark text-2xl cursor-pointer'>
+                      <BiSun />
+                    </div>
+                  :
+                    <div className='flex items-center p-2 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark text-2xl cursor-pointer'>
+                      <BiMoon />
+                    </div>
+                }
               </div>
             </div>
             <Link passHref href='/'>
               <div
                 className={
-                  router.pathname === '/' 
-                  ? `${mobileStyles.active} ${mobileStyles.icontext}`
-                  : `${mobileStyles.icontext}`
+                  'flex gap-2.5 items-center mt-2 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                  + (router.pathname === '/' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
                 }
                 onClick={() => setOpen(false)}
               >
-                <div className={mobileStyles.icon}><BiHomeAlt /></div>
+                <div className='my-2 text-2xl'><BiHomeAlt /></div>
                 <div>Home</div>
               </div>
             </Link>
             <Link passHref href='/projects'>
               <div
                 className={
-                  router.pathname === '/projects' 
-                  ? `${mobileStyles.active} ${mobileStyles.icontext}`
-                  : `${mobileStyles.icontext}`
+                  'flex gap-2.5 items-center mt-2 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                  + (router.pathname === '/projects' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
                 }
                 onClick={() => setOpen(false)}
               >
-                <div className={mobileStyles.icon}><BiGridAlt /></div>
+                <div className='my-2 text-2xl'><BiGridAlt /></div>
                 <div>Projects</div>
               </div>
             </Link>
             <Link passHref href='/blog'>
               <div
                 className={
-                  router.pathname.includes('/blog')
-                  ? `${mobileStyles.active} ${mobileStyles.icontext}`
-                  : `${mobileStyles.icontext}`
+                  'flex gap-2.5 items-center mt-2 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                  + (router.pathname === '/blog' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
                 }
                 onClick={() => setOpen(false)}
               >
-                <div className={mobileStyles.icon}><BiEditAlt /></div>
+                <div className='my-2 text-2xl'><BiEditAlt /></div>
                 <div>Blog</div>
               </div>
             </Link>
             <Link passHref href='/about'>
               <div
                 className={
-                  router.pathname === '/about' 
-                  ? `${mobileStyles.active} ${mobileStyles.icontext}`
-                  : `${mobileStyles.icontext}`
+                  'flex gap-2.5 items-center mt-2 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent dark:hover:bg-accent-dark hover:text-text-active dark:hover:text-text-active-dark cursor-pointer '
+                  + (router.pathname === '/about' && 'bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark')
                 }
                 onClick={() => setOpen(false)}
               >
-                <div className={mobileStyles.icon}><BiUser /></div>
+                <div className='my-2 text-2xl'><BiUser /></div>
                 <div>About</div>
               </div>
             </Link>
           </div>
-          <div className={mobileStyles.bottom}>
+          <div className='flex flex-col w-full p-3 pt-0 rounded-bl-lg rounded-br-lg bg-nav-accent dark:bg-nav-accent-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
             <Link passHref href='https://drive.google.com/file/d/1FpHbai8UVdBYqs-0JDN9VEHnJl0ursV8/view?usp=sharing'>
-              <div
-                className={mobileStyles.button}
-              >
-                <div className={mobileStyles.icon}><BiFile /></div>
+              <div className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark overflow-hidden cursor-pointer'>
+                <div className='my-2 text-2xl'>
+                  <BiFile />
+                </div>
                 <div>Resume</div>
               </div>
             </Link>
           </div>
         </div>
       </div>
+      <div
+        className={
+          "fixed top-0 left-0 w-full h-full bg-transparent transition-all duration-150 "
+          + ( open ? "z-90 visible" : "z-0 invisible" )
+        }
+        onClick={() => setOpen(false)}
+      />
     </>
   )
 }

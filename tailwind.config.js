@@ -11,11 +11,19 @@ module.exports = {
         100: 100,
       },
       width: {
-        76: '19rem',
-        112: '28rem',
-        128: '36rem',
+        240: '60rem',
+        'min': 'min-content',
+      },
+      height: {
+        800: '200rem',
+        'nav': '3.75rem',
+        'nav-open': '21.25rem',
+        'min': 'min-content',
       },
       minHeight: {
+        'min': 'min-content',
+      },
+      maxHeight: {
         'min': 'min-content',
       },
       spacing: {
@@ -67,7 +75,11 @@ module.exports = {
           DEFAULT: '#d7dadd',
           dark: '#121318'
         },
-      }
+      },
+      transitionProperty: {
+        'height': 'height',
+        'maxHeight': 'maxHeight',
+       },
     },
   },
   variants: {},
