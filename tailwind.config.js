@@ -26,7 +26,7 @@ module.exports = {
         22: '5.5rem',
       },
       borderWidth: {
-        '3': '3px',
+        '1': '1px',
       },
       boxShadow: {
         light: '0 4px 12px 0 rgba(0, 0, 0, 0.4)',
@@ -50,6 +50,10 @@ module.exports = {
         accent: {
           DEFAULT: '#eb7171',
           dark: '#e24951',
+        },
+        border: {
+          DEFAULT: '#d7dadd',
+          dark: '#121318'
         },
         overlay: '#00000032',
         'white-50': '#ffffff32',
