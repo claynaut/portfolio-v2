@@ -35,8 +35,10 @@ export default function TimeAccordion( props ) {
       </div>
       <div 
         className={
-          'flex flex-col items-start overflow-hidden transition-height duration-500 ease-in-out '
-          + (open ? '' : 'h-0')
+          'flex flex-col items-start overflow-hidden transition-height transition-max-height ease-in-out '
+          + (props.length === 'sm' ? 'duration-200 ' : 'duration-500 ')
+          + (open ? 'h-auto ' : 'h-full max-h-0 ')
+          + (open && (props.length === 'sm' ? 'max-h-96': 'max-h-600'))
         }
       >
         {props.children}

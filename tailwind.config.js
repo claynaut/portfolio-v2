@@ -1,5 +1,4 @@
 module.exports = {
-  purge: [],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -12,19 +11,13 @@ module.exports = {
       },
       width: {
         240: '60rem',
-        'min': 'min-content',
       },
       height: {
-        800: '200rem',
         'nav': '3.75rem',
         'nav-open': '21.25rem',
-        'min': 'min-content',
-      },
-      minHeight: {
-        'min': 'min-content',
       },
       maxHeight: {
-        'min': 'min-content',
+        600: '150rem',
       },
       spacing: {
         22: '5.5rem',
@@ -79,6 +72,7 @@ module.exports = {
       transitionProperty: {
         'height': 'height',
         'maxHeight': 'maxHeight',
+        'max-height': 'max-height',
        },
     },
   },
