@@ -4,7 +4,7 @@ import { FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-8 pt-4 border-t-1 border-border dark:border-border-dark'>
+    <div className='flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-8 pt-6 border-t-1 border-border dark:border-border-dark'>
       <div className='text-sm'>
         © 2021 J.S. Pescasio. All Rights Reserved.
       </div>
