@@ -120,7 +120,7 @@ export default function Nav() {
           </Link>
         </div>
         <div className='flex flex-col w-full p-3 pt-0 rounded-bl-lg rounded-br-lg bg-nav-accent dark:bg-nav-accent-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
-          <Link passHref href='https://drive.google.com/file/d/1FpHbai8UVdBYqs-0JDN9VEHnJl0ursV8/view?usp=sharing'>
+          <Link passHref href='https://drive.google.com/file/d/1AzDRGmMy14PK4Mce554IjysAhcEXsp_t/view?usp=sharing'>
             <motion.div
               variants={desktopVariants}
               whileHover='itemHover' 
@@ -237,7 +237,7 @@ export default function Nav() {
             </Link>
           </div>
           <div className='flex flex-col w-full p-3 pt-0 rounded-bl-lg rounded-br-lg bg-nav-accent dark:bg-nav-accent-dark backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
-            <Link passHref href='https://drive.google.com/file/d/1FpHbai8UVdBYqs-0JDN9VEHnJl0ursV8/view?usp=sharing'>
+            <Link passHref href='https://drive.google.com/file/d/1AzDRGmMy14PK4Mce554IjysAhcEXsp_t/view?usp=sharing'>
               <div className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg hover:bg-nav-button dark:hover:bg-nav-button-dark overflow-hidden cursor-pointer'>
                 <div className='my-2 text-2xl'>
                   <BiFile />
