@@ -7,7 +7,9 @@ This is my [personal website](https://www.jspescas.io/) providing an insight to 
 
 - Portfolio of projects
 - Blog
-- Dark Mode
+- Themes
+    - Light Mode
+    - Dark Mode
 
 
 ## Tech Stack
