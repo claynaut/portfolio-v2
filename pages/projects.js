@@ -48,6 +48,7 @@ export default function Projects() {
       caption: 'Designing and developing the website for Lotus Hacks, the first hardware hackathon at UCR.',
       stack: [
         'Next.JS',
+        'TailwindCSS',
         'CSS Modules',
         'Framer Motion',
         'React Hook Forms',
