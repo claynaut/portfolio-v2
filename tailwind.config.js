@@ -1,6 +1,9 @@
 module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
     extend: {
       zIndex: {
         60: 60,
