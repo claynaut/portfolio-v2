@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
           <meta name='theme-color' content='#ffffff' />
           <link href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'/>
         </Head>
-        <body className='text-text-primary dark:text-text-primary-dark text-lg'>
+        <body className='bg-primary dark:bg-primary-dark text-text-primary dark:text-text-primary-dark text-lg'>
           <Main />
           <NextScript />
         </body>
