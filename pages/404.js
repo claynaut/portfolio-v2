@@ -13,7 +13,7 @@ export default function Error404() {
             404
           </h1>
           <p className='my-4'>
-            This page does&apos;nt exist.
+            The page you&apos;re looking for doesn&apos;t exist.
           </p>
         </div>
       </section>
