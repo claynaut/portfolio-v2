@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiMail, FiGithub, Fiaedin, FiTwitter } from 'react-icons/fi'
+import { FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 export default function Footer() {
   return (
@@ -20,7 +20,7 @@ export default function Footer() {
         </a>
         <a target='_blank' rel='noreferrer noopener' href='https://www.linkedin.com/in/jspescasio/'>
           <motion.div whileHover={{ y: -2 }}>
-            <Fiaedin className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
+            <FiLinkedin className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
         </a>
         <a target='_blank' rel='noreferrer noopener' href='https://twitter.com/claynaut'>
