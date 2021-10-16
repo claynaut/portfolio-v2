@@ -1,4 +1,3 @@
-import a from 'next/link'
 import { motion } from 'framer-motion'
 import { FiMail, FiGithub, Fiaedin, FiTwitter } from 'react-icons/fi'
 
@@ -9,22 +8,22 @@ export default function Footer() {
         © 2021 J.S. Pescasio. All Rights Reserved.
       </div>
       <div className='flex gap-4 mb-2 sm:mb-0 text-xl'>
-        <a target='_blank' rel='noreferrer' href='mailto:hello@jspescas.io'>
+        <a target='_blank' rel='noreferrer noopener' href='mailto:hello@jspescas.io'>
           <motion.div whileHover={{ y: -2 }}>
             <FiMail className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
         </a>
-        <a target='_blank' rel='noreferrer' href='https://github.com/claynaut'>
+        <a target='_blank' rel='noreferrer noopener' href='https://github.com/claynaut'>
           <motion.div whileHover={{ y: -2 }}>
             <FiGithub className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
         </a>
-        <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/jspescasio/'>
+        <a target='_blank' rel='noreferrer noopener' href='https://www.linkedin.com/in/jspescasio/'>
           <motion.div whileHover={{ y: -2 }}>
             <Fiaedin className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
         </a>
-        <a target='_blank' rel='noreferrer' href='https://twitter.com/claynaut'>
+        <a target='_blank' rel='noreferrer noopener' href='https://twitter.com/claynaut'>
           <motion.div whileHover={{ y: -2 }}>
             <FiTwitter className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>

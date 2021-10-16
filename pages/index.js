@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Image from 'next/image'
 import Container from '../components/Container'
 import profile from '../public/assets/profile.png'
@@ -20,7 +19,7 @@ export default function Home() {
           </p>
           <p className='my-4'>
             Currently a third-year undergraduate studying Computer Science at UCR. 
-            Let&apos;s talk at <Link passHref href='https://twitter.com/claynaut'><span className='font-semibold text-accent dark:text-accent-dark cursor-pointer'>hello@jspescas.io</span></Link>!
+            Let&apos;s talk at <a target='_blank' rel='noreferrer noopener' href='https://twitter.com/claynaut'><span className='font-semibold text-accent dark:text-accent-dark cursor-pointer'>hello@jspescas.io</span></a>!
           </p>
         </div>
         <div className='flex justify-center md:justify-end md:ml-4 mb-3 md:mb-0'>
