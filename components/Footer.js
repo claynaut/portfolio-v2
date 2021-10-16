@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import a from 'next/link'
 import { motion } from 'framer-motion'
-import { FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiMail, FiGithub, Fiaedin, FiTwitter } from 'react-icons/fi'
 
 export default function Footer() {
   return (
@@ -9,26 +9,26 @@ export default function Footer() {
         © 2021 J.S. Pescasio. All Rights Reserved.
       </div>
       <div className='flex gap-4 mb-2 sm:mb-0 text-xl'>
-        <Link passHref href='mailto:hello@jspescas.io'>
+        <a target='_blank' rel='noreferrer' href='mailto:hello@jspescas.io'>
           <motion.div whileHover={{ y: -2 }}>
             <FiMail className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
-        </Link>
-        <Link passHref href='https://github.com/claynaut'>
+        </a>
+        <a target='_blank' rel='noreferrer' href='https://github.com/claynaut'>
           <motion.div whileHover={{ y: -2 }}>
             <FiGithub className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
-        </Link>
-        <Link passHref href='https://www.linkedin.com/in/jspescasio/'>
+        </a>
+        <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/jspescasio/'>
           <motion.div whileHover={{ y: -2 }}>
-            <FiLinkedin className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
+            <Fiaedin className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
-        </Link>
-        <Link passHref href='https://twitter.com/claynaut'>
+        </a>
+        <a target='_blank' rel='noreferrer' href='https://twitter.com/claynaut'>
           <motion.div whileHover={{ y: -2 }}>
             <FiTwitter className='cursor-pointer hover:text-accent dark:hover:text-accent-dark' />
           </motion.div>
-        </Link>
+        </a>
       </div>
     </div>
   )
