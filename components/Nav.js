@@ -120,14 +120,6 @@ export default function Nav() {
           </div>
         </div>
       </div>
-      <div className='z-[80] fixed top-2 left-1/2 flex xl:hidden justify-center p-2.5 rounded-lg rounded-b-2xl bg-primary shadow-shadow w-24 h-[3.75rem] transform -translate-x-1/2'>
-        <div className='flex items-center max-w-min p-2 rounded-lg bg-accent text-2xl text-accent-darkest'>
-          {router.pathname === '/' && <BiHomeAlt /> }
-          {router.pathname === '/projects' && <BiCategory /> }
-          {router.pathname.includes('/blog') && <BiEditAlt /> }
-          {router.pathname === '/about' && <BiUserCircle /> }
-        </div>
-      </div>
       <div
         className={
           'fixed top-0 left-0 w-full h-full bg-transparent transition-all duration-150 '
