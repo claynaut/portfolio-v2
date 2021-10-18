@@ -43,6 +43,11 @@ export default function About() {
       length: 'xl',
       events: [
         {
+          icon: <BiCog />,
+          title: 'Created an Alternate Portfolio',
+          caption: 'Designed and developed a second portfolio for fun with a different theme. Check it out under my projects.',
+        },
+        {
           icon: <BiBoltCircle />,
           title: 'Switched to TailwindCSS',
           caption: 'Refactored my portfolio and switched to using mostly TailwindCSS, a new preference.',
@@ -237,7 +242,7 @@ export default function About() {
           </p>
           <div className='flex flex-wrap gap-2 font-semibold text-sm'>
             { interests.map((interest) =>
-              <div className='px-4 py-1 rounded-md bg-accent text-accent-darkest'>
+              <div className='px-2.5 py-1 rounded-md bg-accent text-accent-darkest'>
                 {interest}
               </div>
             )}
