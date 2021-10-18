@@ -34,7 +34,7 @@ export default function Footer() {
           >
             <motion.div
               whileHover={{ y: -3 }}
-              className='cursor-pointer hover:text-accent'
+              className='text-2xl hover:text-accent cursor-pointer'
             >
               {icon}
             </motion.div>
