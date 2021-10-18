@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='en' className='m-0 p-0 bg-primary dark:bg-primary-dark box-border'>
+      <Html lang='en' className='m-0 p-0 bg-pattern bg-repeat bg-primary box-border'>
         <Head>
           <meta name='description' content='Portfolio for J.S. Pescasio, an aspiring software engineer based in Southern California.' />
           <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
           <meta name='theme-color' content='#ffffff' />
           <link href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'/>
         </Head>
-        <body className='bg-primary dark:bg-primary-dark text-text-primary dark:text-text-primary-dark text-lg'>
+        <body className='bg-pattern bg-repeat bg-primary text-text-primary text-lg'>
           <Main />
           <NextScript />
         </body>

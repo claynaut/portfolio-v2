@@ -9,14 +9,14 @@ export default function Blog() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div>
-          <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
+          <h1>
             Making My First Portfolio
           </h1>
           <p className='text-sm'>
             July 27 2021 • 1 min read
           </p>
           <div className='mb-8 text-base'>
-            <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+            <h2>
               Getting Into Web Development
             </h2>
             <p className='my-4'>
@@ -30,7 +30,7 @@ export default function Blog() {
             </p>
           </div>
           <div className='text-base'>
-            <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+            <h2>
               Why Make a Website?
             </h2>
             <p>

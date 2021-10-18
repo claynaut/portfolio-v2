@@ -9,14 +9,14 @@ export default function Blog() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div>
-          <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
+          <h1>
             Revamping my First Portfolio
           </h1>
           <p className='text-sm'>
             July 27 2021 • 2 min read
           </p>
           <div className='mb-8 text-base'>
-            <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+            <h2>
               Why Did I Revamp It?
             </h2>
             <p className='my-4'>
@@ -24,7 +24,7 @@ export default function Blog() {
             </p>
           </div>
           <div className='text-base'>
-            <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
+            <h2>
               What&apos;s New?
             </h2>
             <h2 className='font-bold text-xl'>

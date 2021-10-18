@@ -1,12 +1,12 @@
 export default function TimeBlurb(props) {
   return (
-    <div className='flex ml-7'>
-      <div className='mt-1 mr-4 text-xl text-text-secondary dark:text-text-secondary-dark'>
-        {props.icon}
-      </div>
-      <div className='flex flex-col mb-5'>
-        <div className='mb-3 font-semibold text-text-secondary dark:text-text-secondary-dark'>
-          {props.title}
+    <div className='group flex w-full p-3 border-2 border-border rounded-xl hover:bg-border cursor-default'>
+      <div className='flex flex-col gap-2'>
+        <div className='flex items-center gap-2 font-semibold text-text-secondary group-hover:text-accent'>
+          <div className='text-2xl'>
+            {props.icon}
+          </div>
+          <span>{props.title}</span>
         </div>
         <div className='leading-relaxed text-base'>
           {props.caption}

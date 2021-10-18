@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* default dark theme */
+    --profile: url('/assets/profile.png');
+    --pattern: url('/checkerboardDark.png');
+    --primary: #1f2026;
+    --text-primary: #6b7280;
+    --text-secondary: #d1d5db;
+    --text-active: #1f2026;
+    --accent: #e24951;
+    --accent-dark: #710b12;
+    --accent-darkest: #9e1d26;
+    --nav-accent: #18191e;
+    --nav-button: #121317;
+    --border: #18191e;
+    --shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.45);
+  }
+
+  [data-theme='light'] {
+    --profile: url('/assets/profileLight.png');
+    --pattern: url('/checkerboard.png');
+    --primary: #f2f2f2;
+    --text-primary: #4b5563;
+    --text-secondary: #1f2937;
+    --text-active: #f2f2f2;
+    --accent: #60a5fa;
+    --accent-dark: #3d79cc;
+    --accent-darkest: #1c519a;
+    --nav-accent: #e4e4e4;
+    --nav-button: #d1d5db;
+    --border: #e4e4e4;
+    --shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  [data-theme='dark'] {
+    --profile: url('/assets/profile.png');
+    --pattern: url('/checkerboardDark.png');
+    --primary: #1f2026;
+    --text-primary: #6b7280;
+    --text-secondary: #d1d5db;
+    --text-active: #1f2026;
+    --accent: #e24951;
+    --accent-dark: #9e1d26;
+    --accent-darkest: #710b12;
+    --nav-accent: #18191e;
+    --nav-button: #121317;
+    --border: #18191e;
+    --shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.45);
+  }
+  
+  h1 {
+    @apply mb-4;
+    @apply font-bold;
+    @apply text-4xl;
+    color: var(--accent);
+  }
+
+  h2 {
+    @apply my-4;
+    @apply font-bold;
+    @apply text-2xl;
+    color: var(--text-secondary);
+  }
+}

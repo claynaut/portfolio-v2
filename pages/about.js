@@ -225,42 +225,39 @@ export default function About() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div>
-          <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
+          <h1>
             About Me
           </h1>
           <p className='my-4'>
             Other than coding, I spend my free time doing my other interests and hobbies.
           </p>
           <div className='flex flex-wrap gap-2 font-semibold text-sm'>
-            { interests.map((interest, idx) =>
-              <div
-                key={idx}
-                className='px-4 py-1 rounded-md bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark'
-              >
+            { interests.map((interest) =>
+              <div className='px-4 py-1 rounded-md bg-accent text-accent-darkest'>
                 {interest}
               </div>
             )}
           </div>
           <p className='my-4'>
-            I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <a target='_blank' rel='noreferrer noopener' href='https://twitter.com/claynaut'><span className='font-semibold text-accent dark:text-accent-dark cursor-pointer'>Twitter</span></a>.
+            I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <a target='_blank' rel='noreferrer noopener' href='https://twitter.com/claynaut'><span className='font-semibold text-accent hover:text-accent-dark cursor-pointer'>Twitter</span></a>.
           </p>
           <p className='my-4'>
             See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.
           </p>
-          { timelines.map(({year, length, events}, idx) =>
+          { timelines.map(({year, length, events}) =>
             <TimeAccordion
-              key={idx}
               year={year}
               length={length}
             >
-              { events.map(({icon, title, caption}, idx) =>
-                <TimeBlurb
-                  key={idx}
-                  icon={icon}
-                  title={title}
-                  caption={caption}
-                />
-              )}
+              <div className='grid grid-cols-1 xl:grid-cols-2 gap-3 w-full pl-7'>
+                { events.map(({icon, title, caption}) =>
+                  <TimeBlurb
+                    icon={icon}
+                    title={title}
+                    caption={caption}
+                  />
+                )}
+              </div>
             </TimeAccordion>
           )}
         </div>

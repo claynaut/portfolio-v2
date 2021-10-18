@@ -9,7 +9,7 @@ export default function Error500() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div className='w-full'>
-          <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
+          <h1>
             500
           </h1>
           <p className='my-4'>

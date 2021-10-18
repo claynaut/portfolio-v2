@@ -1,7 +1,7 @@
 export default function Layout({ children }) {
   return (
-    <main className='flex flex-col lg:flex-row lg:justify-center px-4 lg:px-8 w-full min-h-screen bg-primary dark:bg-primary-dark'>
-      <div className='lg:relative w-full lg:w-240'>
+    <main className='flex flex-col xl:flex-row xl:justify-center items-center px-4 w-full min-h-screen'>
+      <div className='xl:relative w-full xl:w-240'>
         {children}
       </div>
     </main>

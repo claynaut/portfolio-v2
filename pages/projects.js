@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { BiCategory } from 'react-icons/bi'
 import Container from '../components/Container'
 import ProjectBlurb from '../components/ProjectBlurb'
 
@@ -14,6 +15,19 @@ export default function Projects() {
         'TailwindCSS',
         'Framer Motion',
       ],
+      external: true,
+    },
+    {
+      link: 'https://claynaut.io',
+      title: 'Alternate Portfolio',
+      date: 'October 2021 - Present',
+      caption: 'Creating an alternate portfolio for fun, designed with a different UI/UX.',
+      stack: [
+        'Next.JS',
+        'TailwindCSS',
+        'Framer Motion',
+      ],
+      external: true,
     },
     {
       link: 'https://cutiehack.io/',
@@ -28,6 +42,7 @@ export default function Projects() {
         'TypeScript',
         'SendGrid',
       ],
+      external: true,
     },
     {
       link: 'https://prytaneum.io/',
@@ -40,6 +55,7 @@ export default function Projects() {
         'TypeScript',
         'Prisma',
       ],
+      external: true,
     },
     {
       link: 'https://lotushacks.com/',
@@ -56,6 +72,7 @@ export default function Projects() {
         'TypeScript',
         'Axios',
       ],
+      external: true,
     },
     {
       link: '/projects',
@@ -71,6 +88,7 @@ export default function Projects() {
         'TypeScript',
         'Axios',
       ],
+      external: false,
     },
     {
       link: '/projects',
@@ -81,6 +99,7 @@ export default function Projects() {
         'Gatsby.JS',
         'TailwindCSS',
       ],
+      external: false,
     },
     {
       link: '/projects',
@@ -97,6 +116,7 @@ export default function Projects() {
         'TypeScript',
         'Axios',
       ],
+      external: false,
     },
   ]
 
@@ -115,6 +135,7 @@ export default function Projects() {
         'TypeScript',
         'Axios',
       ],
+      external: false,
     },
 
   ]
@@ -130,6 +151,7 @@ export default function Projects() {
         'CSS Modules',
         'Axios',
       ],
+      external: true,
     },
     {
       link: 'https://jspescasio-fe.vercel.app/',
@@ -141,6 +163,7 @@ export default function Projects() {
         'CSS Modules',
         'Framer Motion',
       ],
+      external: true,
     },
     {
       link: 'https://biohack2021-jsdev.vercel.app/',
@@ -151,6 +174,7 @@ export default function Projects() {
         'Next.JS',
         'CSS Modules',
       ],
+      external: true,
     },
   ]
 
@@ -161,76 +185,49 @@ export default function Projects() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div className='w-full'>
-          <h1 className='mb-4 font-bold text-4xl text-accent dark:text-accent-dark'>
-            Projects
-          </h1>
-          <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
-            In the Works
-          </h2>
-          <div className='mb-8'>
-            { current.map(({ link, title, date, caption, stack }, idx) =>
+          <div className='flex items-center gap-2'>
+            <div className='mb-4 p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+              <BiCategory />
+            </div>
+            <h1>Projects</h1>
+          </div>
+          <h2>In the Works</h2>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-3'>
+            { current.map(({ link, title, date, caption, stack, external }) =>
               <ProjectBlurb
-                key={idx}
                 link={link}
                 title={title}
                 date={date}
                 caption={caption}
-              >
-                { stack.map((tech, idx) => 
-                  <div
-                    key={idx}
-                    className='px-4 py-1 rounded-md bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark'
-                  >
-                    {tech}
-                  </div>
-                )}
-              </ProjectBlurb>
+                stack={stack}
+                external={external}
+              />
             )}
           </div>
-          <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
-            Upcoming
-          </h2>
-          <div className='mb-8'>
-            { upcoming.map(({ link, title, date, caption, stack }, idx) =>
+          <h2>Upcoming</h2>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-3'>
+            { upcoming.map(({ link, title, date, caption, stack, external }) =>
               <ProjectBlurb
-                key={idx}
                 link={link}
                 title={title}
                 date={date}
                 caption={caption}
-              >
-                { stack.map((tech, idx) => 
-                  <div
-                    key={idx}
-                    className='px-4 py-1 rounded-md bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark'
-                  >
-                    {tech}
-                  </div>
-                )}
-              </ProjectBlurb>
+                stack={stack}
+                external={external}
+              />
             )}
           </div>
-          <h2 className='my-4 font-bold text-2xl text-text-secondary dark:text-text-secondary-dark'>
-            Completed
-          </h2>
-          <div>
-            { completed.map(({ link, title, date, caption, stack }, idx) =>
+          <h2>Completed</h2>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-3'>
+            { completed.map(({ link, title, date, caption, stack, external }) =>
               <ProjectBlurb
-                key={idx}
                 link={link}
                 title={title}
                 date={date}
                 caption={caption}
-              >
-                { stack.map((tech, idx) => 
-                  <div
-                    key={idx}
-                    className='px-4 py-1 rounded-md bg-accent dark:bg-accent-dark text-text-active dark:text-text-active-dark'
-                  >
-                    {tech}
-                  </div>
-                )}
-              </ProjectBlurb>
+                stack={stack}
+                external={external}
+              />
             )}
           </div>
         </div>

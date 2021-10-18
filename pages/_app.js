@@ -1,13 +1,14 @@
-import Layout from '../components/Layout'
+import { ThemeProvider } from 'next-themes'
 import Nav from '../components/Nav'
 
 import 'tailwindcss/tailwind.css'
+import '../tailwind.source.css'
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <ThemeProvider>
       <Nav />
       <Component {...pageProps} />
-    </Layout>
+    </ThemeProvider>
   )
 }
