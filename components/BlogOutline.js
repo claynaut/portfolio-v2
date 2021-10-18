@@ -35,7 +35,7 @@ export default function BlogOutline({ bookmarks }) {
       {/* mobile blog outline */}
       <div 
         className={
-          'z-[100] fixed bottom-2 right-2 flex 2xl:hidden flex-col justify-end items-start max-w-[15rem] p-2.5 rounded-lg rounded-tl-2xl bg-primary shadow-shadow font-medium overflow-hidden '
+          'z-[100] fixed bottom-2 right-2 hidden sm:flex 2xl:hidden flex-col justify-end items-start max-w-[15rem] p-2.5 rounded-lg rounded-tl-2xl bg-primary shadow-shadow font-medium overflow-hidden '
           + (!open && 'w-[3.75rem] h-[3.75rem]')
         }
       >

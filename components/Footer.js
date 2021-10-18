@@ -21,11 +21,11 @@ export default function Footer() {
     },
   ]
   return (
-    <div className='flex flex-col-reverse sm:flex-row sm:justify-between items-center mt-6 pt-6 border-t-2 border-border'>
+    <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center mt-6 pt-6 border-t-2 border-border'>
       <div className='text-sm'>
         © 2021 J.S. Pescasio. All Rights Reserved.
       </div>
-      <div className='flex gap-4 mb-2 sm:mb-0 text-xl'>
+      <div className='flex gap-4 mb-2 lg:mb-0 text-xl'>
         { socials.map(({ icon, link }) =>
           <a
             target='_blank'
