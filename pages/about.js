@@ -240,7 +240,7 @@ export default function About() {
           <p className='my-4'>
             Other than coding, I spend my free time doing my other interests and hobbies.
           </p>
-          <div className='flex flex-wrap gap-2 font-semibold text-sm'>
+          <div className='flex flex-wrap gap-1.5 font-semibold text-sm'>
             { interests.map((interest) =>
               <div className='px-2.5 py-1 rounded-md bg-accent text-accent-darkest'>
                 {interest}
