@@ -30,6 +30,9 @@ module.exports = {
       border: 'var(--border)',
     },
     extend: {
+      screens: {
+        'xs': '420px',
+      },
       boxShadow: {
         shadow: 'var(--shadow)',
       },

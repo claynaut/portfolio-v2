@@ -26,7 +26,7 @@ export default function Home() {
           </p>
         </div>
         <div
-          className='flex self-center lg:self-end min-w-[15rem] sm:min-w-[20rem] w-60 sm:w-80 min-h-[15rem] sm:min-h-[20rem] h-60 sm:h-80 lg:ml-4 mb-3 lg:mb-0 rounded-xl bg-profile bg-contain bg-no-repeat'
+          className='flex self-center lg:self-end min-w-[15rem] xs:min-w-[20rem] w-60 xs:w-80 min-h-[15rem] xs:min-h-[20rem] h-60 xs:h-80 lg:ml-4 mb-3 lg:mb-0 rounded-xl bg-profile bg-contain bg-no-repeat'
         />
       </section>
     </Container>
