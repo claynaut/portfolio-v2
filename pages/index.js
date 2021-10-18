@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import { BiPlanet } from 'react-icons/bi'
 import Container from '../components/Container'
 
 export default function Home() {
@@ -10,9 +11,12 @@ export default function Home() {
       </Head>
       <section className='flex flex-col-reverse lg:flex-row w-full'>
         <div>
-          <h1>
-            Hello! I&apos;m J.S.
-          </h1>
+          <div className='flex items-center gap-3'>
+            <div className='p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+              <BiPlanet />
+            </div>
+            <h1>Hello! I&apos;m J.S.</h1>
+          </div>
           <p className='my-4'>
             Aspiring software engineer based in Southern California, with a great interest in software and web development.
           </p>

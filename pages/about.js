@@ -226,8 +226,8 @@ export default function About() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div>
-          <div className='flex items-center gap-2'>
-            <div className='mb-3 p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+          <div className='flex items-center gap-3'>
+            <div className='p-2 rounded-full bg-accent text-3xl text-accent-dark'>
               <BiUserCircle />
             </div>
             <h1>About</h1>

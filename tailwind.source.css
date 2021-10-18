@@ -53,7 +53,6 @@
   }
   
   h1 {
-    @apply mb-4;
     @apply font-bold;
     @apply text-4xl;
     color: var(--accent);
