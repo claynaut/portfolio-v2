@@ -44,10 +44,10 @@ export default function Nav() {
       {/* desktop navbar */}
       <motion.div
         whileHover={{ width: 200 }}
-        className='z-[100] fixed top-1/2 left-2 hidden xl:flex flex-col justify-center w-[4.25rem] rounded-lg bg-primary shadow-shadow font-semibold transform -translate-y-1/2'
+        className='z-[100] fixed top-1/2 left-2 hidden xl:flex flex-col justify-center w-[4.25rem] rounded-lg rounded-br-2xl bg-primary shadow-shadow font-semibold transform -translate-y-1/2'
       >
         <div className='flex flex-col w-full p-3'>
-          <div className='flex justify-center self-center p-2 rounded-lg text-2xl'>
+          <div className='flex justify-center self-center p-2 text-2xl'>
             <BiMenu />
           </div>
           { tabs.map(({ icon, name, link }) =>
@@ -56,7 +56,7 @@ export default function Nav() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.995}} 
                 className={
-                  'flex gap-2.5 items-center mt-2.5 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent hover:text-accent-darkest cursor-pointer '
+                  'flex gap-2.5 items-center mt-2.5 px-2.5 py-0.5 rounded-lg rounded-br-2xl overflow-hidden hover:bg-accent hover:text-accent-darkest cursor-pointer '
                   + (router.pathname === link && 'bg-accent text-accent-darkest')
                 }
               >
@@ -66,12 +66,12 @@ export default function Nav() {
             </Link>
           )}
         </div>
-        <div className='flex flex-col w-full p-3 pt-0 rounded-bl-lg rounded-br-lg bg-nav-accent backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
+        <div className='flex flex-col w-full p-3 pt-0 rounded-b-lg rounded-br-2xl bg-nav-accent backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
           <a target='_blank' rel='noreferrer noopener' href='/resume.pdf'>
             <motion.div
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995}} 
-              className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg hover:bg-nav-button overflow-hidden cursor-pointer'
+              className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg rounded-br-2xl hover:bg-nav-button overflow-hidden cursor-pointer'
             >
               <div className='my-2 text-2xl'><BiFile /></div>
               <div>Resume</div>
@@ -82,13 +82,13 @@ export default function Nav() {
       {/* mobile navbar */}
       <div className='z-[100] fixed top-2 left-0 flex xl:hidden justify-start px-2 font-semibold'>
         <div className={
-          'rounded-lg bg-primary shadow-shadow overflow-hidden transition-size duration-200 ease-out '
-          + (open ? 'w-52 h-[21rem]' : 'w-[3.75rem] h-[3.75rem]')
+          'rounded-lg rounded-br-2xl bg-primary shadow-shadow overflow-hidden transition-size duration-200 ease-out '
+          + (open ? 'w-44 h-[21rem]' : 'w-[3.75rem] h-[3.75rem]')
         }>
           <div className='flex flex-col p-2.5'>
             <div className='flex items-center w-full mb-0.5'>
               <div
-                className='flex items-center p-2 rounded-lg hover:bg-nav-button text-2xl cursor-pointer'
+                className='flex items-center p-2 rounded-lg rounded-br-2xl hover:bg-nav-button text-2xl cursor-pointer'
                 onClick={() => setOpen(!open)}
               >
                 { !open && <BiMenu /> }
@@ -99,7 +99,7 @@ export default function Nav() {
               <Link passHref href={link}>
                 <div
                   className={
-                    'flex gap-2.5 items-center mt-2 px-2.5 py-0.5 rounded-lg overflow-hidden hover:bg-accent hover:text-accent-darkest cursor-pointer '
+                    'flex gap-2.5 items-center mt-2 px-2.5 py-0.5 rounded-lg rounded-br-2xl overflow-hidden hover:bg-accent hover:text-accent-darkest cursor-pointer '
                     + (router.pathname === link && 'bg-accent text-accent-darkest')
                   }
                   onClick={() => setOpen(false)}
@@ -110,24 +110,22 @@ export default function Nav() {
               </Link>
             )}
           </div>
-          <div className='flex flex-col w-full p-3 pt-0 rounded-bl-lg rounded-br-lg bg-nav-accent backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
+          <div className='flex flex-col w-full p-3 pt-0 rounded-b-lg rounded-br-2xl bg-nav-accent backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
             <Link passHref href='https://drive.google.com/file/d/1AzDRGmMy14PK4Mce554IjysAhcEXsp_t/view?usp=sharing'>
-              <div className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg hover:bg-nav-button overflow-hidden cursor-pointer'>
-                <div className='my-2 text-2xl'>
-                  <BiFile />
-                </div>
+              <div className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg rounded-br-2xl hover:bg-nav-button overflow-hidden cursor-pointer'>
+                <div className='my-2 text-2xl'><BiFile /></div>
                 <div>Resume</div>
               </div>
             </Link>
           </div>
         </div>
-        <div className='fixed left-1/2 flex justify-center p-2.5 rounded-lg bg-primary shadow-shadow w-32 h-[3.75rem] transform -translate-x-1/2'>
-          <div className='flex items-center max-w-min p-2 rounded-lg bg-accent text-2xl text-accent-darkest'>
-            {router.pathname === '/' && <BiHomeAlt /> }
-            {router.pathname === '/projects' && <BiCategory /> }
-            {router.pathname.includes('/blog') && <BiEditAlt /> }
-            {router.pathname === '/about' && <BiUserCircle /> }
-          </div>
+      </div>
+      <div className='z-[80] fixed top-2 left-1/2 flex xl:hidden justify-center p-2.5 rounded-lg rounded-b-2xl bg-primary shadow-shadow w-24 h-[3.75rem] transform -translate-x-1/2'>
+        <div className='flex items-center max-w-min p-2 rounded-lg bg-accent text-2xl text-accent-darkest'>
+          {router.pathname === '/' && <BiHomeAlt /> }
+          {router.pathname === '/projects' && <BiCategory /> }
+          {router.pathname.includes('/blog') && <BiEditAlt /> }
+          {router.pathname === '/about' && <BiUserCircle /> }
         </div>
       </div>
       <div

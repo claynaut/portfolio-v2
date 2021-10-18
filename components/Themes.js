@@ -39,16 +39,16 @@ export default function Themes() {
     <>
       {/* desktop theme bar */}
       <motion.div
-        whileHover={{ width: 160, height: 165 }}
-        className='z-[100] fixed top-2 right-2 hidden xl:flex flex-col items-end w-[3.75rem] h-[3.75rem] p-2.5 rounded-lg bg-primary shadow-shadow overflow-hidden'
+        whileHover={{ width: 165, height: 170 }}
+        className='z-[100] fixed top-2 right-2 hidden xl:flex flex-col items-end w-[3.75rem] h-[3.75rem] p-2.5 rounded-lg rounded-bl-2xl bg-primary shadow-shadow overflow-hidden'
       >
-        <div className='flex self-center max-w-min mb-1.5 p-2 rounded-lg text-2xl'>
+        <div className='flex self-center max-w-min mb-1.5 p-2 text-2xl'>
           <BiPalette />
         </div>
         { themes.map(({ icon, name, value }) =>
           <div
             className={
-              'flex gap-2 items-center mt-2 p-2 w-36 rounded-lg hover:bg-accent hover:text-accent-darkest font-semibold cursor-pointer '
+              'flex gap-2 items-center mt-2 p-2 w-36 rounded-lg rounded-bl-2xl hover:bg-accent hover:text-accent-darkest font-semibold cursor-pointer '
               + (selectedTheme.current === value && 'bg-accent text-accent-darkest' )
             }
             onClick={() => selectTheme(value)}
@@ -65,12 +65,12 @@ export default function Themes() {
       {/* mobile theme bar */}
       <div
         className={
-          'z-[100] fixed top-2 right-2 flex xl:hidden flex-col items-end p-2.5 rounded-lg bg-primary shadow-shadow overflow-hidden transition-size duration-150 '
-          + (open ? 'w-[10.25rem] h-[10.25rem]' : 'w-[3.75rem] h-[3.75rem]')
+          'z-[100] fixed top-2 right-2 flex xl:hidden flex-col items-end p-2.5 rounded-lg rounded-bl-2xl bg-primary shadow-shadow overflow-hidden transition-size duration-150 '
+          + (open ? 'w-[10.25rem] h-[10.5rem]' : 'w-[3.75rem] h-[3.75rem]')
         }
       >
         <div
-          className='flex max-w-min p-2 rounded-lg hover:bg-nav-button text-2xl cursor-pointer'
+          className='flex max-w-min mb-1 p-2 rounded-lg rounded-bl-2xl hover:bg-nav-button text-2xl cursor-pointer'
           onClick={() => setOpen(!open)}
         >
           { open
