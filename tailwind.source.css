@@ -74,6 +74,12 @@
     color: var(--text-secondary);
   }
 
+  h3 {
+    @apply font-bold;
+    @apply text-xl;
+    color: var(--text-primary);
+  }
+
   ::-webkit-scrollbar {
     width: 7px;
     height: 5px;
