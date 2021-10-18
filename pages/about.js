@@ -15,6 +15,7 @@ import {
 import Container from '../components/Container'
 import TimeBlurb from '../components/TimeBlurb'
 import TimeAccordion from '../components/TimeAccordion'
+import ExternalLink from '../components/ExternalLink'
 
 export default function About() {
   const interests = [
@@ -248,7 +249,7 @@ export default function About() {
             )}
           </div>
           <p className='my-4'>
-            I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <a target='_blank' rel='noreferrer noopener' href='https://twitter.com/claynaut'><span className='font-semibold text-accent hover:text-accent-dark cursor-pointer'>Twitter</span></a>.
+            I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <ExternalLink name='Twitter' link='https://twitter.com/claynaut'/>.
           </p>
           <p className='my-4'>
             See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.

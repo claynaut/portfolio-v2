@@ -6,7 +6,7 @@
   :root {
     /* default dark theme */
     --profile: url('/assets/profile.png');
-    --pattern: url('/checkerboardDark.png');
+    --pattern: url('/assets/checkerboardDark.png');
     --primary: #1f2026;
     --text-primary: #6b7280;
     --text-secondary: #d1d5db;
@@ -25,7 +25,7 @@
 
   [data-theme='light'] {
     --profile: url('/assets/profileLight.png');
-    --pattern: url('/checkerboard.png');
+    --pattern: url('/assets/checkerboard.png');
     --primary: #f2f2f2;
     --text-primary: #4b5563;
     --text-secondary: #1f2937;
@@ -44,7 +44,7 @@
 
   [data-theme='dark'] {
     --profile: url('/assets/profile.png');
-    --pattern: url('/checkerboardDark.png');
+    --pattern: url('/assets/checkerboardDark.png');
     --primary: #1f2026;
     --text-primary: #6b7280;
     --text-secondary: #d1d5db;
@@ -59,6 +59,25 @@
     --scroll: #30323a;
     --scrollhover: #3b3d46;
     --scrollfocus: #43454e;
+  }
+
+  [data-theme='summer'] {
+    --profile: url('/assets/profileSummer.png');
+    --pattern: url('/assets/checkerboardSummer.png');
+    --primary: #157277;
+    --text-primary: #47a895;
+    --text-secondary: #82d5b6;
+    --text-active: #157277;
+    --accent: #ff9e67;
+    --accent-dark: #e66f44;
+    --accent-darkest: #d24d34;
+    --nav-accent: #10656d;
+    --nav-button: #0c5B64;
+    --border: #10656d;
+    --shadow: 0 4px 12px -2px rgba(5, 55, 60, 0.6);
+    --scroll: #219894;
+    --scrollhover: #28a59a;
+    --scrollfocus: #2db39d;
   }
   
   h1 {
