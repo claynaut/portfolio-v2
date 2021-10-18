@@ -11,6 +11,7 @@ module.exports = {
       pattern: 'var(--pattern)',
     },
     colors: {
+      'transparent': 'transparent',
       primary: 'var(--primary)',
       text: {
         primary: 'var(--text-primary)',
@@ -33,7 +34,7 @@ module.exports = {
         shadow: 'var(--shadow)',
       },
       transitionProperty: {
-        'height': 'height, max-height',
+        'size': 'width, max-width, height, max-height',
        },
     },
   },
