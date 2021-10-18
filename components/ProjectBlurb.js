@@ -20,8 +20,8 @@ export default function ProjectBlurb({ link, title, date, caption, stack, extern
             transition={{ ease: 'easeInOut', duration: 0.1 }}
             className='group flex flex-col w-full p-5 border-2 border-border rounded-xl bg-primary hover:bg-border cursor-pointer'
           >
-            <div className='flex flex-col sm:flex-row sm:justify-between mb-3 font-semibold'>
-              <h3 className='mb-1 text-text-secondary group-hover:text-accent'>
+            <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 font-semibold'>
+              <h3 className='text-text-secondary group-hover:text-accent'>
                 {title}
               </h3>
               <div className='text-sm'>
@@ -48,8 +48,8 @@ export default function ProjectBlurb({ link, title, date, caption, stack, extern
             transition={{ ease: 'easeInOut', duration: 0.1 }}
             className='group flex flex-col w-full p-5 border-2 border-border rounded-xl bg-primary hover:bg-border cursor-pointer'
           >
-            <div className='flex flex-col sm:flex-row sm:justify-between mb-3 font-semibold'>
-              <h3 className='mb-1 text-text-secondary group-hover:text-accent'>
+            <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 font-semibold'>
+              <h3 className='text-text-secondary group-hover:text-accent'>
                 {title}
               </h3>
               <div className='text-sm'>
