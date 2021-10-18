@@ -111,12 +111,12 @@ export default function Nav() {
             )}
           </div>
           <div className='flex flex-col w-full p-3 pt-0 rounded-b-lg rounded-br-2xl bg-nav-accent backdrop-filter backdrop-saturate-50 backdrop-blur-lg'>
-            <Link passHref href='https://drive.google.com/file/d/1AzDRGmMy14PK4Mce554IjysAhcEXsp_t/view?usp=sharing'>
+            <a target='_blank' rel='noreferrer noopener' href='/resume.pdf'>
               <div className='flex gap-2.5 items-center w-full mt-3 px-2.5 py-0.5 rounded-lg rounded-br-2xl hover:bg-nav-button overflow-hidden cursor-pointer'>
                 <div className='my-2 text-2xl'><BiFile /></div>
                 <div>Resume</div>
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
