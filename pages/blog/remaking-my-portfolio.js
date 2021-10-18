@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 import Container from '../../components/Container'
 
 export default function Blog() {
@@ -7,12 +9,12 @@ export default function Blog() {
       <Head>
         <title>J.S. Pescasio | Remaking My First Portfolio</title>
       </Head>
-      <section className='flex flex-col-reverse md:flex-row w-full'>
+      <section className='flex flex-col w-full'>
         <div>
           <h1>
             Remaking My First Portfolio
           </h1>
-          <p className='text-sm'>
+          <p className='mt-3 text-sm'>
             July 27 2021 • 2 min read
           </p>
           <div className='mb-8 text-base'>
@@ -58,6 +60,18 @@ export default function Blog() {
               Added more to my About section, so you can learn more about me as a person. Previously, my old portfolio only showcased a few details about what I&apos;ve done and what I plan to do. Now, I&apos;d like to share my experiences with a timeline and this blog.
             </p>
           </div>
+        </div>
+        <div className='flex w-full justify-between'>
+          <Link passHref href='/blog/making-my-first-portfolio'>
+            <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
+              <BiChevronLeft className='text-xl'/> Previous
+            </div>
+          </Link>
+          <Link passHref href='/blog/joining-biohack'>
+            <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
+              Next <BiChevronRight className='text-xl'/>
+            </div>
+          </Link>
         </div>
       </section>
     </Container>

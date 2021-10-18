@@ -57,7 +57,7 @@ export default function Nav() {
                 whileTap={{ scale: 0.995}} 
                 className={
                   'flex gap-2.5 items-center mt-2.5 px-2.5 py-0.5 rounded-lg rounded-br-2xl overflow-hidden hover:bg-accent hover:text-accent-darkest cursor-pointer '
-                  + (router.pathname === link && 'bg-accent text-accent-darkest')
+                  + ((link !== '/' ? router.pathname.includes(link) : router.pathname === link) && 'bg-accent text-accent-darkest')
                 }
               >
                 <div className='my-2 text-2xl'>{icon}</div>
@@ -100,7 +100,7 @@ export default function Nav() {
                 <div
                   className={
                     'flex gap-2.5 items-center mt-2 px-2.5 py-0.5 rounded-lg rounded-br-2xl overflow-hidden hover:bg-accent hover:text-accent-darkest cursor-pointer '
-                    + (router.pathname === link && 'bg-accent text-accent-darkest')
+                    + ((link !== '/' ? router.pathname.includes(link) : router.pathname === link) && 'bg-accent text-accent-darkest')
                   }
                   onClick={() => setOpen(false)}
                 >

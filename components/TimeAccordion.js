@@ -34,7 +34,7 @@ export default function TimeAccordion( props ) {
             onClick={() => setOpen(!open)}
             className='flex gap-3 items-center self-center mt-3 px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary'
           >
-            Show Less <HiChevronUp />
+            Show Less <HiChevronUp className='text-xl'/>
           </motion.button>
         }
       </div>

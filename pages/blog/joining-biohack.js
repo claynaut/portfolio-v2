@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 import Container from '../../components/Container'
 
 export default function Blog() {
@@ -7,12 +9,12 @@ export default function Blog() {
       <Head>
         <title>J.S. Pescasio | Joining BioHack</title>
       </Head>
-      <section className='flex flex-col-reverse md:flex-row w-full'>
+      <section className='flex flex-col w-full'>
         <div>
           <h1>
             Joining BioHack
           </h1>
-          <p className='text-sm'>
+          <p className='mt-3 text-sm'>
             Aug 02 2021 • 3 min read
           </p>
           <div className='mb-8 text-base'>
@@ -54,6 +56,18 @@ export default function Blog() {
               Joining BioHack has inspired my desire to try things out and continue learning, and I hope to never stop learning.
             </p>
           </div>
+        </div>
+        <div className='flex w-full justify-between'>
+          <Link passHref href='/blog/remaking-my-portfolio'>
+            <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
+              <BiChevronLeft className='text-xl'/> Previous
+            </div>
+          </Link>
+          <Link passHref href='/blog/trying-out-for-web-dev-lead'>
+            <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
+              Next <BiChevronRight className='text-xl'/>
+            </div>
+          </Link>
         </div>
       </section>
     </Container>
