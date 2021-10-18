@@ -186,7 +186,7 @@ export default function Projects() {
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div className='w-full'>
           <div className='flex items-center gap-2'>
-            <div className='mb-4 p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+            <div className='mb-3 p-2 rounded-full bg-accent text-3xl text-accent-dark'>
               <BiCategory />
             </div>
             <h1>Projects</h1>

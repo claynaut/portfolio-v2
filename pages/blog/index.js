@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { BiEditAlt } from 'react-icons/bi'
 import Container from '../../components/Container'
 import BlogBlurb from '../../components/BlogBlurb'
 
@@ -36,9 +37,12 @@ export default function Blog() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div className='w-full'>
-          <h1>
-            Blog
-          </h1>
+          <div className='flex items-center gap-2'>
+            <div className='mb-3 p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+              <BiEditAlt />
+            </div>
+            <h1>Blog</h1>
+          </div>
           <p className='my-4'>
             Occasionally writing about what I&apos;ve done and what I find interesting.
           </p>

@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import Container from '../components/Container'
-import TimeBlurb from '../components/TimeBlurb'
-import TimeAccordion from '../components/TimeAccordion'
 import {
   BiStar,
   BiAward,
@@ -12,8 +9,12 @@ import {
   BiWorld, 
   BiCake,
   BiJoystick,
-  BiPalette
+  BiPalette,
+  BiUserCircle
 } from 'react-icons/bi'
+import Container from '../components/Container'
+import TimeBlurb from '../components/TimeBlurb'
+import TimeAccordion from '../components/TimeAccordion'
 
 export default function About() {
   const interests = [
@@ -225,9 +226,12 @@ export default function About() {
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div>
-          <h1>
-            About Me
-          </h1>
+          <div className='flex items-center gap-2'>
+            <div className='mb-3 p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+              <BiUserCircle />
+            </div>
+            <h1>About</h1>
+          </div>
           <p className='my-4'>
             Other than coding, I spend my free time doing my other interests and hobbies.
           </p>
