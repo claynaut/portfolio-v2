@@ -48,7 +48,7 @@ export default function Nav() {
       {/* desktop navbar */}
       <motion.div
         whileHover={{ width: 200 }}
-        className='z-100 fixed top-1/2 left-4 hidden xl:flex flex-col justify-center w-17 rounded-lg bg-primary backdrop-filter backdrop-saturate-50 backdrop-blur-lg shadow-shadow font-semibold transform -translate-y-1/2'
+        className='z-[100] fixed top-1/2 left-4 hidden xl:flex flex-col justify-center w-[4.25rem] rounded-lg bg-primary backdrop-filter backdrop-saturate-50 backdrop-blur-lg shadow-shadow font-semibold transform -translate-y-1/2'
       >
         <div className='flex flex-col w-full p-3'>
           <div className='flex justify-center self-center p-2 rounded-lg text-2xl'>
@@ -106,10 +106,10 @@ export default function Nav() {
         </div>
       </motion.div>
       {/* mobile navbar */}
-      <div className='z-100 fixed top-4 left-0 xl:hidden flex-col justify-start w-full px-4 font-semibold'>
+      <div className='z-[100] fixed top-4 left-0 xl:hidden flex-col justify-start w-full px-4 font-semibold'>
         <div className={
           'rounded-lg bg-primary backdrop-filter backdrop-saturate-50 backdrop-blur-lg shadow-shadow overflow-hidden transition-height duration-200 ease-out '
-          + (open ? 'h-nav-open' : 'h-nav')
+          + (open ? 'h-[21rem]' : 'h-[3.75rem]')
         }>
           <div className='flex flex-col w-full p-2.5'>
             <div className='flex justify-between items-center w-full mb-0.5'>
@@ -173,7 +173,7 @@ export default function Nav() {
       <div
         className={
           "fixed top-0 left-0 w-full h-full bg-transparent transition-all duration-150 "
-          + ( open ? "z-90 visible" : "z-0 invisible" )
+          + ( open ? "z-[90] visible" : "z-0 invisible" )
         }
         onClick={() => setOpen(false)}
       />

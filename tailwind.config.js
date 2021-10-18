@@ -29,27 +29,11 @@ module.exports = {
       border: 'var(--border)',
     },
     extend: {
-      zIndex: {
-        60: 60,
-        70: 70,
-        80: 80,
-        90: 90,
-        100: 100,
-      },
-      width: {
-        17: '4.25rem',
-        240: '60rem',
-      },
-      height: {
-        'nav': '3.75rem',
-        'nav-open': '21rem',
-      },
       boxShadow: {
         shadow: 'var(--shadow)',
       },
       transitionProperty: {
-        'height': 'height',
-        'max-height': 'max-height',
+        'height': 'height, max-height',
        },
     },
   },
