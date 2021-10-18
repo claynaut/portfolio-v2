@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>J.S. Pescasio | Home</title>
       </Head>
-      <section className='flex flex-col-reverse md:flex-row w-full'>
+      <section className='flex flex-col-reverse lg:flex-row w-full'>
         <div>
           <h1>
             Hello! I&apos;m J.S.
@@ -22,7 +22,7 @@ export default function Home() {
           </p>
         </div>
         <div
-          className='flex self-center md:self-end min-w-[15rem] md:min-w-[20rem] w-60 md:w-80 min-h-[15rem] md:min-h-[20rem] h-60 md:h-80 md:ml-4 mb-3 md:mb-0 rounded-xl bg-profile bg-contain bg-no-repeat'
+          className='flex self-center lg:self-end min-w-[15rem] sm:min-w-[20rem] w-60 sm:w-80 min-h-[15rem] sm:min-h-[20rem] h-60 sm:h-80 lg:ml-4 mb-3 lg:mb-0 rounded-xl bg-profile bg-contain bg-no-repeat'
         />
       </section>
     </Container>

@@ -253,7 +253,7 @@ export default function About() {
               year={year}
               length={length}
             >
-              <div className='grid grid-cols-1 xl:grid-cols-2 gap-3 w-full pl-7'>
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 w-full pl-7'>
                 { events.map(({icon, title, caption}) =>
                   <TimeBlurb
                     icon={icon}

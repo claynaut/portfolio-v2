@@ -192,7 +192,7 @@ export default function Projects() {
             <h1>Projects</h1>
           </div>
           <h2>In the Works</h2>
-          <div className='grid grid-cols-1 xl:grid-cols-2 gap-3'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
             { current.map(({ link, title, date, caption, stack, external }) =>
               <ProjectBlurb
                 link={link}
@@ -205,7 +205,7 @@ export default function Projects() {
             )}
           </div>
           <h2>Upcoming</h2>
-          <div className='grid grid-cols-1 xl:grid-cols-2 gap-3'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
             { upcoming.map(({ link, title, date, caption, stack, external }) =>
               <ProjectBlurb
                 link={link}
@@ -218,7 +218,7 @@ export default function Projects() {
             )}
           </div>
           <h2>Completed</h2>
-          <div className='grid grid-cols-1 xl:grid-cols-2 gap-3'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
             { completed.map(({ link, title, date, caption, stack, external }) =>
               <ProjectBlurb
                 link={link}

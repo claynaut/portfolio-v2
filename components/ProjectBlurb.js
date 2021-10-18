@@ -18,7 +18,7 @@ export default function ProjectBlurb({ link, title, date, caption, stack, extern
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995}} 
             transition={{ ease: 'easeInOut', duration: 0.1 }}
-            className='group flex flex-col w-full p-5 border-2 border-border rounded-xl hover:bg-border cursor-pointer'
+            className='group flex flex-col w-full p-5 border-2 border-border rounded-xl bg-primary hover:bg-border cursor-pointer'
           >
             <div className='flex flex-col sm:flex-row sm:justify-between mb-3 font-semibold'>
               <h3 className='mb-1 text-text-secondary group-hover:text-accent'>
@@ -46,7 +46,7 @@ export default function ProjectBlurb({ link, title, date, caption, stack, extern
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995}} 
             transition={{ ease: 'easeInOut', duration: 0.1 }}
-            className='group flex flex-col w-full p-5 border-2 border-border rounded-xl hover:bg-border cursor-pointer'
+            className='group flex flex-col w-full p-5 border-2 border-border rounded-xl bg-primary hover:bg-border cursor-pointer'
           >
             <div className='flex flex-col sm:flex-row sm:justify-between mb-3 font-semibold'>
               <h3 className='mb-1 text-text-secondary group-hover:text-accent'>
