@@ -5,12 +5,12 @@ export default function Blog() {
   return (
     <Container>
       <Head>
-        <title>J.S. Pescasio | Remaking my First Portfolio</title>
+        <title>J.S. Pescasio | Remaking My First Portfolio</title>
       </Head>
       <section className='flex flex-col-reverse md:flex-row w-full'>
         <div>
           <h1>
-            Revamping my First Portfolio
+            Remaking My First Portfolio
           </h1>
           <p className='text-sm'>
             July 27 2021 • 2 min read

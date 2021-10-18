@@ -13,19 +13,19 @@ export default function Blog() {
     },
     {
       link: '/blog/joining-biohack',
-      title: 'Trying Out for Web Dev Lead',
+      title: 'Joining BioHack',
       date: 'August 2021',
       caption: 'Going over my experience with joining the BioHack web dev committee.',
     },
     {
       link: '/blog/remaking-my-portfolio',
-      title: 'Trying Out for Web Dev Lead',
+      title: 'Remaking My First Portfolio',
       date: 'July 2021',
       caption: 'Recreating my portfolio with Next.JS, and why I did it.',
     },
     {
       link: '/blog/making-my-first-portfolio',
-      title: 'Trying Out for Web Dev Lead',
+      title: 'Making My First Portfolio',
       date: 'July 2021',
       caption: 'Why I decided to create my own website.',
     },
