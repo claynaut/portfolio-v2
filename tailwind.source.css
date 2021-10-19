@@ -7,20 +7,20 @@
     /* default dark theme */
     --profile: url('/assets/profile.png');
     --pattern: url('/assets/checkerboardDark.png');
-    --primary: #1f2026;
+    --primary: #1f2937;
     --text-primary: #6b7280;
-    --text-secondary: #d1d5db;
-    --text-active: #1f2026;
+    --text-secondary: #9ca3af;
+    --text-active: #1f2937;
     --accent: #e24951;
-    --accent-dark: #710b12;
-    --accent-darkest: #9e1d26;
-    --nav-accent: #1a1b21;
-    --nav-button: #14151a;
-    --border: #18191e;
+    --accent-dark: #9e1d26;
+    --accent-darkest: #710b12;
+    --nav-accent: #161e2e;
+    --nav-button: #0f1625;
+    --border: #161e2e;
     --shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.45);
-    --scroll: #30323a;
-    --scrollhover: #3b3d46;
-    --scrollfocus: #43454e;
+    --scroll: #36455a;
+    --scrollhover: #405267;
+    --scrollfocus: #495e73;
   }
 
   [data-theme='light'] {
@@ -45,20 +45,20 @@
   [data-theme='dark'] {
     --profile: url('/assets/profile.png');
     --pattern: url('/assets/checkerboardDark.png');
-    --primary: #1f2026;
+    --primary: #1f2937;
     --text-primary: #6b7280;
-    --text-secondary: #d1d5db;
-    --text-active: #1f2026;
+    --text-secondary: #9ca3af;
+    --text-active: #1f2937;
     --accent: #e24951;
     --accent-dark: #9e1d26;
     --accent-darkest: #710b12;
-    --nav-accent: #1a1b21;
-    --nav-button: #14151a;
-    --border: #18191e;
+    --nav-accent: #161e2e;
+    --nav-button: #0f1625;
+    --border: #161e2e;
     --shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.45);
-    --scroll: #30323a;
-    --scrollhover: #3b3d46;
-    --scrollfocus: #43454e;
+    --scroll: #36455a;
+    --scrollhover: #405267;
+    --scrollfocus: #495e73;
   }
 
   [data-theme='honey'] {
