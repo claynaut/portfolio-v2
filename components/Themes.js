@@ -7,7 +7,7 @@ import {
   BiSun,
   BiMoon,
   BiHive,
-  BiCycling,
+  BiBuoy,
 } from 'react-icons/bi'
 
 export default function Themes() {
@@ -31,7 +31,7 @@ export default function Themes() {
       value: 'honey',
     },
     {
-      icon: <BiCycling />,
+      icon: <BiBuoy />,
       name: 'Summer',
       value: 'summer',
     },

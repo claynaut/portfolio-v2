@@ -25,7 +25,7 @@
 
   [data-theme='light'] {
     --profile: url('/assets/profileLight.png');
-    --pattern: url('/assets/checkerboard.png');
+    --pattern: url('/assets/patternLight.png');
     --primary: #f2f2f2;
     --text-primary: #4b5563;
     --text-secondary: #1f2937;
@@ -44,7 +44,7 @@
 
   [data-theme='dark'] {
     --profile: url('/assets/profile.png');
-    --pattern: url('/assets/checkerboardDark.png');
+    --pattern: url('/assets/patternDark.png');
     --primary: #1f2937;
     --text-primary: #6b7280;
     --text-secondary: #9ca3af;
@@ -63,26 +63,26 @@
 
   [data-theme='honey'] {
     --profile: url('/assets/profileHoney.png');
-    --pattern: url('/assets/checkerboardHoney.png');
-    --primary: #884d34;
-    --text-primary: #be6b3f;
-    --text-secondary: #d57f45;
-    --text-active: #884d34;
+    --pattern: url('/assets/patternHoney.png');
+    --primary: #e5be90;
+    --text-primary: #cd7F4c;
+    --text-secondary: #b9663b;
+    --text-active: #e5be90;
     --accent: #d97706;
     --accent-dark: #b5540a;
     --accent-darkest: #92400e;
-    --nav-accent: #83422d;
-    --nav-button: #7b3925;
-    --border: #83422d;
-    --shadow: 0 4px 12px -2px rgba(61, 21, 3, 0.6);
-    --scroll: #9c5531;
-    --scrollhover: #ac5d2d;
-    --scrollfocus: #bb693d;
+    --nav-accent: #e2b282;
+    --nav-button: #dda674;
+    --border: #e2b282;
+    --shadow: 0 4px 12px -2px rgba(61, 21, 3, 0.25);
+    --scroll: #d59560;
+    --scrollhover: #ce8457;
+    --scrollfocus: #c1784c;
   }
 
   [data-theme='summer'] {
     --profile: url('/assets/profileSummer.png');
-    --pattern: url('/assets/checkerboardSummer.png');
+    --pattern: url('/assets/patternSummer.png');
     --primary: #157277;
     --text-primary: #47a895;
     --text-secondary: #82d5b6;
