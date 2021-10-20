@@ -7,7 +7,7 @@
     /* default dark theme */
     --profile: url('/assets/profile.png');
     --profile-webp: url('/assets/profile.webp');
-    --pattern: url('/assets/checkerboardDark.png');
+    --pattern: url('/assets/patternDark.png');
     --primary: #1f2937;
     --text-primary: #6b7280;
     --text-secondary: #9ca3af;
