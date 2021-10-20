@@ -13,7 +13,8 @@ This is my [personal website](https://www.jspescas.io/) providing an insight to 
     - Night (Dark Mode)
     - Honey
     - Summer
-
+- Absolute imports
+- TailwindCSS JIT mode
 
 ## Tech Stack
 

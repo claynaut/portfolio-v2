@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Layout from './Layout'
-import Footer from './Footer'
+import Layout from '@/components/Layout'
+import Footer from '@/components/Footer'
 
 export default function Container({ title, children }) {
   return (
