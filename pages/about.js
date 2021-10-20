@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import {
   BiStar,
   BiAward,
@@ -12,7 +11,7 @@ import {
   BiPalette,
   BiUserCircle
 } from 'react-icons/bi'
-import Container from '../components/Container'
+import Page from '../components/Page'
 import TimeBlurb from '../components/TimeBlurb'
 import TimeAccordion from '../components/TimeAccordion'
 import ExternalLink from '../components/ExternalLink'
@@ -226,52 +225,47 @@ export default function About() {
   ]
 
   return (
-    <Container>
-      <Head>
-        <title>J.S. Pescasio | About</title>
-      </Head>
-      <section className='flex flex-col-reverse md:flex-row w-full'>
-        <div>
-          <div className='flex items-center gap-3'>
-            <div className='p-2 rounded-full bg-accent text-3xl text-accent-dark'>
-              <BiUserCircle />
+    <Page title='About'>
+      <div>
+        <div className='flex items-center gap-3'>
+          <div className='p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+            <BiUserCircle />
+          </div>
+          <h1>About</h1>
+        </div>
+        <p className='my-4'>
+          Other than coding, I spend my free time doing my other interests and hobbies.
+        </p>
+        <div className='flex flex-wrap gap-1.5 font-semibold text-sm'>
+          { interests.map((interest) =>
+            <div className='px-2.5 py-1 rounded-md bg-accent text-accent-darkest'>
+              {interest}
             </div>
-            <h1>About</h1>
-          </div>
-          <p className='my-4'>
-            Other than coding, I spend my free time doing my other interests and hobbies.
-          </p>
-          <div className='flex flex-wrap gap-1.5 font-semibold text-sm'>
-            { interests.map((interest) =>
-              <div className='px-2.5 py-1 rounded-md bg-accent text-accent-darkest'>
-                {interest}
-              </div>
-            )}
-          </div>
-          <p className='my-4'>
-            I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <ExternalLink name='Twitter' link='https://twitter.com/claynaut'/>.
-          </p>
-          <p className='my-4'>
-            See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.
-          </p>
-          { timelines.map(({year, length, events}) =>
-            <TimeAccordion
-              year={year}
-              length={length}
-            >
-              <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 w-full pl-7'>
-                { events.map(({icon, title, caption}) =>
-                  <TimeBlurb
-                    icon={icon}
-                    title={title}
-                    caption={caption}
-                  />
-                )}
-              </div>
-            </TimeAccordion>
           )}
         </div>
-      </section>
-    </Container>
+        <p className='my-4'>
+          I&apos;m also known as claynaut, my pen name for anything art-related. See most of my artworks on <ExternalLink name='Twitter' link='https://twitter.com/claynaut'/>.
+        </p>
+        <p className='my-4'>
+          See what I&apos;ve done and where I&apos;ve gone, with this timeline of my experiences.
+        </p>
+        { timelines.map(({year, length, events}) =>
+          <TimeAccordion
+            year={year}
+            length={length}
+          >
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 w-full pl-7'>
+              { events.map(({icon, title, caption}) =>
+                <TimeBlurb
+                  icon={icon}
+                  title={title}
+                  caption={caption}
+                />
+              )}
+            </div>
+          </TimeAccordion>
+        )}
+      </div>
+    </Page>
   )
 }

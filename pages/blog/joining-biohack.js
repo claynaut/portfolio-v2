@@ -1,9 +1,8 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 import { Element } from 'react-scroll'
 import BlogOutline from '../../components/BlogOutline'
-import Container from '../../components/Container'
+import Page from '../../components/Page'
 
 export default function Blog() {
   const blog = [
@@ -37,11 +36,8 @@ export default function Blog() {
   ]
 
   return (
-    <Container>
-      <Head>
-        <title>J.S. Pescasio | Joining BioHack</title>
-      </Head>
-      <section className='flex flex-col w-full'>
+    <>
+      <Page title='Joining BioHack'>
         <div>
           <h1>
             Joining BioHack
@@ -64,21 +60,21 @@ export default function Blog() {
               </>
             )}
           </div>
+          <div className='flex w-full justify-between mt-4'>
+            <Link passHref href='/blog/remaking-my-portfolio'>
+              <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
+                <BiChevronLeft className='text-xl'/> Previous
+              </div>
+            </Link>
+            <Link passHref href='/blog/trying-out-for-web-dev-lead'>
+              <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
+                Next <BiChevronRight className='text-xl'/>
+              </div>
+            </Link>
+          </div>
         </div>
-        <div className='flex w-full justify-between mt-4'>
-          <Link passHref href='/blog/remaking-my-portfolio'>
-            <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
-              <BiChevronLeft className='text-xl'/> Previous
-            </div>
-          </Link>
-          <Link passHref href='/blog/trying-out-for-web-dev-lead'>
-            <div className='flex gap-3 items-center self-center px-3 py-2 rounded-lg bg-nav-accent hover:bg-nav-button text-base text-text-primary cursor-pointer'>
-              Next <BiChevronRight className='text-xl'/>
-            </div>
-          </Link>
-        </div>
-      </section>
+      </Page>
       <BlogOutline bookmarks={blog} />
-    </Container>
+    </>
   )
 }

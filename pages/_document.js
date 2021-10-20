@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='en' className='m-0 p-0 bg-pattern bg-repeat bg-primary box-border'>
+      <Html lang='en' className='m-0 p-0 bg-pattern bg-repeat bg-primary box-border overflow-x-hidden'>
         <Head>
           <meta name='description' content='Portfolio for J.S. Pescasio, an aspiring software engineer based in Southern California.' />
           <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
