@@ -7,9 +7,12 @@ This is my [personal website](https://www.jspescas.io/) providing an insight to 
 
 - Portfolio of projects
 - Blog
+    - Outline
 - Themes
-    - Light Mode
-    - Dark Mode
+    - Morning (Light Mode)
+    - Night (Dark Mode)
+    - Honey
+    - Summer
 
 
 ## Tech Stack

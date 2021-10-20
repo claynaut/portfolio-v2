@@ -6,7 +6,8 @@
   :root {
     /* default dark theme */
     --profile: url('/assets/profile.png');
-    --pattern: url('/assets/checkerboardDark.png');
+    --profile-webp: url('/assets/profile.webp');
+    --pattern: url('/assets/patternDark.png');
     --primary: #1f2937;
     --text-primary: #6b7280;
     --text-secondary: #9ca3af;
@@ -25,6 +26,7 @@
 
   [data-theme='light'] {
     --profile: url('/assets/profileLight.png');
+    --profile-webp: url('/assets/profileLight.webp');
     --pattern: url('/assets/patternLight.png');
     --primary: #f2f2f2;
     --text-primary: #4b5563;
@@ -44,6 +46,7 @@
 
   [data-theme='dark'] {
     --profile: url('/assets/profile.png');
+    --profile-webp: url('/assets/profile.webp');
     --pattern: url('/assets/patternDark.png');
     --primary: #1f2937;
     --text-primary: #6b7280;
@@ -63,6 +66,7 @@
 
   [data-theme='honey'] {
     --profile: url('/assets/profileHoney.png');
+    --profile-webp: url('/assets/profileHoney.webp');
     --pattern: url('/assets/patternHoney.png');
     --primary: #e5be90;
     --text-primary: #cd7F4c;
@@ -82,6 +86,7 @@
 
   [data-theme='summer'] {
     --profile: url('/assets/profileSummer.png');
+    --profile-webp: url('/assets/profileSummer.webp');
     --pattern: url('/assets/patternSummer.png');
     --primary: #157277;
     --text-primary: #47a895;
