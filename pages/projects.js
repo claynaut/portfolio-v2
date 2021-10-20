@@ -19,7 +19,7 @@ export default function Projects() {
     {
       link: 'https://claynaut.io',
       title: 'Alternate Portfolio',
-      date: 'October 2021 - Present',
+      date: 'Oct 2021 - Present',
       caption: 'Creating an alternate portfolio for fun, designed with a different UI/UX.',
       stack: [
         'Next.JS',
@@ -46,7 +46,7 @@ export default function Projects() {
     {
       link: 'https://prytaneum.io/',
       title: 'Prytaneum',
-      date: 'August 2021 - Present',
+      date: 'Aug 2021 - Present',
       caption: 'Developing the frontend of Prytaneum providing a unique platform for town officials and their constituents, promoting a better democracy.',
       stack: [
         'Next.JS',
@@ -92,7 +92,7 @@ export default function Projects() {
     {
       link: '/projects',
       title: 'IEJL Website',
-      date: 'August 2021 - Present',
+      date: 'Aug 2021 - Present',
       caption: 'Developing the redesign of International Economic Justice League\'s (IEJL) website, with a small team of developers working remotely.',
       stack: [
         'Gatsby.JS',
