@@ -1,5 +1,6 @@
 import React from 'react'
 import { BiPlanet } from 'react-icons/bi'
+import { isWebpSupported } from 'react-image-webp/dist/utils'
 import Page from '../components/Page'
 import ExternalLink from '../components/ExternalLink'
 
@@ -21,9 +22,17 @@ export default function Home() {
           Let&apos;s talk at <ExternalLink name='hello@jspescas.io' link='mailto:hello@jspescas.io'/>!
         </p>
       </div>
-      <div
-        className='flex self-center lg:self-end min-w-[15rem] xs:min-w-[20rem] w-60 xs:w-80 min-h-[15rem] xs:min-h-[20rem] h-60 xs:h-80 lg:ml-4 mb-3 lg:mb-0 rounded-xl bg-profile bg-contain bg-no-repeat'
-      />
+      {
+        isWebpSupported
+        ?
+          <div
+            className='flex self-center lg:self-end min-w-[15rem] xs:min-w-[20rem] w-60 xs:w-80 min-h-[15rem] xs:min-h-[20rem] h-60 xs:h-80 lg:ml-4 mb-3 lg:mb-0 rounded-xl bg-profile-webp bg-contain bg-no-repeat'
+          />
+        :
+          <div
+            className='flex self-center lg:self-end min-w-[15rem] xs:min-w-[20rem] w-60 xs:w-80 min-h-[15rem] xs:min-h-[20rem] h-60 xs:h-80 lg:ml-4 mb-3 lg:mb-0 rounded-xl bg-profile bg-contain bg-no-repeat'
+          />
+      }
     </Page>
   )
 }

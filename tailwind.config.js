@@ -8,6 +8,7 @@ module.exports = {
     },
     backgroundImage: {
       profile: 'var(--profile)',
+      'profile-webp': 'var(--profile-webp)',
       pattern: 'var(--pattern)',
     },
     colors: {
