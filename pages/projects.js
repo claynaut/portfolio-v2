@@ -1,6 +1,5 @@
-import Head from 'next/head'
 import { BiCategory } from 'react-icons/bi'
-import Container from '../components/Container'
+import Page from '../components/Page'
 import ProjectBlurb from '../components/ProjectBlurb'
 
 export default function Projects() {
@@ -179,59 +178,54 @@ export default function Projects() {
   ]
 
   return (
-    <Container>
-      <Head>
-        <title>J.S. Pescasio | Projects</title>
-      </Head>
-      <section className='flex flex-col-reverse md:flex-row w-full'>
-        <div className='w-full'>
-          <div className='flex items-center gap-3'>
-            <div className='p-2 rounded-full bg-accent text-3xl text-accent-dark'>
-              <BiCategory />
-            </div>
-            <h1>Projects</h1>
+    <Page title='Projects'>
+      <div>
+        <div className='flex items-center gap-3'>
+          <div className='p-2 rounded-full bg-accent text-3xl text-accent-dark'>
+            <BiCategory />
           </div>
-          <h2>In the Works</h2>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
-            { current.map(({ link, title, date, caption, stack, external }) =>
-              <ProjectBlurb
-                link={link}
-                title={title}
-                date={date}
-                caption={caption}
-                stack={stack}
-                external={external}
-              />
-            )}
-          </div>
-          <h2>Upcoming</h2>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
-            { upcoming.map(({ link, title, date, caption, stack, external }) =>
-              <ProjectBlurb
-                link={link}
-                title={title}
-                date={date}
-                caption={caption}
-                stack={stack}
-                external={external}
-              />
-            )}
-          </div>
-          <h2>Completed</h2>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
-            { completed.map(({ link, title, date, caption, stack, external }) =>
-              <ProjectBlurb
-                link={link}
-                title={title}
-                date={date}
-                caption={caption}
-                stack={stack}
-                external={external}
-              />
-            )}
-          </div>
+          <h1>Projects</h1>
         </div>
-      </section>
-    </Container>
+        <h2>In the Works</h2>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
+          { current.map(({ link, title, date, caption, stack, external }) =>
+            <ProjectBlurb
+              link={link}
+              title={title}
+              date={date}
+              caption={caption}
+              stack={stack}
+              external={external}
+            />
+          )}
+        </div>
+        <h2>Upcoming</h2>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
+          { upcoming.map(({ link, title, date, caption, stack, external }) =>
+            <ProjectBlurb
+              link={link}
+              title={title}
+              date={date}
+              caption={caption}
+              stack={stack}
+              external={external}
+            />
+          )}
+        </div>
+        <h2>Completed</h2>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
+          { completed.map(({ link, title, date, caption, stack, external }) =>
+            <ProjectBlurb
+              link={link}
+              title={title}
+              date={date}
+              caption={caption}
+              stack={stack}
+              external={external}
+            />
+          )}
+        </div>
+      </div>
+    </Page>
   )
 }
