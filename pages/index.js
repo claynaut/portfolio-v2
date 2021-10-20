@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiPlanet } from 'react-icons/bi'
-import Page from '../components/Page'
-import ExternalLink from '../components/ExternalLink'
+import Page from '@/components/Page'
+import ExternalLink from '@/components/ExternalLink'
 
 export default function Home() {
   return (

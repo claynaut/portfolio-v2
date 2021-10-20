@@ -1,6 +1,6 @@
 import { BiCategory } from 'react-icons/bi'
-import Page from '../components/Page'
-import ProjectBlurb from '../components/ProjectBlurb'
+import Page from '@/components/Page'
+import ProjectBlurb from '@/components/ProjectBlurb'
 
 export default function Projects() {
   const current = [

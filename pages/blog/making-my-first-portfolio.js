@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 import { Element } from 'react-scroll'
-import BlogOutline from '../../components/BlogOutline'
-import Page from '../../components/Page'
+import BlogOutline from '@/components/BlogOutline'
+import Page from '@/components/Page'
 
 export default function Blog() {
   const blog = [
