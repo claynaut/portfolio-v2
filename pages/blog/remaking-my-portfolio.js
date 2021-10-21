@@ -29,7 +29,7 @@ export default function Blog() {
       title: 'Started a Blog',
       value: 'subheading2',
       content: [
-        'Thought that writing a blog would be a new and fun experience for me. I\'m personally not the best at telling stories, so I hope that as I continue writing this blog that I&apos;ll get better at it.',
+        'Thought that writing a blog would be a new and fun experience for me. I\'m personally not the best at telling stories, so I hope that as I continue writing this blog that I\'ll get better at it.',
         'This blog also lets me have something to do on a regular basis (hopefully), other than coding. So, I hope you enjoy reading about my experiences!',
       ]
     },
