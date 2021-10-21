@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
-import { Element } from 'react-scroll'
 import BlogOutline from '@/components/BlogOutline'
 import Page from '@/components/Page'
 
@@ -8,7 +7,7 @@ export default function Blog() {
   const blog = [
     {
       title: 'Getting Into Web Development',
-      value: 'heading1',
+      value: 'blog1heading1',
       content: [
         'I first got into web development when I decided on a whim to try joining the web dev committee for BioHack, one of various hackathons at UCR.',
         'At this point, my only experience with web dev was learning HTML/CSS online to try and make a web app back in high school, which never pushed through. I was working with one HTML file and had no clue about any frameworks or other tools.',
@@ -17,7 +16,7 @@ export default function Blog() {
     },
     {
       title: 'Why Make a Website?',
-      value: 'heading2',
+      value: 'blog1heading2',
       content: [
         'What better way to learn something new than just diving right in? So, I decided to try building my own website using Gatsby.',
         'My experience from BioHack made me want to learn more about web development. And making my own website from scratch definitely led me to learning more about other frameworks and toolchains, along with challenging my design skills.',
@@ -39,12 +38,12 @@ export default function Blog() {
           <div className='flex flex-col text-base'>
             { blog.map(({ title, value, content }) =>
               <>
-                <Element name={value}>
+                <div id={value}>
                   { value.includes('subheading')
                     ? <h3 className='my-2'>{title}</h3>
                     : <h2 className='my-2 mt-4'>{title}</h2>
                   }
-                </Element>
+                </div>
                 <div className='flex gap-4 flex-col'>
                   { content.map((paragraph) => <p>{paragraph}</p>) }
                 </div>

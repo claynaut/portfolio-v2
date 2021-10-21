@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { Link as NavLink } from 'react-scroll'
+import { Link } from 'react-scroll'
 import { BiListUl, BiX } from 'react-icons/bi'
 
 export default function BlogOutline({ bookmarks }) {
@@ -15,7 +15,7 @@ export default function BlogOutline({ bookmarks }) {
         </h2>
         <div className='flex gap-1.5 flex-col px-2 pb-2'>
           { bookmarks.map((bookmark) =>
-            <NavLink 
+            <Link 
               activeClass='text-accent'
               to={bookmark.value}
               spy={true}
@@ -23,12 +23,12 @@ export default function BlogOutline({ bookmarks }) {
               offset={-90}
               duration={500}
               className={
-                'hover:text-accent cursor-pointer transition-all duration-150 '
+                'text-base hover:text-accent cursor-pointer transition-all duration-150 '
                 + (bookmark.value.includes('subheading') ? 'ml-6 text-sm' : 'text-base')
               }
             >
               {bookmark.title}
-            </NavLink>
+            </Link>
           )}
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function BlogOutline({ bookmarks }) {
         </h2>
         <div className='flex gap-1.5 flex-col px-2 pb-2'>
           { bookmarks.map((bookmark) =>
-            <NavLink 
+            <Link 
               activeClass='text-accent'
               to={bookmark.value}
               spy={true}
@@ -57,7 +57,7 @@ export default function BlogOutline({ bookmarks }) {
               }
             >
               {bookmark.title}
-            </NavLink>
+            </Link>
           )}
         </div>
         <div
