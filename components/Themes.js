@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import {
@@ -12,8 +12,8 @@ import {
 
 export default function Themes() {
   const [open, setOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
-  const selectedTheme = useRef('light')
   const themes = [
     {
       icon: <BiSun />,
@@ -37,15 +37,9 @@ export default function Themes() {
     },
   ]
 
-  const selectTheme = (selected) => {
-    setTheme(selected)
-    localStorage.setItem('theme', selected)
-    selectedTheme.current = selected
-  }
+  useEffect(() => setMounted(true), [])
 
-  useEffect(() =>{
-    selectedTheme.current = localStorage.getItem('theme')
-  }, [theme, selectedTheme])
+  if (!mounted) return null
 
   return (
     <>
@@ -61,9 +55,9 @@ export default function Themes() {
           <div
             className={
               'flex gap-2 items-center mt-2 p-2 w-36 rounded-lg rounded-bl-2xl hover:bg-accent hover:text-accent-darkest font-semibold cursor-pointer '
-              + (selectedTheme.current === value && 'bg-accent text-accent-darkest' )
+              + (theme === value && 'bg-accent text-accent-darkest' )
             }
-            onClick={() => selectTheme(value)}
+            onClick={() => setTheme(value)}
           >
             <div className='text-2xl'>
               {icon}
@@ -94,9 +88,9 @@ export default function Themes() {
           <div
             className={
               'flex gap-2 items-center mt-2 p-2 w-36 rounded-lg rounded-bl-2xl hover:bg-accent hover:text-accent-darkest font-semibold cursor-pointer '
-              + (selectedTheme.current === value && 'bg-accent text-accent-darkest' )
+              + (theme === value && 'bg-accent text-accent-darkest' )
             }
-            onClick={() => selectTheme(value)}
+            onClick={() => setTheme(value)}
           >
             <div className='text-2xl'>
               {icon}
