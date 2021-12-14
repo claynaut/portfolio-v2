@@ -176,6 +176,27 @@ export default function Projects() {
       external: true,
     },
   ]
+  
+  const stack = [
+    'JavaScript',
+    'TypeScript',
+    'HTML5',
+    'CSS3',
+    'C++',
+    'Python',
+    'Java',
+    'Next.JS',
+    'React',
+    'TailwindCSS',
+    'CSS Modules',
+    'Framer Motion',
+    'MaterialUI',
+    'Axios',
+    'MongoDB',
+    'Prisma',
+    'React Hook Forms',
+    'SendGrid',
+  ]
 
   return (
     <Page title='Projects'>
@@ -185,6 +206,17 @@ export default function Projects() {
             <BiCategory />
           </div>
           <h1>Projects</h1>
+        </div>
+        <h2>Languages and Tools</h2>
+        <p className='my-4'>
+          Technologies I&apos;m currently using, along with some I&apos;ve had experience working with.
+        </p>
+        <div className='flex flex-wrap gap-1.5 font-semibold text-sm'>
+          { stack.map((tech) =>
+            <div className='px-2.5 py-1 rounded-md bg-accent text-accent-darkest'>
+              {tech}
+            </div>
+          )}
         </div>
         <h2>In the Works</h2>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
