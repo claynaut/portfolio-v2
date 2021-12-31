@@ -2,27 +2,10 @@ import React from 'react'
 import { BiPlanet } from 'react-icons/bi'
 import { isWebpSupported } from 'react-image-webp/dist/utils'
 import Page from '@/components/Page'
+import { Toolkit } from '@/components/Project'
 import ExternalLink from '@/components/ExternalLink'
 
 export default function Home() {
-  const stack = [
-    'JavaScript',
-    'TypeScript',
-    'HTML5',
-    'CSS3',
-    'Next.JS',
-    'React',
-    'TailwindCSS',
-    'CSS Modules',
-    'Framer Motion',
-    'MaterialUI',
-    'Axios',
-    'MongoDB',
-    'Prisma',
-    'React Hook Forms',
-    'SendGrid',
-  ]
-  
   return (
     <Page title='Home'>
       <div>
@@ -41,15 +24,9 @@ export default function Home() {
         </p>
         <h2>Current Toolkit</h2>
         <p className='my-4'>
-          Some languages and tools I&apos;m currently working with.
+          Some languages and tools I&apos;ve worked with.
         </p>
-        <div className='flex flex-wrap gap-1.5 font-semibold text-sm'>
-          { stack.map((tech) =>
-            <div className='px-2.5 py-1 rounded-md bg-accent text-accent-darkest'>
-              {tech}
-            </div>
-          )}
-        </div>
+        <Toolkit/>
       </div>
       {
         isWebpSupported

@@ -204,3 +204,32 @@ export function PreviousProjectList() {
     </div>
   )
 }
+
+export function Toolkit() {
+  const { data, error } = useSWR('/api/about/toolkit', fetcher)
+
+  if (error) 
+    return (
+      <p className='my-4'>
+        Uh oh. Something went wrong. Contact me if this error persists.
+      </p>
+    )
+  if (!data) 
+    return (
+      <p className='my-4'>
+        Loading...
+      </p>
+    )
+  
+  const stack = data.data
+
+  return (
+    <div className='flex flex-wrap gap-1.5 font-semibold text-sm'>
+      { stack.map((tech: string) =>
+        <div className='px-2.5 py-1 rounded-md bg-accent text-accent-darkest'>
+          {tech}
+        </div>
+      )}
+    </div>
+  )
+}
