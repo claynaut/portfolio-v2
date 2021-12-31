@@ -70,7 +70,7 @@ const ProjectBlurb = ({ link, title, date, caption, stack, external }: BlurbProp
   <>
     {
       link ?
-        (external
+        ( external
           ?
             <ExternalLinkWrapper link={link}>
               <ProjectBody
