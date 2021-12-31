@@ -1,9 +1,51 @@
-
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import Link from 'next/link'
+import { Link as NavLink } from 'react-scroll'
+import { motion } from 'framer-motion'
 import { BiListUl, BiX } from 'react-icons/bi'
 
-export default function BlogOutline({ bookmarks }) {
+interface BlurbProps {
+  link: string
+  title: string
+  date: string
+  caption: string
+}
+
+interface Bookmark {
+  value: string
+  title: string
+}
+
+interface OutlineProps {
+  bookmarks: Bookmark[]
+}
+
+export function BlogBlurb({ link, title, date, caption }: BlurbProps) {
+  return (
+    <Link passHref href={link}>
+      <motion.div 
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 0.995}} 
+        transition={{ ease: 'easeInOut', duration: 0.1 }}
+        className='group flex flex-col w-full p-5 border-2 border-border rounded-xl bg-primary hover:bg-border cursor-pointer'
+      >
+        <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 font-semibold'>
+          <h3 className='text-text-secondary group-hover:text-accent'>
+            {title}
+          </h3>
+          <div className='text-sm'>
+            {date}
+          </div>
+        </div>
+        <p className='text-base'>
+          {caption}
+        </p>
+      </motion.div>
+    </Link>
+  )
+}
+
+export function BlogOutline({ bookmarks }: OutlineProps) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -14,21 +56,21 @@ export default function BlogOutline({ bookmarks }) {
           <BiListUl className='text-2xl' /> Outline
         </h2>
         <div className='flex gap-1.5 flex-col px-2 pb-2'>
-          { bookmarks.map((bookmark) =>
-            <Link 
+          { bookmarks.map(({ value, title }) =>
+            <NavLink 
               activeClass='text-accent'
-              to={bookmark.value}
+              to={value}
               spy={true}
               smooth={true}
               offset={-90}
               duration={500}
               className={
                 'text-base hover:text-accent cursor-pointer transition-color duration-150 '
-                + (bookmark.value.includes('subheading') ? 'ml-6 text-sm' : 'text-base')
+                + (value.includes('subheading') ? 'ml-6 text-sm' : 'text-base')
               }
             >
-              {bookmark.title}
-            </Link>
+              {title}
+            </NavLink>
           )}
         </div>
       </div>
@@ -43,21 +85,21 @@ export default function BlogOutline({ bookmarks }) {
           <BiListUl className='text-2xl' /> Outline
         </h2>
         <div className='flex gap-1.5 flex-col px-2 pb-2'>
-          { bookmarks.map((bookmark) =>
-            <Link 
+          { bookmarks.map(({ value, title }) =>
+            <NavLink 
               activeClass='text-accent'
-              to={bookmark.value}
+              to={value}
               spy={true}
               smooth={true}
               offset={-90}
               duration={500}
               className={
                 'text-base hover:text-accent cursor-pointer transition-color duration-150 '
-                + (bookmark.value.includes('subheading') ? 'ml-6 text-sm' : 'text-base')
+                + (value.includes('subheading') ? 'ml-6 text-sm' : 'text-base')
               }
             >
-              {bookmark.title}
-            </Link>
+              {title}
+            </NavLink>
           )}
         </div>
         <div

@@ -20,6 +20,7 @@ export default function Footer() {
       link: 'https://twitter.com/claynaut',
     },
   ]
+  
   return (
     <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center mt-6 pt-6 border-t-2 border-border'>
       <div className='text-sm'>

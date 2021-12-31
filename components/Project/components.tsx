@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-export default function ProjectBlurb({ link, title, date, caption, stack, external }) {
+interface BlurbProps {
+  title: string
+  date: string
+  caption: string
+  link: string
+  stack: string[]
+  external: boolean
+}
+
+export function ProjectBlurb({ link, title, date, caption, stack, external }: BlurbProps) {
   return (
     <>
     {

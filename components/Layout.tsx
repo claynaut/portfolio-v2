@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion'
 
-export default function Layout({ children }) {
+interface Props {
+  children: React.ReactNode | React.ReactNode[]
+}
+
+export default function Layout({ children }: Props) {
   return (
     <>
       <motion.main

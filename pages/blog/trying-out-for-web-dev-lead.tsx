@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
-import BlogOutline from '@/components/BlogOutline'
+import { BlogOutline } from '@/components/Blog'
 import Page from '@/components/Page'
 
 export default function Blog() {

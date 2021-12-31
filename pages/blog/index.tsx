@@ -1,6 +1,6 @@
 import { BiEditAlt } from 'react-icons/bi'
 import Page from '@/components/Page'
-import BlogBlurb from '@/components/BlogBlurb'
+import { BlogBlurb } from '@/components/Blog'
 
 export default function Blog() {
   const posts = [

@@ -12,8 +12,7 @@ import {
   BiUserCircle
 } from 'react-icons/bi'
 import Page from '@/components/Page'
-import TimeBlurb from '@/components/TimeBlurb'
-import TimeAccordion from '@/components/TimeAccordion'
+import { TimeAccordion, TimeBlurb } from '@/components/Timeline'
 import ExternalLink from '@/components/ExternalLink'
 
 export default function About() {
