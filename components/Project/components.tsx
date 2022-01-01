@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import useSWR from 'swr'
+import Skeleton from '@/components/Skeleton'
 
 const fetcher = (url: string) => fetch(url).then(res => res.json())
 interface BlurbProps {
@@ -114,9 +115,7 @@ export function CurrentProjectList() {
     )
   if (!data) 
     return (
-      <p className='my-4'>
-        Loading...
-      </p>
+      <Skeleton rows={3} />
     )
 
   const projects = data.data.sort((a, b) => a.order - b.order)
@@ -148,9 +147,7 @@ export function UpcomingProjectList() {
     )
   if (!data) 
     return (
-      <p className='my-4'>
-        Loading...
-      </p>
+      <Skeleton rows={3} />
     )
 
   const projects = data.data.sort((a, b) => a.order - b.order)
@@ -182,9 +179,7 @@ export function PreviousProjectList() {
     )
   if (!data) 
     return (
-      <p className='my-4'>
-        Loading...
-      </p>
+      <Skeleton rows={3} />
     )
 
   const projects = data.data.sort((a, b) => a.order - b.order)
@@ -216,9 +211,7 @@ export function Toolkit() {
     )
   if (!data) 
     return (
-      <p className='my-4'>
-        Loading...
-      </p>
+      <Skeleton rows={2} />
     )
   
   const stack = data.data

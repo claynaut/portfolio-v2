@@ -1,4 +1,5 @@
 import useSWR from 'swr'
+import Skeleton from '@/components/Skeleton'
 
 const fetcher = (url: string) => fetch(url).then(res => res.json())
 
@@ -13,9 +14,7 @@ export default function InterestList() {
     )
   if (!data) 
     return (
-      <p className='my-4'>
-        Loading...
-      </p>
+      <Skeleton rows={3} />
     )
 
   const interests = data.data

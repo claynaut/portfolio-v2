@@ -14,6 +14,7 @@ import {
   BiJoystick,
   BiPalette
 } from 'react-icons/bi'
+import Skeleton from '@/components/Skeleton'
 
 const fetcher = (url: string) => fetch(url).then(res => res.json())
 interface AccordionProps {
@@ -95,9 +96,7 @@ export function Timeline() {
     )
   if (!data) 
     return (
-      <p className='my-4'>
-        Loading...
-      </p>
+      <Skeleton rows={3} />
     )
 
   // Order by most recent events
