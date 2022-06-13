@@ -4,27 +4,29 @@
 
 @layer base {
   :root {
-    --accent: #A95186;
-    --accent-light: #AC628F
-    --accent-lighter: #C57DB4
-    --accent-lightest: #D6A8D1
     --profile: url('/assets/profile.png');
+    --accent: #A95186;
+    --accent-light: #AC628F;
+    --accent-lighter: #C57DB4;
+    --accent-lightest: #D6A8D1;
   }
 
   [data-theme='light'] {
     --primary: #F7F8F9;
     --secondary: #000;
     --secondary-light: #6C7075;
-    --highlight: #EDB6E8;
-    --profile: url('/assets/profile.png');
+    --highlight: #EAD2E7;
+    --accent-mute: #EAD2E7;
+    --accent-text: #A95186;
   }
 
   [data-theme='dark'] {
     --primary: #353543;
     --secondary: #EBECFF;
     --secondary-light: #9FA2C6;
-    --highlight: #5A2055;
-    --profile: url('/assets/profile.png');
+    --highlight: #493247;
+    --accent-mute: #C57DB4;
+    --accent-text: #7F3461;
   }
   
   h1 {
@@ -41,5 +43,9 @@
   h3 {
     @apply font-bold;
     @apply text-xl;
+  }
+
+  label {
+    @apply font-bold;
   }
 }
