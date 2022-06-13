@@ -5,19 +5,19 @@ const Projects: NextPage = () => {
   return (
     <Page title='Projects'>
       <div className='flex flex-col gap-2'>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <p className='text-secondary-light'>
           A collection of some projects I&apos;ve worked on.
         </p>
       </div>
       <div>
-        <h2>Current</h2>
+        <h3>Current</h3>
       </div>
       <div>
-        <h2>Previous</h2>
+        <h3>Previous</h3>
       </div>
       <div>
-        <h2>Upcoming</h2>
+        <h3>Upcoming</h3>
       </div>
     </Page>
   )

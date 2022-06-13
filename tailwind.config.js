@@ -17,6 +17,7 @@ module.exports = {
       secondary: {
         DEFAULT: 'var(--secondary)',
         light: 'var(--secondary-light)',
+        mute: 'var(--secondary-mute)',
       },
       accent: {
         DEFAULT: 'var(--accent)',
