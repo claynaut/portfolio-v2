@@ -83,7 +83,7 @@ export const Sidebar = () => {
   const router = useRouter()
 
   return (
-    <div className='flex flex-col w-full max-w-[20rem] gap-4 p-4 rounded-md shadow-md break-words'>
+    <div className='flex flex-col w-full max-w-[20rem] h-min gap-4 p-4 rounded-md shadow-md break-words'>
       {(router.pathname === '/' || router.pathname === '/projects') &&
         mainContent.map(({ title, tags }) => (
           <div key={title} className='flex flex-col gap-1'>

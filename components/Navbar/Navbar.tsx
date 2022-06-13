@@ -41,7 +41,7 @@ const ResumeLink = () => {
 
 export const Navbar = () => {
   return (
-    <nav className='fixed top-4 left-1/2 -translate-x-1/2 flex gap-8 p-3 rounded-md bg-primary shadow-md'>
+    <nav className='z-[100] fixed top-4 left-1/2 -translate-x-1/2 flex gap-8 p-3 rounded-md bg-primary shadow-md'>
       <NavLink href='/' title='Home' />
       <NavLink href='/projects' title='Projects' />
       <NavLink href='/about' title='About' />
