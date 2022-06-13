@@ -5,15 +5,15 @@ export const projects = [
       {
         name: 'Portfolio',
         link: '',
-        timespan: '',
-        description: '',
+        timespan: 'Jul 2021 - Present',
+        description: 'Creating a cool website to showcase of what I do and who I am.',
         tags: ['React (Next.js)', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
       },
       {
         name: 'Alternate Portfolio',
         link: '',
-        timespan: '',
-        description: '',
+        timespan: 'Oct 2021 - Present',
+        description: 'Working on as a fun side project to try out new designs.',
         tags: ['React (Next.js)', 'TailwindCSS', 'Framer Motion'],
       },
     ],
@@ -24,15 +24,17 @@ export const projects = [
       {
         name: 'Citrus Hack 2022 Website',
         link: '',
-        timespan: '',
-        description: '',
+        timespan: 'Nov 2021 - Apr 2022',
+        description:
+          "Spearheaded web development for Citrus Hack 2022, the Inland Empire's largest hackathon hosted at UC Riverside.",
         tags: ['React (Next.js)', 'TypeScript', 'MongoDB', 'Firebase'],
       },
       {
         name: 'Prytaneum',
         link: '',
-        timespan: '',
-        description: '',
+        timespan: 'Aug 2021 - Mar 2022',
+        description:
+          'Worked on developing a unique platform for town officials to meet. A project led by the School of Public Policy at UC Riverside.',
         tags: [
           'React (Next.js)',
           'TypeScript',
@@ -44,8 +46,9 @@ export const projects = [
       {
         name: 'BioHack 2022 Website',
         link: '',
-        timespan: '',
-        description: '',
+        timespan: 'Jul 2021 - May 2022',
+        description:
+          'Led the design and development for the BioHack 2022 website.',
         tags: [
           'React (Next.js)',
           'TypeScript',
@@ -58,15 +61,16 @@ export const projects = [
       {
         name: 'Cutie Hack 2021 Website',
         link: '',
-        timespan: '',
-        description: '',
+        timespan: 'Jun - Nov 2021',
+        description:
+          'Spearheaded the full stack development for the Cutie Hack 2021 website.',
         tags: ['React (Next.js)', 'MongoDB', 'CSS Modules'],
       },
       {
         name: 'BioHack 2021 Website',
-        link: 'Helped develop the frontend for BioHack 2021, a healthcare hackathon at UC Riverside.',
-        timespan: '',
-        description: '',
+        link: '',
+        timespan: 'Jan - May 2021',
+        description: 'Developed the frontend for the BioHack 2021 website.',
         tags: ['React (Next.js)', 'CSS Modules'],
       },
     ],
@@ -78,14 +82,14 @@ export const projects = [
         name: 'A Tracker App',
         link: '',
         timespan: 'TBD',
-        description: '',
+        description: 'A general tracking app for Computer Science courses.',
         tags: ['TBD'],
       },
       {
         name: 'A Platform for Artists',
         link: '',
         timespan: 'TBD',
-        description: '',
+        description: 'A platform that prioritizes an artist community.',
         tags: ['TBD'],
       },
     ],

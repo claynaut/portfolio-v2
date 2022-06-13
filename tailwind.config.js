@@ -13,6 +13,7 @@ module.exports = {
       'transparent': 'transparent',
       primary: {
         DEFAULT: 'var(--primary)',
+        highlight: 'var(--primary-highlight)',
       },
       secondary: {
         DEFAULT: 'var(--secondary)',

@@ -23,7 +23,7 @@ interface FooterLinkProps {
 
 const FooterLink = ({ icon, href }: FooterLinkProps) => {
   return (
-    <motion.div whileHover={{ rotate: '-15deg' }} className='hover:text-accent'>
+    <motion.div whileHover={{ rotate: '-10deg' }} className='hover:text-accent'>
       <a target='_blank' rel='noreferrer noopener' href={href}>
         <div className='text-2xl'>{icon}</div>
       </a>

@@ -13,6 +13,7 @@
 
   [data-theme='light'] {
     --primary: #F7F8F9;
+    --primary-highlight: #FCFCFC;
     --secondary: #000;
     --secondary-light: #6C7075;
     --secondary-mute: #E7E8E9;
@@ -23,6 +24,7 @@
 
   [data-theme='dark'] {
     --primary: #353543;
+    --primary-highlight: #2E2E3D;
     --secondary: #EBECFF;
     --secondary-light: #9FA2C6;
     --secondary-mute: #40414F;

@@ -34,7 +34,7 @@ const About: NextPage = () => {
                   <div className='absolute top-0 -left-[0.9375rem] p-1 text-xl bg-primary'>
                     {icon}
                   </div>
-                  <div className='flex items-center gap-1.5 font-medium'>
+                  <div className='flex items-center gap-1.5 font-semibold'>
                     <span>{name}</span>
                     {subtitle && (
                       <div className='flex gap-1.5 h-min'>
@@ -50,7 +50,7 @@ const About: NextPage = () => {
                     )}
                   </div>
                   {timespan && (
-                    <span className='text-base text-secondary-light'>
+                    <span className='text-base text-secondary-light font-medium'>
                       {timespan}
                     </span>
                   )}
