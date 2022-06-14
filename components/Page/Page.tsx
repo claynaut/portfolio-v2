@@ -12,7 +12,7 @@ export const Page = ({ title, children }: Props) => {
       <Head>
         <title>J.S. Pescasio {title && '| ' + title}</title>
       </Head>
-      <section className='flex w-full gap-8 my-24 max-w-[64rem]'>
+      <section className='flex flex-col lg:flex-row w-full gap-8 my-24 max-w-[64rem]'>
         <div className='w-full'>{children}</div>
         <Sidebar />
       </section>

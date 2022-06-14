@@ -25,7 +25,7 @@ const Work = ({
     <motion.div
       whileHover={{ rotate: '-1deg', scale: 1.03 }}
       whileTap={{ scale: 0.998 }}
-      className='group flex flex-col gap-2 p-4 rounded-md shadow-md text-base hover:bg-primary-highlight hover:shadow-lg cursor-pointer'
+      className='group flex flex-col w-full gap-2 p-4 rounded-md shadow-md text-base hover:bg-primary-highlight hover:shadow-lg cursor-pointer'
     >
       <div className='flex flex-col'>
         <span className='flex items-center gap-1 text-lg font-semibold group-hover:text-accent'>
@@ -116,7 +116,7 @@ const Projects: NextPage = () => {
         {projects.map(({ group, works }) => (
           <div key={group}>
             <h3>{group}</h3>
-            <div className='flex flex-col gap-[1.25rem] grid grid-cols-2'>
+            <div className='flex flex-col gap-[1.25rem] grid sm:grid-cols-2'>
               {works.map(({ name, link, timespan, description, tags }) => (
                 <WorkBlock
                   key={group + '-' + name}

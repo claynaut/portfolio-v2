@@ -35,7 +35,8 @@
   
   h1 {
     @apply font-bold;
-    @apply text-6xl;
+    @apply text-4xl;
+    @apply sm:text-6xl;
   }
 
   h2 {
