@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import { motion } from 'framer-motion'
+import { BiLinkExternal } from 'react-icons/bi'
 import { Page } from 'components/Page'
 import { projects } from 'data/projects'
 
 interface WorkProps {
   group: string
   name: string
-  link?: string
+  linked?: boolean
   timespan: string
   description: string
   tags: string[]
@@ -15,7 +16,7 @@ interface WorkProps {
 const Work = ({
   group,
   name,
-  link,
+  linked,
   timespan,
   description,
   tags,
@@ -27,7 +28,14 @@ const Work = ({
       className='group flex flex-col gap-2 p-4 rounded-md shadow-md text-base hover:bg-primary-highlight hover:shadow-lg cursor-pointer'
     >
       <div className='flex flex-col'>
-        <span className='text-lg font-semibold group-hover:text-accent'>{name}</span>
+        <span className='flex items-center gap-1 text-lg font-semibold group-hover:text-accent'>
+          {name}
+          {linked && (
+            <div className='text-base'>
+              <BiLinkExternal />
+            </div>
+          )}
+        </span>
         <span className='text-secondary-light text-sm font-medium'>
           {timespan}
         </span>
@@ -47,6 +55,54 @@ const Work = ({
   )
 }
 
+interface WorkBlockProps {
+  group: string
+  name: string
+  link?: string
+  timespan: string
+  description: string
+  tags: string[]
+}
+
+const WorkBlock = ({
+  group,
+  name,
+  link,
+  timespan,
+  description,
+  tags,
+}: WorkBlockProps) => {
+  return (
+    <>
+      {link ? (
+        <a
+          target='_blank'
+          rel='noreferrer noopener'
+          href={link}
+          className='flex'
+        >
+          <Work
+            group={group}
+            name={name}
+            linked
+            timespan={timespan}
+            description={description}
+            tags={tags}
+          />
+        </a>
+      ) : (
+        <Work
+          group={group}
+          name={name}
+          timespan={timespan}
+          description={description}
+          tags={tags}
+        />
+      )}
+    </>
+  )
+}
+
 const Projects: NextPage = () => {
   return (
     <Page title='Projects'>
@@ -56,24 +112,26 @@ const Projects: NextPage = () => {
           A collection of some projects I&apos;ve worked on.
         </p>
       </div>
-      {projects.map(({ group, works }) => (
-        <div key={group}>
-          <h3>{group}</h3>
-          <div className='flex flex-col gap-[1.25rem] grid grid-cols-2'>
-            {works.map(({ name, link, timespan, description, tags }) => (
-              <Work
-                key={group + '-' + name}
-                group={group}
-                name={name}
-                link={link}
-                timespan={timespan}
-                description={description}
-                tags={tags}
-              />
-            ))}
+      <div className='flex flex-col gap-4'>
+        {projects.map(({ group, works }) => (
+          <div key={group}>
+            <h3>{group}</h3>
+            <div className='flex flex-col gap-[1.25rem] grid grid-cols-2'>
+              {works.map(({ name, link, timespan, description, tags }) => (
+                <WorkBlock
+                  key={group + '-' + name}
+                  group={group}
+                  name={name}
+                  link={link}
+                  timespan={timespan}
+                  description={description}
+                  tags={tags}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </Page>
   )
 }
