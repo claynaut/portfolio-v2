@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Sidebar } from './Sidebar'
 
 interface Props {
   title?: string
@@ -11,7 +12,10 @@ export const Page = ({ title, children }: Props) => {
       <Head>
         <title>J.S. Pescasio {title && '| ' + title}</title>
       </Head>
-      <section className='w-full max-w-[60rem]'>{children}</section>
+      <section className='flex flex-col lg:flex-row w-full gap-8 my-24 max-w-[64rem]'>
+        <div className='w-full'>{children}</div>
+        <Sidebar />
+      </section>
     </main>
   )
 }

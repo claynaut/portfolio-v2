@@ -4,28 +4,54 @@
 
 @layer base {
   :root {
-    /* default dark theme */
+    --profile: url('/assets/profile.png');
+    --accent: #A95186;
+    --accent-light: #AC628F;
+    --accent-lighter: #C57DB4;
+    --accent-lightest: #D6A8D1;
   }
 
   [data-theme='light'] {
+    --primary: #F7F8F9;
+    --primary-highlight: #FCFCFC;
+    --secondary: #000;
+    --secondary-light: #6C7075;
+    --secondary-mute: #E7E8E9;
+    --highlight: #EAD2E7;
+    --accent-mute: #EAD2E7;
+    --accent-text: #A95186;
   }
 
   [data-theme='dark'] {
+    --primary: #353543;
+    --primary-highlight: #2E2E3D;
+    --secondary: #EBECFF;
+    --secondary-light: #9FA2C6;
+    --secondary-mute: #40414F;
+    --highlight: #493247;
+    --accent-mute: #C57DB4;
+    --accent-text: #7F3461;
   }
   
   h1 {
     @apply font-bold;
     @apply text-4xl;
+    @apply sm:text-6xl;
   }
 
   h2 {
-    @apply my-4;
     @apply font-bold;
-    @apply text-2xl;
+    @apply text-4xl;
   }
 
   h3 {
+    @apply mt-4;
+    @apply mb-2;
+    @apply font-semibold;
+    @apply text-2xl;
+  }
+
+  label {
     @apply font-bold;
-    @apply text-xl;
   }
 }
