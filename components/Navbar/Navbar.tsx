@@ -66,7 +66,7 @@ export const Navbar = () => {
     <>
       <nav
         className={
-          'z-[100] fixed top-4 left-4 md:left-1/2 md:-translate-x-1/2 flex flex-col md:flex-row md:items-center gap-4 p-2 rounded-md rounded-br-2xl md:rounded-br-md bg-primary shadow-md overflow-hidden transition-size duration-150	 ' +
+          'z-[100] fixed top-4 left-4 md:left-1/2 md:-translate-x-1/2 flex flex-col md:flex-row md:items-center gap-4 p-2 rounded-md rounded-br-2xl md:rounded-br-md bg-primary shadow-md overflow-hidden transition-size duration-150 ' +
           (open
             ? 'w-1/2 md:w-auto min-w-[10rem] h-[17rem]'
             : 'w-12 md:w-auto h-12 md:h-auto')
@@ -82,7 +82,7 @@ export const Navbar = () => {
         >
           <BiMenu />
         </button>
-        <div className='flex flex-col md:flex-row md:items-center gap-6 md:gap-8'>
+        <div className='flex flex-col md:flex-row md:items-center gap-6 md:gap-8 text-lg'>
           <NavLink href='/' title='Home' onClick={() => setOpen(false)} />
           <NavLink href='/projects' title='Projects' onClick={() => setOpen(false)} />
           <NavLink href='/about' title='About' onClick={() => setOpen(false)} />
