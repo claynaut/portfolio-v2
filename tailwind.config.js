@@ -38,6 +38,7 @@ module.exports = {
       },
       transitionProperty: {
         'size': 'width, max-width, height, max-height',
+        'spacing': 'margin, padding',
       },
     },
   },
