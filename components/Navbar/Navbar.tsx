@@ -6,9 +6,10 @@ import { BiMenu } from 'react-icons/bi'
 interface NavLinkProps {
   href: string
   title: string
+  onClick: () => void
 }
 
-const NavLink = ({ href, title }: NavLinkProps) => {
+const NavLink = ({ href, title, onClick }: NavLinkProps) => {
   const router = useRouter()
 
   return (
@@ -24,6 +25,7 @@ const NavLink = ({ href, title }: NavLinkProps) => {
             ? 'font-bold'
             : 'text-secondary-light')
         }
+        onClick={onClick}
       >
         {title}
       </span>
@@ -81,9 +83,9 @@ export const Navbar = () => {
           <BiMenu />
         </button>
         <div className='flex flex-col md:flex-row md:items-center gap-6 md:gap-8'>
-          <NavLink href='/' title='Home' />
-          <NavLink href='/projects' title='Projects' />
-          <NavLink href='/about' title='About' />
+          <NavLink href='/' title='Home' onClick={() => setOpen(false)} />
+          <NavLink href='/projects' title='Projects' onClick={() => setOpen(false)} />
+          <NavLink href='/about' title='About' onClick={() => setOpen(false)} />
           <ResumeLink />
         </div>
       </nav>
