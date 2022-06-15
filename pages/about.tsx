@@ -50,7 +50,7 @@ const About: NextPage = () => {
                     )}
                   </div>
                   {timespan && (
-                    <span className='text-base text-secondary-light font-medium'>
+                    <span className='text-sm text-secondary-light font-medium'>
                       {timespan}
                     </span>
                   )}
