@@ -84,7 +84,11 @@ export const Navbar = () => {
         </button>
         <div className='flex flex-col md:flex-row md:items-center gap-6 md:gap-8 text-lg'>
           <NavLink href='/' title='Home' onClick={() => setOpen(false)} />
-          <NavLink href='/projects' title='Projects' onClick={() => setOpen(false)} />
+          <NavLink
+            href='/projects'
+            title='Projects'
+            onClick={() => setOpen(false)}
+          />
           <NavLink href='/about' title='About' onClick={() => setOpen(false)} />
           <ResumeLink />
         </div>

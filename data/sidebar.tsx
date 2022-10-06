@@ -4,16 +4,19 @@ export const sideContent = [
     tags: ['Digital Art', 'Mechanical Keyboards'],
   },
   {
-    title: 'Video Games',
+    title: 'Currently Playing',
+    tags: ['VALORANT', 'Phasmophobia', 'Subnautica', 'Cuphead'],
+  },
+  {
+    title: 'Favorite Video Games',
     tags: [
-      'Legend of Zelda',
       'HADES',
+      'Transistor',
+      'Valheim',
       'Horizon: Zero Dawn',
       'Mother 3',
-      'Okami',
+      'Legend of Zelda: Ocarina of Time',
       'Red Dead Redemption 2',
-      'The Witcher 3: Wild Hunt',
-      'Yakuza',
     ],
   },
   {
@@ -21,7 +24,7 @@ export const sideContent = [
     tags: [
       'Boy Pablo',
       'Conan Gray',
-      'HONNE',
+      'Derivakat',
       'Jack Stauber',
       'Joji',
       'Mother Mother',
@@ -32,7 +35,7 @@ export const sideContent = [
   },
   {
     title: 'Other Interests',
-    tags: ['Horror Movies', 'Musicals', 'Period Piece Dramas', 'Swords', 'True Crime'],
+    tags: ['Horror', 'Period Piece Dramas', 'Musicals', 'Swords', 'True Crime'],
   },
 ]
 
@@ -47,7 +50,7 @@ export const mainContent = [
   },
   {
     title: 'Databases',
-    tags: ['MongoDB', 'PostgreSQL', 'Firebase'],
+    tags: ['MongoDB', 'PostgreSQL', 'DynamoDB', 'Firebase'],
   },
   {
     title: 'Development + Design',

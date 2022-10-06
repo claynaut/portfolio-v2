@@ -36,9 +36,9 @@ export const Footer = () => {
     <div className='flex w-full -mt-[4.5rem] xs:-mt-[3.75rem] xl:mt-0 xl:w-auto justify-center xl:fixed xl:top-1/2 xl:-translate-y-1/2 xl:right-[1.75rem]'>
       <div className='relative flex flex-col xs:flex-row-reverse xl:flex-col items-center gap-1 xs:gap-4 xl:gap-6 text-secondary-light'>
         <div className='flex xl:flex-col gap-4 xl:gap-6'>
-          {links.map(({ icon, href }) =>
+          {links.map(({ icon, href }) => (
             <FooterLink key={href} icon={icon} href={href} />
-          )}
+          ))}
         </div>
         <div className='xl:absolute mt-0.5 xl:mt-0 whitespace-nowrap xl:-rotate-90 origin-bottom-right -bottom-6 right-0.5 text-sm'>
           © 2021-2022 J.S. Pescasio
