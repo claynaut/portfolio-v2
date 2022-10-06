@@ -1,6 +1,8 @@
-
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: '', // or 'media' or 'class'
   theme: {
     fontFamily: {
@@ -10,7 +12,7 @@ module.exports = {
       profile: 'var(--profile)',
     },
     colors: {
-      'transparent': 'transparent',
+      transparent: 'transparent',
       primary: {
         DEFAULT: 'var(--primary)',
         highlight: 'var(--primary-highlight)',
@@ -30,15 +32,15 @@ module.exports = {
       },
       highlight: {
         DEFAULT: 'var(--highlight)',
-      }
+      },
     },
     extend: {
       screens: {
-        'xs': '420px',
+        xs: '420px',
       },
       transitionProperty: {
-        'size': 'width, max-width, height, max-height',
-        'spacing': 'margin, padding',
+        size: 'width, max-width, height, max-height',
+        spacing: 'margin, padding',
       },
     },
   },

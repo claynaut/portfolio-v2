@@ -5,34 +5,34 @@
 @layer base {
   :root {
     --profile: url('/assets/profile.png');
-    --accent: #A95186;
-    --accent-light: #AC628F;
-    --accent-lighter: #C57DB4;
-    --accent-lightest: #D6A8D1;
+    --accent: #a95186;
+    --accent-light: #ac628f;
+    --accent-lighter: #c57db4;
+    --accent-lightest: #d6a8d1;
   }
 
   [data-theme='light'] {
-    --primary: #F7F8F9;
-    --primary-highlight: #FCFCFC;
+    --primary: #f7f8f9;
+    --primary-highlight: #fcfcfc;
     --secondary: #000;
-    --secondary-light: #6C7075;
-    --secondary-mute: #E7E8E9;
-    --highlight: #EAD2E7;
-    --accent-mute: #EAD2E7;
-    --accent-text: #A95186;
+    --secondary-light: #6c7075;
+    --secondary-mute: #e7e8e9;
+    --highlight: #ead2e7;
+    --accent-mute: #ead2e7;
+    --accent-text: #a95186;
   }
 
   [data-theme='dark'] {
     --primary: #353543;
-    --primary-highlight: #2E2E3D;
-    --secondary: #EBECFF;
-    --secondary-light: #9FA2C6;
-    --secondary-mute: #40414F;
+    --primary-highlight: #2e2e3d;
+    --secondary: #ebecff;
+    --secondary-light: #9fa2c6;
+    --secondary-mute: #40414f;
     --highlight: #493247;
-    --accent-mute: #C57DB4;
-    --accent-text: #7F3461;
+    --accent-mute: #c57db4;
+    --accent-text: #7f3461;
   }
-  
+
   h1 {
     @apply font-bold;
     @apply text-4xl;

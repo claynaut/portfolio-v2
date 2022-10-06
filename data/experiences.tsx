@@ -9,7 +9,8 @@ export const experiences = [
         name: 'Stealth Startup',
         subtitle: ['Software Engineer'],
         timespan: 'Apr 2022 - Present',
-        description: 'Working with React, Node.js, and AWS to build innovating products. Enjoying the process and continuing to do what I love.',
+        description:
+          'Working with React, Node.js, and AWS to build innovating products. Enjoying the process and continuing to do what I love.',
       },
     ],
   },
@@ -21,13 +22,15 @@ export const experiences = [
         name: 'UC Riverside',
         subtitle: ['B.S. in Computer Science'],
         timespan: 'Sep 2019 - Mar 2022',
-        description: 'Graduated with a B.S. in Computer Science. Heavily involved in hackathons as a lead for Citrus Hack and BioHack.',
+        description:
+          'Graduated with a B.S. in Computer Science. Heavily involved in hackathons as a lead for Citrus Hack and BioHack.',
       },
       {
         icon: <TbMapPin />,
         name: 'Road Trip to San Francisco',
         timespan: 'Winter 2022',
-        description: 'Traveled with a few friends, and enjoyed sightseeing and eating sourdough turtles.',
+        description:
+          'Traveled with a few friends, and enjoyed sightseeing and eating sourdough turtles.',
       },
     ],
   },

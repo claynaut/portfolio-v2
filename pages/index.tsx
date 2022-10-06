@@ -7,7 +7,9 @@ const Home: NextPage = () => {
     <Page>
       <div className='flex flex-col-reverse sm:flex-row justify-between items-start sm:items-center mb-6'>
         <div className='flex flex-col gap-2'>
-          <p className='hidden sm:block text-secondary-light'>Hey, there. I&apos;m...</p>
+          <p className='hidden sm:block text-secondary-light'>
+            Hey, there. I&apos;m...
+          </p>
           <h1>
             <span className='px-0.5 bg-highlight text-accent'>J.S.</span>{' '}
             Pescasio

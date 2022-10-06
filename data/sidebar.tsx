@@ -32,7 +32,13 @@ export const sideContent = [
   },
   {
     title: 'Other Interests',
-    tags: ['Horror Movies', 'Musicals', 'Period Piece Dramas', 'Swords', 'True Crime'],
+    tags: [
+      'Horror Movies',
+      'Musicals',
+      'Period Piece Dramas',
+      'Swords',
+      'True Crime',
+    ],
   },
 ]
 
